@@ -1,0 +1,1625 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Akash OTT | Yess Bangla Private Limited</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <meta name="keywords" content="">
+    <link rel="shortcut icon"
+      type="image/x-icon"
+      href="https://yessbd.com/uploads/Configuration/1786630550_uV9KMcmNWxyi.png">
+  
+    <!-- <link rel="stylesheet" href="https://yessbd.com/Backend/css/color.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5f7bc44e9f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Flipbook StyleSheet start -->
+    <link href="https://yessbd.com/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <link href="https://yessbd.com/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Flipbook main Js file -->
+    <script src="https://yessbd.com/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="https://yessbd.com/dflip/js/dflip.min.js" type="text/javascript"></script>
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Anek Bangla', 'sans-serif'],
+                    },
+                    colors: {
+                        aliceblue: 'aliceblue',
+                        white: '#ffffff',
+                        black: '#0f172a',
+                        muted: '#64748b',
+                        primary: '#0d9488',
+                        primarydark: '#013d38',
+                        hover: '#00ebd7',
+                        'primary-dark': '#00701A',
+                        'primary-deep': '#003D0F',
+                        ink: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Outfit', sans-serif;
+        }
+
+        *,
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Anek Bangla', sans-serif;
+        }
+
+        .mobile-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            color: #6b7280;
+        }
+        .mobile-link:hover {
+            background: #f3f4f6;
+            color: var(--primary-color);
+        }
+
+        .mobile-nav-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .mobile-nav-scroll::-webkit-scrollbar { display: none; }
+
+        /* ---- Animations (defined once) ---- */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.7s ease-out forwards;
+            opacity: 0;
+        }
+        .animation-delay-200 { animation-delay: 200ms; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.96); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-scale-in {
+            animation: scaleIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+        .float-anim { animation: float 6s ease-in-out infinite; }
+        .float-anim-delay { animation: float 7s ease-in-out 1s infinite; }
+        .float-anim-delay-2 { animation: float 8s ease-in-out 2s infinite; }
+
+        @keyframes floatFeature {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+        .float-feature { animation: floatFeature 4s ease-in-out infinite; }
+        .float-feature-delay-1 { animation-delay: 0s; }
+        .float-feature-delay-2 { animation-delay: 1.5s; }
+        .float-feature-delay-3 { animation-delay: 3s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ---- Hero / backgrounds ---- */
+        .bg-hero {
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 30%, rgba(6,13,10,0.35) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 20% 80%, rgba(15,61,46,0.2) 0%, transparent 60%),
+                linear-gradient(180deg,
+                    rgba(6,13,10,0.55) 0%,
+                    rgba(6,13,10,0.4) 30%,
+                    rgba(6,13,10,0.35) 50%,
+                    rgba(6,13,10,0.45) 70%,
+                    rgba(6,13,10,0.7) 85%,
+                    rgba(6,13,10,0.92) 100%
+                );
+        }
+
+        .hero-gradient {
+            background:
+                radial-gradient(ellipse 80% 60% at 10% 20%, rgba(20, 184, 166, 0.18) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 40% at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, #f0fdfa 0%, #f8fafc 25%, #fdf4ff 50%, #f8fafc 75%, #f0f9ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.6;
+            animation: float 20s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .orb-1 {
+            width: 400px; height: 400px;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.3), rgba(59, 130, 246, 0.2));
+            top: -100px; left: -100px; animation-delay: 0s;
+        }
+        .orb-2 {
+            width: 350px; height: 350px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.15));
+            bottom: -80px; right: -80px; animation-delay: -7s;
+        }
+        .orb-3 {
+            width: 250px; height: 250px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(20, 184, 166, 0.15));
+            top: 40%; right: 10%; animation-delay: -14s;
+        }
+
+        /* this class used */
+        .header-on-scroll { 
+            background: rgba(255, 255, 255, 0.43) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-color: transparent !important;
+        }
+
+        .card-glow { position: relative; overflow: hidden; }
+        .card-glow::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, transparent, var(--glow-color, #355B4F), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .card-glow:hover::before { opacity: 1; }
+
+        /* ---- Buttons ---- */
+        .btn-primary {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            box-shadow: 0 4px 14px -3px rgba(13, 148, 136, 0.4);
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        .btn-primary:hover::after { opacity: 1; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.5); }
+        .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px -2px rgba(13, 148, 136, 0.4); }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 1); border-color: var(--primary); color: var(--primary); }
+
+        /* ---- Dashboard / laptop mock / floating cards ---- */
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        .dashboard-card:hover {
+            border-color: rgba(13, 148, 136, 0.3);
+            box-shadow: 0 15px 40px -10px rgba(13, 148, 136, 0.15);
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .laptop-frame {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 24px 24px 0 0;
+            padding: 12px 14px 0;
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+        .laptop-frame::before {
+            content: '';
+            position: absolute;
+            top: 6px; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 4px;
+            background: #0f172a;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .laptop-screen { background: #0f172a; border-radius: 12px 12px 0 0; overflow: hidden; position: relative; }
+        .laptop-base {
+            height: 14px;
+            background: linear-gradient(180deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+            border-radius: 0 0 4px 4px;
+            margin: 0 -20px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+        .laptop-base::before {
+            content: '';
+            position: absolute;
+            top: 4px; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 4px;
+            background: #0f172a;
+            border-radius: 0 0 2px 2px;
+        }
+        .laptop-stand {
+            width: 120px; height: 4px;
+            background: linear-gradient(180deg, #334155, #1e293b);
+            margin: 0 auto;
+            border-radius: 0 0 2px 2px;
+        }
+
+        .floating-feature {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 4px 16px -4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            max-width: 200px;
+        }
+        .floating-feature:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.15), 0 8px 24px -8px rgba(0, 0, 0, 0.1);
+        }
+        .floating-feature .icon-wrap {
+            width: 40px; height: 40px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-item { opacity: 0.35; transition: all 0.3s ease; filter: grayscale(100%); }
+        .logo-item:hover { opacity: 1; filter: grayscale(0%); transform: translateY(-2px); }
+
+        button:focus-visible, a:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+        }
+
+        .pie-segment { transition: transform 0.3s ease; transform-origin: center; }
+        .pie-segment:hover { transform: scale(1.03); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        .stat-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 9999px;
+        }
+
+        .dashboard-content { background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%); }
+
+        /* ---- Charts ---- */
+        .chart-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+        .chart-area { opacity: 0.3; }
+        .chart-dot { transition: all 0.2s ease; cursor: pointer; }
+        .chart-dot:hover { r: 6; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .chart-grid-line { stroke: #e2e8f0; stroke-width: 1; stroke-dasharray: 4 4; }
+
+        .chart-tooltip {
+            position: absolute;
+            background: #0f172a;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 500;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s;
+            z-index: 100;
+            white-space: nowrap;
+        }
+        .chart-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%; left: 50%; transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #0f172a;
+        }
+
+        @keyframes drawLine { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+        @keyframes fillArea { from { opacity: 0; } to { opacity: 0.3; } }
+        .animate-line { stroke-dasharray: 1000; animation: drawLine 1.5s ease-out forwards; }
+        .animate-area { animation: fillArea 1s ease-out 0.5s forwards; opacity: 0; }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            70% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-dot { animation: popIn 0.3s ease-out forwards; }
+    </style>
+
+    </head>
+<body>
+    <!-- Sticky Social Icons -->
+    <div class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-3">
+        <div class="flex flex-col gap-3 shadow-xl">
+
+                            <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition duration-300">
+                    <i class="fab fa-facebook-f text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                class="w-8 h-8  rounded-full bg-gradient-to-br from-pink-500 to-yellow-500 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                <i class="fab fa-instagram text-white text-base"></i>
+            </a>
+                        
+                            <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" rel="noopener noreferrer"
+                class="w-8 h-8  rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition duration-300">
+                    <i class="fa-brands fa-linkedin text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-sky-500 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                    <i class="fab fa-twitter text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-red-700 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                    <i class="fab fa-youtube text-white text-base"></i>
+                </a>
+                    </div>
+    </div>
+
+    <div class="main">
+        <!-- HEADER Start -->
+        <header id="navbar" class="fixed top-0 left-0 right-0 z-[40] w-full max-w-[100vw] overflow-x-clip bg-transparent px-0 transition-all duration-300">
+            <!-- top bar -->
+            <div class="hidden md:block bg-primarydark py-2">
+                <div class="max-w-7xl mx-auto px-2">
+                <div class="topbar-inner flex flex-col gap-2 text-sm lg:flex-row lg:items-center lg:justify-between lg:gap-6">
+                    <div class="topbar-info text-center sm:text-left text-white">
+                        <a href="mailto:yessbangla.bd@gmail.com" class="transition hover:text-white">Contact Us: yessbangla.bd@gmail.com |</a>
+                        <a href="https://wa.me/881805464343?text=Hello%2C+I+would+like+to+know+more+about+your+services."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="transition hover:text-primary">
+                                WhatsApp: 01805464343
+                        </a>
+                    </div>
+
+                    <div class="topbar-social justify-center sm:justify-start lg:justify-end">
+                        <span class="text-white/75">Follow Us On:</span>
+
+                                                <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" aria-label="Facebook" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        
+                                                <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" aria-label="Instagram" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                                                
+                                                <a href="https://www.youtube.com/" target="_blank" aria-label="Twitter" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto my-0 md:my-2 px-4 rounded-0 md:rounded-full bg-white backdrop-blur-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)]">
+                <!-- bg-white/5 backdrop-blur-lg rounded-b-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)] -->
+                <div class="flex items-center justify-between h-auto py-3">
+                    <!-- Logo -->
+                    <a href="https://yessbd.com" class="flex items-center gap-3">
+                        <div class="w-auto h-10 rounded-md p-1 flex items-center justify-center overflow-hidden">
+                                                            <img src="https://yessbd.com/uploads/Configuration/1786630550_MhvzHrbFS0jx.png" alt="Logo" class="w-full h-full object-contain" width="40" height="40">
+                                                    </div>
+                        <div class="block">
+                            <h1 id="logo_text" class="text-sm md:text-lg font-semibold text-black">Yess Bangla Private Limited</h1>
+                            <p id="slogan_text" class="text-xs text-black">Where Solution Begins</p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a href="https://yessbd.com" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Home</a>
+                        <a href="https://yessbd.com/about" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">About</a>
+                        <a href="https://yessbd.com/services" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Services</a>
+
+                        <div class="relative group">
+                            <button onclick="window.location='https://yessbd.com/ventures'"
+                                class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition flex items-center gap-1">
+                                Ventures
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                           <div class="absolute left-0 top-[20px] w-[520px] rounded-lg
+                                shadow-xl
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-300
+                                bg-white
+                                p-3 grid grid-cols-2 gap-2">
+
+                                                                    <a href="https://yessbd.com/ventures/5?type=Shondhaan" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png" alt="Shondhaan" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Shondhaan</span>
+                                            <span class="block text-xs text-gray-800 truncate">Home &amp; Professional Services</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png" alt="Organic Haat" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Organic Haat</span>
+                                            <span class="block text-xs text-gray-800 truncate">Organic Marketplace</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png" alt="Yess Host" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Host</span>
+                                            <span class="block text-xs text-gray-800 truncate">Hosting &amp; Cloud Infrastructure</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Akash OTT</span>
+                                            <span class="block text-xs text-gray-800 truncate">Streaming Platform</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png" alt="Yess Soft" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Soft</span>
+                                            <span class="block text-xs text-gray-800 truncate">Software &amp; IT Solutions</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png" alt="Yess Event" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Event</span>
+                                            <span class="block text-xs text-gray-800 truncate">Event Management</span>
+                                        </span>
+                                    </a>
+                                                            </div>
+                        </div>
+
+                        <a href="https://yessbd.com/industries" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Industries</a>
+                        <a href="https://yessbd.com/insights" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Insights</a>
+                        <a href="https://yessbd.com/career" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Careers</a>
+                        <a href="https://yessbd.com/contact" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Contact</a>
+                    </nav>
+
+                    <!-- CTA -->
+                    <div class="hidden lg:flex items-center gap-6">
+                        <button id="consultationOpen" class="bg-primary hover:bg-hover px-4 py-2 rounded-full text-white hover:text-black text-sm font-medium transition">
+                            LET'S TALK
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="headerMenuBtn" class="hidden lg:hidden p-2 text-black hover:bg-white/10 rounded-lg transition" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                        <svg id="menuIcon" class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M3 12h18M3 6h18M3 18h18"/>
+                        </svg>
+                        <svg id="closeIcon" class="w-6 h-6 hidden text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileQuickNav" class="md:hidden relative w-full max-w-full mx-auto my-0 px-4 bg-white backdrop-blur-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)]">
+                <nav class="mobile-nav-scroll flex min-w-0 max-w-full items-center gap-6 overflow-x-auto py-2.5 pr-2 text-sm font-medium whitespace-nowrap" aria-label="Quick navigation">
+                    <a href="https://yessbd.com" class="shrink-0 text-gray-700">Home</a>
+                    <a href="https://yessbd.com/about" class="shrink-0 text-gray-700">About</a>
+                    <a href="https://yessbd.com/services" class="shrink-0 text-gray-700">Services</a>
+
+                    <div class="relative shrink-0">
+                        <button type="button" data-mobile-dropdown-toggle aria-expanded="false" aria-controls="mobileVenturesMenu" class="inline-flex items-center gap-1 text-gray-700">
+                            Ventures
+                            <svg class="h-3.5 w-3.5 transition-transform" data-mobile-dropdown-icon fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <a href="https://yessbd.com/industries" class="shrink-0 text-gray-700">Industries</a>
+                    <a href="https://yessbd.com/insights" class="shrink-0 text-gray-700">Insights</a>
+                    <a href="https://yessbd.com/career" class="shrink-0 text-gray-700">Careers</a>
+                    <a href="https://yessbd.com/contact" class="shrink-0 text-gray-700">Contact</a>
+                </nav>
+                <div id="mobileVenturesMenu" data-mobile-dropdown-menu class="absolute left-4 top-full z-[70] mt-2 hidden w-64 rounded-lg bg-white p-2 shadow-xl ring-1 ring-black/5">
+                                            <a href="https://yessbd.com/ventures/5?type=Shondhaan" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png" alt="Shondhaan" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Shondhaan</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png" alt="Organic Haat" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Organic Haat</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png" alt="Yess Host" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Host</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Akash OTT</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png" alt="Yess Soft" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Soft</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png" alt="Yess Event" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Event</span>
+                        </a>
+                                    </div>
+            </div>
+
+        </header>
+        <!-- HEADER End -->
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden fixed bottom-16 left-0 right-0 z-[60] lg:hidden bg-slate-700 backdrop-blur-lg border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
+            <nav class="max-w-7xl mx-auto px-4 py-6 flex flex-col gap-1">
+                <a href="https://yessbd.com" class="mobile-link text-white">Home</a>
+                <a href="https://yessbd.com/about" class="mobile-link text-white">About</a>
+                <a href="https://yessbd.com/services" class="mobile-link text-white">Services</a>
+                <a href="https://yessbd.com/clients" class="mobile-link text-white">Clients</a>
+                <a href="https://yessbd.com/ventures" class="mobile-link text-white">Ventures</a>                    
+                <a href="https://yessbd.com/contact" class="mobile-link text-white">Contact Us</a>
+
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <button id="consultationOpen" class="bg-[#328F6C] hover:bg-[#28785A] block w-full text-center px-4 py-2 rounded-md text-white font-medium transition">
+                        LET'S TALK
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Bottom Navigation -->
+        <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 h-16 bg-white border-t border-gray-200 shadow-[0_-2px_12px_rgba(0,0,0,0.1)]" aria-label="Mobile navigation">
+            <div class="grid h-full grid-cols-5 items-center">
+                <a href="https://yessbd.com" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Home">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg>
+                    <span>Home</span>
+                </a>
+                <a href="https://yessbd.com/about" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="About">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 11v5m0-8h.01"/></svg>
+                    <span>About</span>
+                </a>
+                <a href="https://yessbd.com/services" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Services">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/><path stroke-linecap="round" d="M8 7v0m4 5v0m-2 5v0"/></svg>
+                    <span>Services</span>
+                </a>
+                <a href="https://yessbd.com/contact" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Contact">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v12H8l-4 4V5Z"/><path stroke-linecap="round" d="M8 9h8M8 13h5"/></svg>
+                    <span>Contact</span>
+                </a>
+                <button id="menuBtn" type="button" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Open more menu" aria-controls="mobileMenu" aria-expanded="false">
+                    <svg id="bottomMoreIcon" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+                    <span>More</span>
+                </button>
+            </div>
+        </nav>
+
+        <div style="min-height: 90vh">
+            <div class="bg-cover bg-center bg-no-repeat w-full h-full fixed -z-0"
+    style="background-image: url('https://yessbd.com/uploads/hero/hero_6a89616e974f4.png');">
+</div>
+
+<section id="top" class="relative overflow-hidden pt-16 md:pt-6">
+    <div class="absolute z-10 h-full w-full inset-0 bg-black/70 backdrop-blur-sm"></div>
+    <!-- Hero Content -->
+    <div class="relative z-10 mx-auto flex max-w-7xl flex-col gap-10 px-4 py-20 sm:px-6 sm:py-24 lg:flex-row lg:items-center lg:gap-12 lg:px-0 lg:py-32">
+
+        <div class="w-full lg:w-7/12">
+
+            <span class="text-[12px] spec-tag border border-primary rounded-full px-3 py-1 uppercase text-white mb-4">
+                Streaming Platform
+            </span>
+
+            <h1 class="mt-4 text-4xl font-semibold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
+                Akash OTT <br>
+                <span class="mt-2 block text-base leading-snug text-circuit sm:text-xl lg:text-2xl">
+                    Your favourite shows, anytime — on any screen.
+                </span>
+            </h1>
+
+
+            <p class="mt-4 max-w-lg text-base leading-relaxed text-white/80 sm:text-lg">
+                Akash OTT is the digital home for Bangla storytelling — feature films, web series, live TV simulcasts and exclusive premieres, available on mobile, web and smart TV with personalised recommendations and offline downloads.
+            </p>
+
+
+            <!-- Buttons -->
+            <div class="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:flex-wrap sm:gap-4">
+
+                <a href="#contact"
+                    class="w-full _df_button border border-primary bg-primarydark px-6 py-3.5 text-center text-sm font-medium uppercase tracking-wide text-white transition-colors hover:bg-primary hover:text-black sm:w-auto"
+                    source="https://yessbd.com/">
+                    Open Brief
+                </a>
+                <button data-download-request
+                    class="w-full border border-white/30 px-6 py-3.5 text-center font-mono text-sm uppercase tracking-wide text-white transition-colors hover:border-white sm:w-auto">
+                    Download Brief (PDF)
+                </button>
+
+            </div>
+
+        </div>
+
+        <div class="w-full lg:flex lg:w-5/12 lg:items-end">
+                            <img class="mx-auto h-auto w-full max-w-[280px] object-contain sm:max-w-[360px] lg:ml-auto lg:max-w-[450px]" src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT">
+                    </div>
+
+    </div>
+    <!-- Bottom Strip -->
+    <div class="relative z-10 border-t border-white/10 bg-black/80">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-4 flex flex-wrap gap-x-8 gap-y-2 justify-center text-[11px] uppercase tracking-wide text-white/80">
+
+            <span>ISO-aligned processes</span>
+            <span>/</span>
+            <span>Senior-led team</span>
+            <span>/</span>
+            <span>Global delivery</span>
+            <span>/</span>
+            <span>24/5 support</span>
+            <span>/</span>
+            <span>NPS 60+</span>
+
+        </div>
+
+    </div>
+</section>
+
+
+<section id="offer" class="bg-[aliceblue] relative grid-blueprint">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-24">
+        <div class="grid lg:grid-cols-12 gap-10 mb-14">
+            <div class="lg:col-span-5">
+                <span class="px-2 py-1 border border-primary rounded-full text-[12px] font-bold spec-tag uppercase text-circuit">What we offer</span>
+                <h2 class="font-display font-semibold text-3xl sm:text-4xl leading-tight mt-4">
+                    Built around quality, every step of the way.
+                </h2>
+            </div>
+            <div class="lg:col-span-7 flex items-end">
+                <p class="text-ink/60 leading-relaxed">
+                    Viewers, advertisers and content creators looking for a premium broadcast platform
+                </p>
+            </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-5 border-t border-l border-linelt">
+                                    <div class="border-r border-b border-linelt p-6 bg-white hover:bg-white/60 transition-colors">
+                <span class="font-mono text-[11px] text-signal">01</span>
+                <h3 class="font-display font-semibold text-primary mt-3">24/7</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">24/7 satellite broadcasting</p>
+            </div>
+                        <div class="border-r border-b border-linelt p-6 bg-white hover:bg-white/60 transition-colors">
+                <span class="font-mono text-[11px] text-signal">02</span>
+                <h3 class="font-display font-semibold text-primary mt-3">Content</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">News, drama, talk shows and cultural programs</p>
+            </div>
+                        <div class="border-r border-b border-linelt p-6 bg-white hover:bg-white/60 transition-colors">
+                <span class="font-mono text-[11px] text-signal">03</span>
+                <h3 class="font-display font-semibold text-primary mt-3">Nationwide reach</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Nationwide reach and growing global audience</p>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section class="bg-white relative text-paper">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-16">
+        <span class="font-bold rounded-full px-2 py-1 border border-primary text-[12px] spec-tag uppercase text-signal mb-4">Signature features</span>
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl leading-tight max-w-xl mt-4 mb-6">
+            Why partners choose Akash TV.
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-px bg-line">
+                                    <div class="bg-transparent pl-8 pr-8 py-2 border-l border-primary">
+                <span class="font-mono border rounded-full border-primary px-2 py-1 text-signal text-sm">1</span>
+                <h3 class="font-display font-semibold text-lg mt-4">HD newsroom</h3>
+                <p class="text-paper/55 text-sm mt-3 leading-relaxed">Three studios, automated graphics, dual control rooms and live OB capability.</p>
+            </div>
+                        <div class="bg-transparent pl-8 pr-8 py-2 border-l border-primary">
+                <span class="font-mono border rounded-full border-primary px-2 py-1 text-signal text-sm">2</span>
+                <h3 class="font-display font-semibold text-lg mt-4">Original drama slate</h3>
+                <p class="text-paper/55 text-sm mt-3 leading-relaxed">12+ flagship serials a year, produced in-house with award-winning directors.</p>
+            </div>
+                        <div class="bg-transparent pl-8 pr-8 py-2 border-l border-primary">
+                <span class="font-mono border rounded-full border-primary px-2 py-1 text-signal text-sm">3</span>
+                <h3 class="font-display font-semibold text-lg mt-4">Brand-safe inventory</h3>
+                <p class="text-paper/55 text-sm mt-3 leading-relaxed">Curated programming blocks and custom integrations for premium advertisers.</p>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section id="work" class="bg-[aliceblue] relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-0 py-14">
+        <span class="font-bold rounded-full border border-primary px-2 py-1 text-[12px] spec-tag uppercase text-circuit mb-4">Case study</span>
+
+                <div class="grid lg:grid-cols-2 gap-12 mt-4 mb-16">
+                        <div class="border border-linelt p-8 bg-white">
+                <h3 class="font-display font-semibold text-xl mb-3">The challenge</h3>
+                <p class="text-ink/65 leading-relaxed text-sm">A growing OTT platform needed a reliable way to manage streaming content, users, subscriptions, and digital media from a single ecosystem. Fragmented content management and limited platform infrastructure made it difficult to deliver a consistent viewing experience while scaling its audience.</p>
+            </div>
+                        <div class="border border-linelt p-8 bg-white">
+                <h3 class="font-display font-semibold text-xl mb-3">Our solution</h3>
+                <p class="text-ink/65 leading-relaxed text-sm">Yess Soft engineered a centralized OTT platform for AkashOTT — bringing content management, video streaming, user accounts, subscriptions and platform operations into one scalable system, with a responsive web and mobile experience designed for seamless content discovery and playback.</p>
+            </div>
+                    </div>
+        
+        <h3 class="font-display font-semibold text-2xl mb-8">Delivery phases</h3>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-5">
+                        <div class="pl-4 border-l-2 border-signal">
+                <span class="font-mono text-xs text-signal">01</span>
+                <h4 class="font-display font-semibold mt-2">Discover</h4>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Audience research across 6 divisions, competitor grid analysis and a programming blueprint.</p>
+            </div>
+                        <div class="pl-4 border-l-2 border-signal">
+                <span class="font-mono text-xs text-signal">02</span>
+                <h4 class="font-display font-semibold mt-2">Design</h4>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">On-air branding system, set design and a graphics package built for HD and social cut-downs.</p>
+            </div>
+                        <div class="pl-4 border-l-2 border-signal">
+                <span class="font-mono text-xs text-signal">03</span>
+                <h4 class="font-display font-semibold mt-2">Build</h4>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Three studios, two control rooms, MAM workflow and an OB van commissioned in 7 months.</p>
+            </div>
+                        <div class="pl-4 border-l-2 border-signal">
+                <span class="font-mono text-xs text-signal">04</span>
+                <h4 class="font-display font-semibold mt-2">Launch &amp; grow</h4>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Soft launch, weekly grid optimisation against ratings and a rolling slate of new originals.</p>
+            </div>
+                    </div>
+        
+        
+        <!-- <div class="border-t border-linelt pt-10">
+                <p class="font-mono text-[12px] spec-tag uppercase text-ink/40 mb-5">Capabilities &amp; stack</p>
+                <div class="flex flex-wrap gap-3">
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">TypeScript</span>
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">React</span>
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">Node.js</span>
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">PostgreSQL</span>
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">Redis</span>
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">AWS</span>
+                                            <span class="font-mono text-xs border border-linelt px-3 py-1.5 text-ink/65">Cloudflare</span>
+                                    </div>
+            </div> -->
+    </div>
+</section>
+
+
+<section class="bg-white relative text-paper">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-24">
+        <span class="text-[12px] border border-primary px-2 py-1 spec-tag uppercase font-bold rounded-full text-signal mb-4">Our journey</span>
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl leading-tight mb-14 mt-4">Milestones that shaped Akash OTT.</h2>
+
+        <div class="space-y-0 border-l border-line ml-2">
+                        <div class="relative pl-8 pb-12 last:pb-0">
+                <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-circuit"></span>
+                <span class="font-mono border border-primary rounded-full px-2 p-1 text-xs">2019</span>
+                <h3 class="font-semibold text-lg mt-3 text-primary">Founded</h3>
+                <p class="text-paper/55 text-sm mt-2 max-w-xl leading-relaxed">Akash TV launched with a focused team and a clear mandate: stories that connect a nation.</p>
+            </div>
+                        <div class="relative pl-8 pb-12 last:pb-0">
+                <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-circuit"></span>
+                <span class="font-mono border border-primary rounded-full px-2 p-1 text-xs">2020</span>
+                <h3 class="font-semibold text-lg mt-3 text-primary">First scale milestone</h3>
+                <p class="text-paper/55 text-sm mt-2 max-w-xl leading-relaxed">Shipped the v1 platform and onboarded our first cohort of viewers.</p>
+            </div>
+                        <div class="relative pl-8 pb-12 last:pb-0">
+                <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-circuit"></span>
+                <span class="font-mono border border-primary rounded-full px-2 p-1 text-xs">2021</span>
+                <h3 class="font-semibold text-lg mt-3 text-primary">National footprint</h3>
+                <p class="text-paper/55 text-sm mt-2 max-w-xl leading-relaxed">Expanded operations across major Bangladesh markets with reliable SLAs and a dedicated success desk.</p>
+            </div>
+                        <div class="relative pl-8 pb-12 last:pb-0">
+                <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-circuit"></span>
+                <span class="font-mono border border-primary rounded-full px-2 p-1 text-xs">2022</span>
+                <h3 class="font-semibold text-lg mt-3 text-primary">International standard</h3>
+                <p class="text-paper/55 text-sm mt-2 max-w-xl leading-relaxed">Adopted enterprise-grade tooling, audited processes and a public quality scorecard reviewed each quarter.</p>
+            </div>
+                        <div class="relative pl-8 pb-12 last:pb-0">
+                <span class="absolute -left-[5px] top-1.5 w-2.5 h-2.5 rounded-full bg-circuit"></span>
+                <span class="font-mono border border-primary rounded-full px-2 p-1 text-xs">Today</span>
+                <h3 class="font-semibold text-lg mt-3 text-primary">Where we are now</h3>
+                <p class="text-paper/55 text-sm mt-2 max-w-xl leading-relaxed">Nationwide + diaspora — and still investing in the team, the tech and the experience.</p>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section id="engage" class="bg-[aliceblue] relative grid-blueprint">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-20">
+        <span class="font-bold border border-primary rounded-full px-2 py-1 text-[12px] spec-tag uppercase mb-4">Ways to engage</span>
+        <h2 class="mt-4 font-semibold text-3xl sm:text-4xl leading-tight mb-14">Choose how you want to work with Akash TV.</h2>
+
+        <div class="grid lg:grid-cols-3 gap-6">
+            
+            <div class="border border-linelt bg-white/60 p-8 flex flex-col">
+                                 <h3 class="font-display font-semibold text-lg">Starter</h3>                <p class="font-mono text-xs text-ink/45 mt-1 uppercase">On request — per project</p>
+                <p class="text-sm text-ink/60 mt-4 leading-relaxed">A focused engagement to validate fit and ship a first news &amp; current affairs outcome.</p>                <ul class="mt-6 space-y-2.5 text-sm text-ink/70 flex-1">
+                    <li class="flex gap-2"><span class="text-circuit">—</span>Discovery workshop &amp; written scope</li>
+                    <li class="flex gap-2"><span class="text-circuit">—</span>Single delivery sprint</li>
+                    <li class="flex gap-2"><span class="text-circuit">—</span>Email support, business hours</li>
+                    <li class="flex gap-2"><span class="text-circuit">—</span>30-day post-launch warranty</li>
+                </ul>
+                <a href="#contact" class="mt-8 text-center border border-ink py-3 font-bold text-xs uppercase tracking-wide hover:bg-primarydark hover:text-white transition-colors">Talk to us</a>            </div>
+            
+            
+            <div class="border-2 border-signal bg-primarydark text-paper p-8 flex flex-col relative">
+                <span class="absolute -top-3 left-8 bg-primary border border-primary text-white rounded-full text-[10px] uppercase tracking-wide px-2 py-1">Most chosen</span>
+                                 <h3 class="font-semibold text-lg text-white">Growth</h3>                <p class="font-mono text-xs text-white mt-1 uppercase">Tailored — quarterly retainer</p>
+                <p class="text-sm text-white/70 mt-4 leading-relaxed">For teams scaling Akash TV into a core part of their operation.</p>                <ul class="mt-6 space-y-2.5 text-sm text-white/85 flex-1">
+                    <li class="flex gap-2"><span class="text-white">—</span>Dedicated delivery pod</li>
+                    <li class="flex gap-2"><span class="text-white">—</span>Quarterly roadmap reviews</li>
+                    <li class="flex gap-2"><span class="text-white">—</span>Priority support, 24/5</li>
+                    <li class="flex gap-2"><span class="text-white">—</span>Performance &amp; quality scorecard</li>
+                </ul>
+                <a href="#contact" class="mt-8 text-center bg-primary text-white py-3 font-bold text-xs uppercase tracking-wide hover:bg-paper transition-colors">Talk to us</a>            </div>
+            
+            
+            <div class="border border-linelt bg-white/60 p-8 flex flex-col">
+                                 <h3 class="font-display font-semibold text-lg">Enterprise</h3>                <p class="font-mono text-xs text-ink/45 mt-1 uppercase">Custom — annual partnership</p>
+                <p class="text-sm text-ink/60 mt-4 leading-relaxed">White-glove partnership with SLAs, dedicated leadership and custom integrations.</p>                <ul class="mt-6 space-y-2.5 text-sm text-ink/70 flex-1">
+                    <li class="flex gap-2"><span class="text-circuit">—</span>Named account leadership</li>
+                    <li class="flex gap-2"><span class="text-circuit">—</span>Custom SLAs &amp; security review</li>
+                    <li class="flex gap-2"><span class="text-circuit">—</span>24/7 incident response</li>
+                    <li class="flex gap-2"><span class="text-circuit">—</span>Quarterly business reviews</li>
+                </ul>
+                <a href="#contact" class="mt-8 text-center border border-ink py-3 font-bold text-xs uppercase tracking-wide hover:bg-primarydark hover:text-white transition-colors">Talk to us</a>            </div>
+                    </div>
+    </div>
+ </section>
+
+
+<section id="faq" class="bg-white relative border-t border-linelt">
+    <div class="max-w-4xl mx-auto px-4 lg:px-0 py-20">
+        <span class="font-bold border border-primary rounded-full px-2 py-1 text-[12px] spec-tag uppercase">Frequently asked</span>
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl leading-tight mt-4 mb-4">Everything you wanted to know about Akash TV.</h2>
+        <p class="text-ink/55 text-sm mb-12">Can&#039;t find what you&#039;re looking for? Our specialists answer every enquiry within one business day.</p>
+        <div class="divide-y divide-linelt border-t border-b border-linelt">
+                                    <details class="group py-5">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <span class="font-display font-medium">How do we get started with Akash TV?</span>
+                    <span class="font-mono text-signal group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed pr-8">
+                    Our team will walk you through this during a discovery call — request a callback below and we'll cover it in detail, with references where relevant.
+                </p>
+            </details>
+                        <details class="group py-5">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <span class="font-display font-medium">Who is Akash TV best suited for?</span>
+                    <span class="font-mono text-signal group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed pr-8">
+                    Our team will walk you through this during a discovery call — request a callback below and we'll cover it in detail, with references where relevant.
+                </p>
+            </details>
+                        <details class="group py-5">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <span class="font-display font-medium">What does pricing look like?</span>
+                    <span class="font-mono text-signal group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed pr-8">
+                    Our team will walk you through this during a discovery call — request a callback below and we'll cover it in detail, with references where relevant.
+                </p>
+            </details>
+                        <details class="group py-5">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <span class="font-display font-medium">How do you ensure quality and accountability?</span>
+                    <span class="font-mono text-signal group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed pr-8">
+                    Our team will walk you through this during a discovery call — request a callback below and we'll cover it in detail, with references where relevant.
+                </p>
+            </details>
+                        <details class="group py-5">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <span class="font-display font-medium">Can you work with our existing vendors and tools?</span>
+                    <span class="font-mono text-signal group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed pr-8">
+                    Our team will walk you through this during a discovery call — request a callback below and we'll cover it in detail, with references where relevant.
+                </p>
+            </details>
+                        <details class="group py-5">
+                <summary class="flex items-center justify-between cursor-pointer list-none">
+                    <span class="font-display font-medium">What support is available after launch?</span>
+                    <span class="font-mono text-signal group-open:rotate-45 transition-transform">+</span>
+                </summary>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed pr-8">
+                    Our team will walk you through this during a discovery call — request a callback below and we'll cover it in detail, with references where relevant.
+                </p>
+            </details>
+                    </div>
+    </div>
+</section>
+
+
+
+<section class="bg-[aliceblue] relative">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-20">
+        <span class="font-bold border border-primary rounded-full px-2 py-1 text-[12px] spec-tag uppercase">Why Akash TV</span>
+        <h2 class="font-display font-semibold text-3xl sm:text-4xl leading-tight mt-4 mb-14">Four reasons enterprise teams stay with us.</h2>
+
+        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-linelt border border-linelt bg-white">
+                                    <div class="bg-paper p-6">
+                <h3 class="font-display font-semibold text-base">Trust-first delivery</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Signed MSAs, NDAs, IP assignment and a documented change-control process from day one.</p>
+            </div>
+                        <div class="bg-paper p-6">
+                <h3 class="font-display font-semibold text-base">Senior-only pods</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Every engagement is staffed with a tech lead, designer and PM — no hand-offs to juniors.</p>
+            </div>
+                        <div class="bg-paper p-6">
+                <h3 class="font-display font-semibold text-base">Global standard, local context</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">International best practices delivered with deep understanding of Bangladesh&#039;s market.</p>
+            </div>
+                        <div class="bg-paper p-6">
+                <h3 class="font-display font-semibold text-base">Long-term partnership</h3>
+                <p class="text-sm text-ink/55 mt-2 leading-relaxed">Quarterly reviews, dedicated success manager and 24/5 support — for years, not sprints.</p>
+            </div>
+                    </div>
+    </div>
+</section>
+
+
+<section class="bg-transparent relative border-t border-linelt">
+    <div class="absolute z-10 h-full w-full inset-0 bg-black/80"></div>
+    <div class="max-w-7xl relative z-10 mx-auto px-4 lg:px-0 py-20 w-full">
+        <div class="w-full flex">
+            <span class="mx-auto font-bold border border-primary rounded-full px-3 py-1 text-[12px] spec-tag uppercase text-white">Industries we serve</span>
+        </div>
+        <div class="flex flex-wrap mt-4 gap-3 item-center justify-center">
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Banking &amp; Fintech</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Telecom &amp; Media</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Manufacturing &amp; FMCG</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Healthcare &amp; Pharma</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Retail &amp; E-commerce</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Government &amp; Public</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Education &amp; EdTech</span>
+                        <span class="font-bold text-lg border border-primary px-3 py-2 text-white hover:border-circuit hover:text-circuit transition-colors">Hospitality &amp; Travel</span>
+                    </div>
+    </div>
+</section>
+
+
+<section id="contact" class="bg-[aliceblue] relative text-paper grid-blueprint-dark">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-20 grid lg:grid-cols-12 gap-12">
+        <div class="lg:col-span-5">
+            <span class="font-bold border border-primary rounded-full px-2 py-1 text-[12px] spec-tag uppercase">Get in touch</span>
+            <h2 class="font-display font-semibold text-3xl sm:text-4xl leading-tight mb-6 mt-4">Ready to Move Forword with YessBangla?</h2>
+            <p class="text-paper/60 leading-relaxed mb-8">
+                Share a few details and we'll come back within one business day with a tailored proposal —
+                or download the full enterprise brief now.
+            </p>
+            <a href="" class="inline-block border border-primary bg-primarydark hover:bg-primary text-white font-bold text-sm uppercase tracking-wide px-6 py-3.5 hover:border-paper/60 transition-colors">
+                Download brief (PDF)
+                <i class="fa-solid fa-download"></i>
+            </a>
+            <p class="font-mono text-xs text-paper/40 mt-8">We respond within 1 business day. NDA available on request.</p>
+        </div>
+
+        <div class="lg:col-span-7">
+            <form action="#" method="POST" class="bracket bg-white border border-line bg-steel/50 p-8 space-y-5">
+                <input type="hidden" name="_token" value="h9ojP8NziT9ei9bLDJxdLQtW77wInOQ0CrX58wk1" autocomplete="off">                <div class="grid sm:grid-cols-2 gap-5">
+                    <div>
+                        <label for="full_name" class="font-mono text-[11px] uppercase text-paper/50">Full name *</label>
+                        <input id="full_name" name="full_name" type="text" required
+                            class="mt-2 w-full bg-transparent border-b border-line focus:border-signal outline-none py-2 text-sm placeholder-paper/30 transition-colors"
+                            placeholder="Your name">
+                    </div>
+                    <div>
+                        <label for="work_email" class="font-mono text-[11px] uppercase text-paper/50">Work email *</label>
+                        <input id="work_email" name="work_email" type="email" required
+                            class="mt-2 w-full bg-transparent border-b border-line focus:border-signal outline-none py-2 text-sm placeholder-paper/30 transition-colors"
+                            placeholder="you@company.com">
+                    </div>
+                    <div>
+                        <label for="company" class="font-mono text-[11px] uppercase text-paper/50">Company *</label>
+                        <input id="company" name="company" type="text" required
+                            class="mt-2 w-full bg-transparent border-b border-line focus:border-signal outline-none py-2 text-sm placeholder-paper/30 transition-colors"
+                            placeholder="Company name">
+                    </div>
+                    <div>
+                        <label for="country_role" class="font-mono text-[11px] uppercase text-paper/50">Country / role</label>
+                        <input id="country_role" name="country_role" type="text"
+                            class="mt-2 w-full bg-transparent border-b border-line focus:border-signal outline-none py-2 text-sm placeholder-paper/30 transition-colors"
+                            placeholder="Bangladesh — CTO">
+                    </div>
+                </div>
+                <div>
+                    <label for="requirements" class="font-mono text-[11px] uppercase text-paper/50">Your requirements</label>
+                    <textarea id="requirements" name="requirements" rows="4"
+                        class="mt-2 w-full bg-transparent border-b border-line focus:border-signal outline-none py-2 text-sm placeholder-paper/30 resize-none transition-colors"
+                        placeholder="Briefly describe your goals, scope and timeline…"></textarea>
+                </div>
+                <button type="submit" class="w-full border border-primary text-black text-sm uppercase tracking-wide py-3.5 font-medium hover:bg-primarydark hover:text-white transition-colors">
+                    Request callback
+                </button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<section class="bg-white relative border-t border-linelt">
+    <div class="max-w-7xl mx-auto px-4 lg:px-0 py-20">
+        <div class="flex items-end justify-between mb-6">
+            <div>
+                <span class="font-bold border border-primary rounded-full px-2 py-1 text-[12px] spec-tag uppercase">Related projects</span>
+                <h2 class="font-semibold text-2xl mt-4">More work from the YESS Bangla group.</h2>
+            </div>
+            <a href="https://yessbd.com/ventures" class="font-bold text-primary text-xs uppercase tracking-wide text-ink/50 hover:text-ink whitespace-nowrap">View all →</a>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+            <a href="#" class="group bg-[aliceblue] border border-linelt p-8 hover:border-circuit transition-colors">
+                <span class="font-mono text-[11px] uppercase text-ink/40">Satellite Television</span>
+                <h3 class="font-display font-semibold text-xl mt-2">Akash TV</h3>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed">A modern satellite broadcast channel delivering news, entertainment, drama, talk shows and cultural programs across the country.</p>
+                <span class="font-bold text-sm text-primary mt-4 inline-block group-hover:translate-x-1 transition-transform">Explore →</span>
+            </a>
+            <a href="#" class="group bg-[aliceblue] border border-linelt p-8 hover:border-circuit transition-colors">
+                <span class="font-mono text-[11px] uppercase text-ink/40">Streaming Platform</span>
+                <h3 class="font-display font-semibold text-xl mt-2">Akash OTT</h3>
+                <p class="text-sm text-ink/55 mt-3 leading-relaxed">An on-demand streaming platform with films, web originals, live TV and exclusive premieres tailored for Bangla-speaking audiences worldwide.</p>
+                <span class="font-bold text-sm text-primary mt-4 inline-block group-hover:translate-x-1 transition-transform">Explore →</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Company profile download request modal -->
+<div id="downloadRequestModal" class="hidden fixed inset-0 z-[70] overflow-y-auto bg-black/60 px-4 py-8 backdrop-blur-sm"
+    role="dialog" aria-modal="true" aria-labelledby="downloadRequestTitle">
+    <div class="flex min-h-full items-center justify-center">
+        <div class="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl sm:p-8">
+            <div class="mb-6 flex items-start justify-between gap-4">
+                <div>
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#328f6c]">Company profile</p>
+                    <h2 id="downloadRequestTitle" class="mt-1 text-xl font-bold text-zinc-900">Send Download Request</h2>
+                    <p class="mt-2 text-sm text-zinc-500">We will send company profile to you email.</p>
+                </div>
+                <button type="button" id="downloadRequestClose" class="rounded-lg p-2 text-zinc-400 transition hover:bg-zinc-100 hover:text-zinc-700"
+                    aria-label="Close download form">
+                    <i data-lucide="x" class="h-5 w-5"></i>
+                </button>
+            </div>
+
+            <form method="POST" action="https://yessbd.com/download-request" class="space-y-4">
+                <input type="hidden" name="_token" value="h9ojP8NziT9ei9bLDJxdLQtW77wInOQ0CrX58wk1" autocomplete="off">                <div>
+                    <label for="downloadRequestName" class="mb-1.5 block text-sm font-medium text-zinc-700">Name</label>
+                    <input id="downloadRequestName" name="name" type="text" required autocomplete="name"
+                        class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="Your name">
+                </div>
+                <div>
+                    <label for="downloadRequestEmail" class="mb-1.5 block text-sm font-medium text-zinc-700">Email</label>
+                    <input id="downloadRequestEmail" name="email" type="email" required autocomplete="email"
+                        class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="you@example.com">
+                </div>
+                <div>
+                    <label for="downloadRequestPhone" class="mb-1.5 block text-sm font-medium text-zinc-700">Phone</label>
+                    <input id="downloadRequestPhone" name="phone" type="tel" required autocomplete="tel"
+                        class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="Your phone number">
+                </div>
+                <input type="hidden" name="profile_topic" value="Akash OTT">
+                <div>
+                    <label for="downloadRequestDescription" class="mb-1.5 block text-sm font-medium text-zinc-700">Description <span class="font-normal text-zinc-400">(optional)</span></label>
+                    <textarea id="downloadRequestDescription" name="description" rows="3"
+                        class="w-full resize-y rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="Tell us anything else you would like to share"></textarea>
+                </div>
+                <button type="submit" class="flex w-full items-center justify-center gap-2 rounded-lg bg-[#328f6c] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#2a7a5c] active:scale-[0.99]">
+                    Send Download Request
+                    <i class="fa-regular fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+        // ---------- Company profile download request form ----------
+        const downloadRequestModal = document.getElementById('downloadRequestModal');
+        const downloadRequestForm = document.getElementById('downloadRequestForm');
+        const downloadRequestClose = document.getElementById('downloadRequestClose');
+        let requestedDownloadButton = null;
+
+        const closeDownloadRequest = () => {
+            downloadRequestModal?.classList.add('hidden');
+            requestedDownloadButton = null;
+        };
+
+        document.querySelectorAll('[data-download-request]').forEach(button => {
+            button.addEventListener('click', () => {
+                requestedDownloadButton = button;
+                downloadRequestForm?.reset();
+                downloadRequestModal?.classList.remove('hidden');
+                document.getElementById('downloadRequestName')?.focus();
+            });
+        });
+
+        downloadRequestClose?.addEventListener('click', closeDownloadRequest);
+        downloadRequestModal?.addEventListener('click', event => {
+            if (event.target === downloadRequestModal) closeDownloadRequest();
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && !downloadRequestModal?.classList.contains('hidden')) {
+                closeDownloadRequest();
+            }
+        });
+
+        downloadRequestForm?.addEventListener('submit', event => {
+            event.preventDefault();
+            if (!requestedDownloadButton) return;
+
+            const button = requestedDownloadButton;
+            const name = button.dataset.downloadName;
+            const fileUrl = button.dataset.downloadUrl;
+            closeDownloadRequest();
+            window.handleDownload(button, name, fileUrl);
+        });
+
+</script>
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="bg-[#060D0A] relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+
+                    <!-- Brand -->
+                    <div class="lg:col-span-4">
+                        <div class="flex gap-2">
+                            <div class="inline-flex items-center rounded-md bg-white p-1 shadow-[0_2px_8px_rgba(15,36,29,0.18)] mb-5">
+                                <img src="https://yessbd.com/Frontend/img/yess-bangla-logo.png" alt="Yess Bangla Logo" class="h-10 w-auto object-contain">
+                            </div>
+                            <div class="block">
+                                <h1 id="logo_text" class="text-sm md:text-lg font-semibold text-white">Yess Bangla Private Limited</h1>
+                                <p id="slogan_text" class="text-xs text-white">Where Solution Begins</p>
+                            </div>                  
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-white/70">A full-service business consulting and IT solutions company helping organisations across Bangladesh scale with confidence.</p>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                                                        <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                                                                                    <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                                                                                    <a href="https://www.instagram.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                                                                                    <a href="https://www.x.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                                                                                     <a href="https://www.youtube.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                                                    </div>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="lg:col-span-2">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Company</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="https://yessbd.com/about" class="text-white/60 hover:text-[#3AD9A6] transition-colors">About Us <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/services" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Services <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/ventures" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Ventures <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/industries" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Industries <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/insights" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Insights <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/career" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Careers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/contact" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Contact <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Ventures -->
+                    <div class="lg:col-span-3">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Our Ventures</h4>
+                        <ul class="space-y-3 text-sm">
+                                                            <li><a href="https://yessbd.com/ventures/5?type=Shondhaan" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Shondhaan <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Organic Haat <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Host <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Akash OTT <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Soft <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Event <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                    </ul>
+                    </div>
+
+                    <!-- Get In Touch -->
+                    <div class="lg:col-span-3">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Get in touch</h4>
+                        <ul class="space-y-4 text-sm mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+                                    <circle cx="12" cy="11" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="text-white/60 leading-relaxed">
+                                    Block-A, Road-3, House-127 (Green View), 1st Floor, Mirpur-12, Dhaka-1216
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <a href="tel:+8801805464343" class="text-white/60 hover:text-[#3AD9A6] transition-colors">+880 1805-464343</a>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:yessbangla.bd@gmail.com" class="text-white/60 hover:text-[#3AD9A6] transition-colors break-all">yessbangla.bd@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <form onsubmit="return false;" class="flex">
+                            <input type="email" placeholder="Your email"
+                                   class="bg-white/5 border border-white/10 rounded-l-lg px-3.5 py-2.5 text-sm text-white outline-none w-full placeholder:text-white/40">
+                            <button type="submit" class="bg-[#10B67F] hover:opacity-90 text-white text-sm font-semibold px-5 rounded-r-lg whitespace-nowrap transition-opacity">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollToTop"
+            type="button"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+            class="hidden fixed bottom-20 md:bottom-5 right-5 z-50 w-11 h-11 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-all duration-300 hover:bg-hover hover:text-black hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m5 15 7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Consultation modal -->
+    <div id="consultationModal" class="hidden fixed inset-0 z-50 overflow-y-auto" role="dialog"
+        aria-modal="true" aria-labelledby="consultationModalTitle">
+        <div id="consultationBackdrop" class="fixed inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <div class="relative flex min-h-full items-center justify-center p-4 sm:p-6">
+            <div class="relative my-8 w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+                <div class="flex items-start justify-between border-b border-zinc-200 px-5 py-4 sm:px-7">
+                    <div>
+                        <p class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#328f6c]">Let's talk</p>
+                        <h2 id="consultationModalTitle" class="mt-1 text-xl font-bold text-zinc-900">Start Free Consultation</h2>
+                    </div>
+                    <button type="button" id="consultationClose" aria-label="Close consultation form"
+                        class="rounded-lg p-2 text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-700">
+                        <i data-lucide="x" class="h-5 w-5"></i>
+                    </button>
+                </div>
+
+                <form method="POST" action="https://yessbd.com/book-consultancy" class="space-y-4 px-5 py-5 sm:px-7 sm:py-6">
+                    <input type="hidden" name="_token" value="h9ojP8NziT9ei9bLDJxdLQtW77wInOQ0CrX58wk1" autocomplete="off">                    
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div>
+                            <label for="consultationName" class="mb-1.5 block text-sm font-medium text-zinc-700">Your name</label>
+                            <input id="consultationName" name="name" type="text" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationEmail" class="mb-1.5 block text-sm font-medium text-zinc-700">Email</label>
+                            <input id="consultationEmail" name="email" type="email" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationPhone" class="mb-1.5 block text-sm font-medium text-zinc-700">Phone</label>
+                            <input id="consultationPhone" name="phone" type="tel" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationSubject" class="mb-1.5 block text-sm font-medium text-zinc-700">Subject</label>
+                            <input id="consultationSubject" name="subject" type="text" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                    </div>
+
+                    <div>
+                        <label for="consultationService" class="mb-1.5 block text-sm font-medium text-zinc-700">Select a venture or service</label>
+                        <select id="consultationService" name="service" required
+                            class="w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                            <option value="">Choose an option</option>
+                                                            <option value="Shondhaan" >
+                                    Shondhaan
+                                </option>
+                                                            <option value="Organic Haat" >
+                                    Organic Haat
+                                </option>
+                                                            <option value="Yess Host" >
+                                    Yess Host
+                                </option>
+                                                            <option value="Akash OTT" >
+                                    Akash OTT
+                                </option>
+                                                            <option value="Yess Soft" >
+                                    Yess Soft
+                                </option>
+                                                            <option value="Yess Event" >
+                                    Yess Event
+                                </option>
+                                                        <option value="Other service" >Other service</option>
+                            <option value="General consultation" >General consultation</option>
+                            <option value="Partnership" >Partnership</option>
+                        </select>
+                                            </div>
+
+                    <div>
+                        <label for="consultationDescription" class="mb-1.5 block text-sm font-medium text-zinc-700">Description</label>
+                        <textarea id="consultationDescription" name="description" rows="4"
+                            class="w-full resize-y rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"></textarea>
+                                            </div>
+
+                    <div class="flex flex-col-reverse gap-3 border-t border-zinc-200 pt-4 sm:flex-row sm:justify-end">
+                        <button type="reset" class="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-5 py-2.5 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-50">Clear</button>
+                        <button type="submit" class="inline-flex items-center justify-center rounded-lg bg-[#328f6c] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2a7a5c] focus:outline-none focus:ring-2 focus:ring-[#328f6c]/40">Submit request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const consultationModal = document.getElementById('consultationModal');
+        const consultationOpen = document.getElementById('consultationOpen');
+        const consultationClose = document.getElementById('consultationClose');
+        const consultationBackdrop = document.getElementById('consultationBackdrop');
+
+        const closeConsultation = () => consultationModal?.classList.add('hidden');
+
+        consultationOpen?.addEventListener('click', () => {
+            consultationModal.classList.remove('hidden');
+            document.getElementById('consultationName')?.focus();
+        });
+        consultationClose?.addEventListener('click', closeConsultation);
+        consultationBackdrop?.addEventListener('click', closeConsultation);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeConsultation();
+        });
+    </script>
+
+    <!-- ============ Non-critical scripts moved to the bottom, deferred ============ -->
+    <script src="https://kit.fontawesome.com/9f57283aa3.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const navbar = document.getElementById("navbar");
+            const header = navbar;
+            const navMenuBtn = header.querySelector('#headerMenuBtn');
+            const navLogoText = document.querySelector('#logo_text');
+            const navSlogan = document.querySelector('#slogan_text');
+
+          function updateHeaderOnScroll() {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > 20) {
+                    header.classList.add('header-on-scroll');
+                    header.classList.remove('bg-transparent', 'border-transparent');
+
+                    // Logo and slogan → black
+                    if (navLogoText) {
+                        navLogoText.classList.remove('text-white', 'text-primary');
+                        navLogoText.classList.add('text-black');
+                    }
+
+                    if (navSlogan) {
+                        navSlogan.classList.remove('text-white', 'text-primary');
+                        navSlogan.classList.add('text-black');
+                    }
+
+                } else {
+                    header.classList.remove('header-on-scroll');
+                    header.classList.add('bg-transparent', 'border-transparent');
+
+                    // Logo and slogan → white
+                    if (navLogoText) {
+                        navLogoText.classList.remove('text-white', 'text-primary');
+                        navLogoText.classList.add('text-black');
+                    }
+
+                    if (navSlogan) {
+                        navSlogan.classList.remove('text-white', 'text-primary');
+                        navSlogan.classList.add('text-black');
+                    }
+                }
+
+                if (navMenuBtn) {
+                    navMenuBtn.classList.remove('text-gray-900');
+
+                    if (currentScrollY > 20) {
+                        navMenuBtn.classList.add('text-gray-900');
+                    } else {
+                        navMenuBtn.classList.add('text-white');
+                    }
+                }
+            }
+            window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+            updateHeaderOnScroll();
+
+            // Show the scroll-to-top button after the user moves down the page.
+            const scrollToTop = document.getElementById('scrollToTop');
+            function updateScrollToTopVisibility() {
+                scrollToTop.classList.toggle('hidden', window.scrollY <= 300);
+                scrollToTop.classList.toggle('flex', window.scrollY > 300);
+            }
+            scrollToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            window.addEventListener('scroll', updateScrollToTopVisibility, { passive: true });
+            updateScrollToTopVisibility();
+
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menuBtn');
+            const headerMenuBtn = document.getElementById('headerMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            function toggleMobileMenu() {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                menuBtn.setAttribute('aria-expanded', String(isOpen));
+                headerMenuBtn.setAttribute('aria-expanded', String(isOpen));
+            }
+
+            if (menuBtn) menuBtn.addEventListener('click', toggleMobileMenu);
+            if (headerMenuBtn) headerMenuBtn.addEventListener('click', toggleMobileMenu);
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    headerMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Keep the quick-nav dropdown independent from the full mobile menu.
+            const mobileQuickNav = document.getElementById('mobileQuickNav');
+            const mobileDropdownToggle = mobileQuickNav?.querySelector('[data-mobile-dropdown-toggle]');
+            const mobileDropdownMenu = mobileQuickNav?.querySelector('[data-mobile-dropdown-menu]');
+            const mobileDropdownIcon = mobileQuickNav?.querySelector('[data-mobile-dropdown-icon]');
+
+            function closeMobileDropdown() {
+                mobileDropdownMenu?.classList.add('hidden');
+                mobileDropdownToggle?.setAttribute('aria-expanded', 'false');
+                mobileDropdownIcon?.classList.remove('rotate-180');
+            }
+
+            mobileDropdownToggle?.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const isOpen = mobileDropdownMenu?.classList.toggle('hidden') === false;
+                mobileDropdownToggle.setAttribute('aria-expanded', String(isOpen));
+                mobileDropdownIcon?.classList.toggle('rotate-180', isOpen);
+            });
+
+            document.addEventListener('click', (event) => {
+                if (mobileQuickNav && !mobileQuickNav.contains(event.target)) {
+                    closeMobileDropdown();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') closeMobileDropdown();
+            });
+        });
+    </script>
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>

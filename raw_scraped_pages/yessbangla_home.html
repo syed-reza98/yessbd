@@ -1,0 +1,2396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YessBangla - IT Solutions</title>
+    
+    <!-- Tailwind CSS (No Config) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5f7bc44e9f.js" crossorigin="anonymous"></script> 
+    <link rel="icon" type="image/png" href="/resources/img/logo.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    
+<style>
+    :root {
+        --primary-color-dim: rgba(0, 87, 61, 0.103);      /* Emerald 600 */
+        --primary-color: #1fb1cd;      /* Emerald 600 */
+        --primary-hover: #06be81;      /* Emerald 500 */
+        --primary-light: #d1fae5;      /* Emerald 100 */
+        --primary-highlight: #f37208;      /* Emerald 100 */
+        --primary-highlight-half: #f37a0842;      /* Emerald 100 */
+    }
+    html {
+        scroll-behavior: smooth;
+    }
+    body { font-family: 'Inter', sans-serif; }
+
+    ::-webkit-scrollbar { width: 8px; }
+    ::-webkit-scrollbar-track { background: #f1f5f9; }
+    ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* Smooth fade animation for filtered items */
+    .fade-in {
+        animation: fadeIn 0.5s ease-in-out;
+    }
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    .social-icon {
+      transition: color 0.2s ease;
+    }
+
+    #scroll-top-btn {
+        opacity: 0;
+        pointer-events: none;
+        transform: translateY(12px);
+        transition: opacity 0.25s ease, transform 0.25s ease, background-color 0.2s ease;
+    }
+
+    #scroll-top-btn.show {
+        opacity: 1;
+        pointer-events: auto;
+        transform: translateY(0);
+    }
+</style>
+
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 backdrop-blur-lg bg-white/50 border-b border-white/20 shadow-sm">
+        <div class="max-w-7xl mx-auto px-2">
+            <div class="flex items-center justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center gap-2">
+                    <!-- Changed to Green -->
+                    <a href="#hero" class="w-auto h-[50px] p-2 rounded flex items-center justify-center text-white font-bold text-xl">
+                        <img class="h-full w-full" src="/resources/img/logo.png" alt="">
+                    </a>
+                    <!-- <span class="text-[var(--primary-highlight)] font-bold text-xl tracking-tight">Yess</span><span class="text-white font-bold text-xl tracking-tight">Bangla</span> -->
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#hero" class="text-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition">Home</a>
+                        <a href="#products" class="text-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition">Products</a>
+                        <a href="#projects" class="text-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition">Projects</a>
+                        <a href="#others_products" class="text-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition">Services</a>
+                        <a href="#technologies" class="text-gray-800 hover:text-emerald-400 px-3 py-2 rounded-md text-sm font-medium transition">About</a>
+                    </div>
+                </div>
+                
+                <!-- Desktop CTA -->
+                <div class="hidden md:block">
+                    <!-- Changed to Green -->
+                    <a href="#contact" class="bg-[var(--primary-color)] hover:bg-emerald-500 text-white px-5 py-2 rounded-full text-sm font-semibold transition shadow-lg shadow-emerald-500/30">
+                        Contact Us
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button (Hamburger) -->
+                <div class="-mr-0 flex md:hidden">
+                    <button type="button" onclick="toggleMenu()" class="inline-flex items-center justify-center p-2 rounded-md text-gray-800 hover:text-white hover:bg-slate-800 focus:outline-none transition">
+                        <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu (Hidden by default) -->
+        <div id="mobile-menu" class="hidden md:hidden backdrop-blur-lg bg-white/50 border-t border-slate-800">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#hero" class="text-gray-800 hover:text-emerald-400 hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Home</a>
+                <a href="#products" class="text-gray-800 hover:text-emerald-400 hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Products</a>
+                <a href="#projects" class="text-gray-800 hover:text-emerald-400 hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Projects</a>
+                <a href="#others_products" class="text-gray-800 hover:text-emerald-400 hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="#technologies" class="text-gray-800 hover:text-emerald-400 hover:bg-slate-800 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="#contact" class="text-emerald-800 font-bold block px-3 py-2 rounded-md text-base">Contact Us</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="relative flex w-full h-[80vh] lg:h-[60vh]">
+        <div class="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat 
+           overflow-hidden" style="background-image: url('/resources/img/hero-bg.jpg');">
+        </div>
+        <!-- Black Overlay -->
+        <div class="absolute inset-0 bg-white/70 z-0"></div>
+
+        <div class="max-w-7xl mx-auto my-auto px-4 relative z-10 sm:px-6 lg:px-8 text-center py-5">
+            <!-- Changed Badge to Green -->
+            <div class="inline-flex items-center px-3 py-2 rounded-full border border-[var(--primary-highlight)] bg-[var(--primary-highlight-half)] text-[var(--primary-highlight)] text-xs font-semibold uppercase tracking-wide mb-6">
+                Next Gen Software Solutions
+            </div>
+            
+            <h1 class="text-4xl md:text-6xl font-extrabold tracking-tight mb-6">
+                <span class="text-[var(--primary-color)]">
+                    Empowering Business with <br class="hidden md:block" />
+                </span>
+                <!-- Changed Gradient to Green -->
+                <span class="text-transparent bg-clip-text mt-4">
+                    <span class="text-[var(--primary-highlight)]">Yess</span></span class="text-slate">Bangla Private Limited</span>
+                </span>
+            </h1>
+            
+            <p class="mt-4 max-w-2xl mx-auto text-xl text-slate-800 mb-10">
+                We build robust management systems, CRM, and POS solutions designed to streamline your workflow and drive growth.
+            </p>
+            
+            <div class="flex justify-center gap-4">
+                <a href="#products" class="px-8 py-3 rounded-lg bg-[var(--primary-color)] text-slate-900 font-bold hover:bg-slate-800 hover:text-white transition shadow-lg">
+                    Explore Demos
+                </a>
+                <a href="#" class="px-8 py-3 rounded-lg border border-[var(--primary-color)] text-slate-800 hover:text-white font-medium hover:bg-slate-800 transition">
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section (With Images) -->
+    <section id="products" class="bg-[aliceblue] py-20">
+        <div class="max-w-7xl relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Header -->
+            <div class="text-center mb-8 max-w-3xl mx-auto">
+                <span class="inline-block px-4 py-1 mb-4 text-sm font-semibold tracking-wide 
+                    bg-[var(--primary-highlight)] 
+                    text-white 
+                    rounded-full">
+                    Our Solutions
+                </span>
+
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    <span class="text-[var(--primary-highlight)]">Software</span>
+                    <span class="text-slate-900"> Products</span>
+                </h2>
+
+                <p class="text-slate-600 mt-4 text-lg">
+                    Explore our powerful, ready-made solutions designed to scale your business efficiently.
+                </p>
+            </div>
+            <div id="product-filters" class="flex flex-wrap justify-center gap-2 mb-10 sticky top-16 z-20 bg-[aliceblue] py-3 px-2 shadow-sm">
+                <button onclick="filterProducts('all', this)" class="product-filter-btn active px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-emerald-600 bg-emerald-600 text-white font-medium transition-all shadow-md hover:shadow-lg hover:bg-emerald-700">
+                    All
+                </button>
+                <button onclick="filterProducts('entertainment', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Entertainment
+                </button>
+                <button onclick="filterProducts('ecommerce', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    E-Commerce
+                </button>
+                <button onclick="filterProducts('news', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    News Portal
+                </button>
+                <button onclick="filterProducts('business', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Business
+                </button>
+                <button onclick="filterProducts('retail', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Retail
+                </button>
+                <button onclick="filterProducts('healthcare', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Healthcare
+                </button>
+                <button onclick="filterProducts('enterprise', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Enterprise
+                </button>
+                <button onclick="filterProducts('education', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Education
+                </button>
+                <button onclick="filterProducts('finance', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Finance
+                </button>
+                <button onclick="filterProducts('travel', this)" class="product-filter-btn px-3 py-2 text-xs sm:px-5 sm:py-2 sm:text-sm rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                    Travel
+                </button>
+            </div>
+            <!-- Grid -->
+            <div id="products-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- href="javascript:void(0)" onclick="underConstruction()" -->
+                <!-- entertainment start -->
+                <!-- Product Card -->
+                <a href="https://goflix.yessbd.top/" target="_blank" data-category="entertainment" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/goflix.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/goflix.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">GoFlix-OTT</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stream movies and TV shows on demand with our cutting-edge OTT platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- ecommerce start -->
+                <!-- Product Card -->
+                <a href="https://ecom1-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom1.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Shopix (Ecommerce Demo-1)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom2-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom2.png" alt="POS System" class="w-full h-full  group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">GadgetBD (Ecommerce Demo-2)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom3-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom3.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">OrganicMarket (Ecommerce Demo-3)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom4-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom4.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">BoiBazar (Ecommerce Demo-4)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom5-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom5.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Chuijhal (Ecommerce Demo-5)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom6-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom6.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yFashion (Ecommerce Demo-6)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom7-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom7.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">GlowMart (Ecommerce Demo-7)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom8-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom8.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Femina (Ecommerce Demo-8)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ecom9-demo.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom9.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Shopora (Ecommerce Demo-9)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://land1.yessbangla.top/" target="_blank" data-category="ecommerce" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ecom8.png" alt="POS System" class="w-full h-full  group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/shopping-bags.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Ecommerce Demo-10</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage Ecommerce operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- ecommerce end -->
+                <!-- news portal start -->
+                <!-- Product Card -->
+                <a href="https://news1.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/news1.JPG" alt="POS System" class="w-full h-full  group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">News Portal Demo-1</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://news2.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/news2.JPG" alt="POS System" class="w-full h-full  group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">News Portal Demo-2</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://news3.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/news3.JPG" alt="POS System" class="w-full h-full  group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">News Portal Demo-3</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://news4.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/news4.png" alt="POS System" class="w-full h-full  group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">News Portal Demo-4</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://news5.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/news5.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">News Portal Demo-5</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>                     
+                <!-- Product Card -->
+                <a href="https://epaper-1.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/epaper-1.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">E-Paper (Demo-1)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>                     
+                <!-- Product Card -->
+                <a href="https://epaper-2.yessbangla.top/" target="_blank" data-category="news" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/epaper-2.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/newspaper.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">E-Paper (Demo-2)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>                     
+                <!-- news portal end -->
+                <a href="https://digital-product1.yessbangla.top/" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/digital_mart.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/digital product.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Digital Mart</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            DigitalMart is your trusted destination for premium digital products, offering software, templates, tools, and digital solutions with instant delivery.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://yesscourier.yessbangla.top/" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/y_courier.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_courier.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yCourier</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage courier operations, parcel tracking, deliveries, pickups, and logistics efficiently in one complete system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.courier1.yessbangla.top/" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/swift-courier.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_courier.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Swift Courier Service</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Streamline parcel deliveries, pickup requests, shipment tracking, and courier management with a powerful all-in-one logistics platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.courier2.yessbangla.top/" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/shiply.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_courier.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Shiply Courier Service</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                           Simplify your courier operations with an all-in-one platform for parcel management, pickup scheduling, shipment tracking, and fast, reliable deliveries.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://courier3.yessbangla.top/admin/login" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/shurjo.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_courier.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Surjo Courier Service</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage your entire courier operation from one powerful platform—handle parcels, schedule pickups, track shipments in real time, and ensure quick, reliable deliveries.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ypharma.yessbangla.top/" target="_blank" data-category="healthcare" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ypharma.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/ypharma.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yPharma</h3>
+                        <p class="text-sm text-slate-500 mb-4">Manage pharmacy operations, inventory, sales, prescriptions, and billing in one powerful platform.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://hospital.yessbangla.top/admin" target="_blank" data-category="healthcare" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/clinic.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/clinic.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yClinic</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                        Manage doctors, patients, appointments, prescriptions, and pharmacy operations seamlessly in one complete healthcare management system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yessdoctor.yessbangla.top/login" target="_blank" data-category="healthcare" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yessDoctor.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_doctor.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yessDoctor</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                        Manage doctors, patients, appointments, prescriptions, and pharmacy operations seamlessly in one complete healthcare management system.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yhms.yessbangla.top/login" target="_blank" data-category="healthcare" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yesshms.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yesshms.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yessHMS</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            All-in-one healthcare management system to efficiently handle doctors, patients, appointments, prescriptions, and pharmacy operations in a single platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yesshr.yessbangla.top/" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yesshr.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_hr.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessHR</h3>
+                        <p class="text-sm text-slate-500 mb-4">Manage employees, payroll, attendance, and more in one powerful platform.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://ysales.yessbangla.top/" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/y_salse.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/sale.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">ySales</h3>
+                        <p class="text-sm text-slate-500 mb-4">Manage leads, opportunities, quotes, orders, invoices, projects, and reports — all from one platform.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yesslaw.yessbangla.top/" target="_blank" data-category="enterprise" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yess_law.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_law.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessLaw</h3>
+                        <p class="text-sm text-slate-500 mb-4">Streamline your law firm operations with comprehensive case, client, and document management.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yessgarments.erp.yessbangla.top/" target="_blank" data-category="enterprise" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/y_garments.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/gurments.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">GurmentsERP</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Manage production, inventory, orders, and operations efficiently with a complete garments ERP solution.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yessenterprise.yessbangla.top/" target="_blank" data-category="enterprise" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yessenterprise.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yessenterprise.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessEnterprise</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Complete enterprise ERP solution to streamline production, inventory, orders, and business operations with efficiency and control.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yessstore.yessbangla.top/" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yess_store.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_store.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessStore</h3>
+                        <p class="text-sm text-slate-500 mb-4">Complete SaaS platform for creating unlimited e-commerce stores with multiple themes, payment gateways, and advanced management tools.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yinvoice.yessbangla.top/login" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yinvoice.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/invoice.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">yInvoice</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Simple and efficient invoice generator to create, manage, and track your business invoices online.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card  -->
+                <a href="https://yesspos.yessbangla.top/" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yess_pos.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_pos.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessPOS</h3>
+                        <p class="text-sm text-slate-500 mb-4">Smart POS solution to manage sales, inventory, customers, and reports in one powerful platform.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                 <!-- Product Card  -->
+                <a href="https://pos1.yessbangla.top/" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/POS1.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_pos.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessPOS-1</h3>
+                        <p class="text-sm text-slate-500 mb-4">Smart POS solution to manage sales, inventory, customers, and reports in one powerful platform.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                 <!-- Product Card  -->
+                <a href="https://pos2.yessbangla.top/" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/pos2.JPG" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/yess_pos.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application (SaaS)</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">YessPOS-2</h3>
+                        <p class="text-sm text-slate-500 mb-4">Smart POS solution to manage sales, inventory, customers, and reports in one powerful platform.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card  -->
+                <a href="https://salepos.yessbangla.top/login" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/salsepos.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/salespos.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">SalsePOS</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            All-in-one POS solution for handling sales, inventory, customers, and reporting with speed and ease.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://pos.yessbd.top/" target="_blank" data-category="retail" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/pos.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/billing-machine.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">POS Software</h3>
+                        <p class="text-sm text-slate-500 mb-4">Complete point of sale system for retail, restaurant, and service businesses.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://crm.yessbd.top/login" target="_blank" data-category="business" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <!-- Image Part at Top -->
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/crm.png" alt="CRM Dashboard" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/crm-software.png" alt="">
+                            </div>
+                            <div class="flex items-center my-auto gap-2 mb-3">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">SaaS</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">CRM System</h3>
+                        <p class="text-sm text-slate-500 mb-4">Manage leads, track opportunities, and close deals faster with our advanced CRM.</p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://crm1.yessbangla.top/" target="_blank" data-category="enterprise" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative border p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/crm1.png" alt="POS System" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/crm-software.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">EasyCRM</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Stay updated with the latest news and information in one centralized platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://yesshealth.yessbd.top/admin/login" target="_blank" data-category="healthcare" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/ehospital.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/medical-app.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                       <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Hospital Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Streamline patient registration, appointment scheduling, billing, pharmacy, and medical records with our all-in-one hospital management solution.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yschool.yessbangla.top/authentication" target="_blank" data-category="education" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yschool.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/school.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                       <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">School Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                           Streamline student admissions, class routines, attendance tracking, examinations, fee management, and academic records with our all-in-one school management system built to improve efficiency and simplify educational administration.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://eschool.yessbd.top/" target="_blank" data-category="education" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/school.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/school.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                       <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">School Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                           Efficiently manage student admissions, class schedules, attendance, exams, fees, and academic records with our comprehensive school management system designed to simplify administration and enhance educational operations.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yesstravel.yessbd.top/admin/login" target="_blank" data-category="travel" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yesstravel.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/travel.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                       <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Travel Agency</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                           Yess Travel is a web application platform that helps travel agencies manage tour packages, bookings, and travel operations easily and efficiently.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://travel.yessbangla.top/" target="_blank" data-category="travel" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/booking.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/booking2.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                       <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Booking Core (Booking Management)</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                          Booking Management System is a smart web-based solution that helps businesses efficiently manage customer bookings, reservations, schedules, and payments from a single platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://yessbooking.yessbd.top/login" target="_blank" data-category="travel" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/yessbooking.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/booking.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Booking Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Yess Booking is a booking management system that helps businesses manage reservations, customer bookings, schedules, and related operations easily and efficiently from a single platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+                <!-- Product Card -->
+                <a href="https://loan1.yessbangla.top/login" target="_blank" data-category="finance" class="product-card fade-in group bg-white rounded shadow-sm border border-slate-300 overflow-hidden hover:shadow-xl transition-all duration-300">
+                    <div class="h-48 bg-slate-500 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/loan1.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/loan1.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <!-- <span class="text-xs text-gray-400">Desktop</span> -->
+                            </div>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">Loan Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                           Manage loan applications, approvals, repayments, installments, and borrower records seamlessly with a complete loan management solution, and efficiently from a single platform.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+            </div>
+            <!-- Product Card 4 School Management system-->
+                <a href="https://eschool.yessbd.top/" target="_blank" 
+                    class="!hidden group lg:flex bg-white rounded shadow-sm border mt-8 border-slate-300 overflow-hidden hover:shadow-xl  transition-all duration-300">
+                    <div class="lg:w-1/2 overflow-hidden relative p-[1px] border border-slate-500">
+                        <img src="/resources/img/demo_img/school.png" alt="Inventory" class="w-full h-full group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 group-hover:bg-transparent transition duration-300"></div>
+                    </div>
+                    <div class="p-6 lg:w-1/2 bg-white border border-slate-300">
+                        <div class="flex gap-2 mb-3">
+                            <div class="h-[50px] rounded-lg w-[50px] border-2 border-[var(--primary-color)] p-2">
+                                <img class="h-full w-full" src="/resources/img/icons/school.png" alt="">
+                            </div>
+                            <div class="flex items-center gap-2 mb-3 my-auto">
+                                <span class="px-2 py-1 bg-emerald-100 text-emerald-700 text-xs font-bold rounded">Web Application</span>
+                                <span class="text-xs text-gray-800">SaaS</span>
+                            </div>
+                        </div>
+                       <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-emerald-600 transition">School Management System</h3>
+                        <p class="text-sm text-slate-500 mb-4">
+                            Efficiently manage student admissions, class schedules, attendance, exams, fees, and academic records with our comprehensive school management system designed to simplify administration and enhance educational operations.
+                        </p>
+                        <div class="flex items-center text-sm font-semibold text-[var(--primary-highlight)] group-hover:text-emerald-600">
+                            View Demo 
+                            <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </div>
+
+                    </div>
+                </a>
+            <!-- Button (Now inside container) -->
+            <div class="flex justify-center mt-8">
+                <button onclick="filterProducts('all', this)" 
+                    class="inline-flex items-center gap-2 
+                        bg-[var(--primary-highlight)] 
+                        hover:bg-[var(--primary-hover)] 
+                        text-white 
+                        px-6 py-3 
+                        rounded-full 
+                        font-semibold 
+                        transition 
+                        shadow-lg">
+                    View All Products →
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Projects start -->
+    <section id="projects" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <span class="inline-block px-4 py-1 mb-4 text-sm font-semibold tracking-wide 
+                    bg-[var(--primary-color)] 
+                    text-white 
+                    rounded-full">
+                    Our Projects
+                </span>
+                
+                <h2 class="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight">
+                    <span class="text-slate-900">Our Recent</span>
+                    <span class=" text-[var(--primary-color)]"> Projects</span>
+                </h2>
+
+                <p class="text-lg text-slate-500 max-w-2xl mt-2 mx-auto">
+                    Explore the software solutions and applications we have built for our clients across various industries.
+                </p>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="group mb-10 overflow-hidden rounded-lg border border-slate-300 bg-white shadow-sm transition-all duration-300 hover:shadow-2xl">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="relative min-h-[320px] overflow-hidden bg-slate-900 p-5 sm:p-8 lg:min-h-[430px]">
+                        <div class="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(31,177,205,0.28),transparent_36%),radial-gradient(circle_at_bottom_right,rgba(243,114,8,0.20),transparent_34%)]"></div>
+
+                        <div class="relative mx-auto flex h-full max-w-2xl items-center justify-center">
+                            <div class="w-full rounded-xl border border-white/15 bg-white/10 p-2 shadow-2xl backdrop-blur-sm">
+                                <div class="overflow-hidden rounded-lg border border-slate-700 bg-slate-950">
+                                    <img src="/resources/img/demo_projects/akash_desktop.png" alt="AkashOTT desktop view" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.02]">
+                                </div>
+                            </div>
+
+                            <div class="absolute bottom-4 right-2 w-[29%] min-w-[92px] max-w-[150px] rounded-[1.4rem] border-[6px] border-slate-950 bg-slate-950 shadow-2xl sm:right-8">
+                                <div class="overflow-hidden rounded-[1rem] bg-white">
+                                    <img src="/resources/img/demo_projects/akash_phone.png" alt="AkashOTT mobile view" class="w-full object-cover">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center p-6 sm:p-8 lg:p-10">
+                        <div class="mb-5 flex flex-wrap items-center gap-3">
+                            <span class="rounded-full bg-[var(--primary-color)] px-3 py-1 text-xs font-bold text-white shadow-sm">
+                                OTT Platform
+                            </span>
+                            <span class="text-xs font-semibold uppercase tracking-wide text-slate-400">
+                                Responsive Web System
+                            </span>
+                        </div>
+
+                        <h3 class="mb-3 text-2xl font-extrabold leading-tight text-slate-900 sm:text-3xl">
+                            Akash.tv
+                        </h3>
+                        <p class="mb-6 text-sm leading-relaxed text-slate-500 sm:text-base">
+                            A professional OTT streaming system designed with responsive desktop and mobile experiences, smooth content browsing, and a polished user interface for modern digital entertainment.
+                        </p>
+
+                        <a href="https://akash.tv/" target="_blank" class="mb-6 inline-flex w-fit items-center gap-2 rounded-full bg-[var(--primary-highlight)] px-5 py-2.5 text-sm font-bold text-white shadow-lg transition hover:bg-[var(--primary-hover)]">
+                            Visit Now
+                            <svg class="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+
+                        <div class="grid grid-cols-1 gap-3 border-t border-slate-100 pt-5 sm:grid-cols-3">
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Experience</p>
+                                <p class="mt-1 text-sm font-bold text-slate-800">Desktop & Mobile</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Focus</p>
+                                <p class="mt-1 text-sm font-bold text-slate-800">Streaming UI</p>
+                            </div>
+                            <div>
+                                <p class="text-xs font-semibold uppercase tracking-wide text-slate-400">Project</p>
+                                <p class="mt-1 text-sm font-bold text-slate-800">Akash.TV</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Project Card 1 -->
+                <div class="group bg-white rounded-lg shadow-sm border border-slate-300 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <!-- Screenshot / Image -->
+                    <div class="relative h-60 overflow-hidden bg-gray-200 border-b border-slate-300">
+                        <img src="/resources/img/demo_projects/table.png" alt="E-Commerce Platform" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        
+                        <!-- Category Badge -->
+                        <div class="absolute top-4 left-4 bg-[var(--primary-color)] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                            Table Management
+                        </div>
+                        
+                        <!-- Hover Overlay (Optional) -->
+                        <!-- <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <span class="bg-white text-slate-900 font-semibold px-4 py-2 rounded-lg text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                                View Details
+                            </span>
+                        </div> -->
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[var(--primary-color)] transition-colors">Yess Dinning Lounge</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                            A smart restaurant table management system designed to handle table reservations, order tracking, billing, and real-time table availability.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-gray-400 font-medium">React, Node.js, Stripe</span>
+                            <a href="https://yessrestaurant.akashtv.top/" target="_blank" class="text-[var(--primary-color)] font-bold text-sm hover:underline flex items-center">
+                                Click to View &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="group bg-white rounded-lg shadow-sm border border-slate-300 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <!-- Screenshot / Image -->
+                    <div class="relative h-60 overflow-hidden bg-gray-200 border-b border-slate-300">
+                        <img src="/resources/img/demo_projects/shop.png" alt="E-Commerce Platform" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        
+                        <!-- Category Badge -->
+                        <div class="absolute top-4 left-4 bg-[var(--primary-color)] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                            E-Commerce
+                        </div>
+                        
+                        <!-- Hover Overlay (Optional) -->
+                        <!-- <div class="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition duration-300 flex items-center justify-center">
+                            <span class="bg-white text-slate-900 font-semibold px-4 py-2 rounded-lg text-sm shadow-lg transform translate-y-4 group-hover:translate-y-0 transition duration-300">
+                                View Details
+                            </span>
+                        </div> -->
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[var(--primary-color)] transition-colors">YessBangla Shop</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                            A reliable e-commerce platform for managing products, orders, payments, and customers with an easy-to-use admin dashboard.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-gray-400 font-medium">React, Node.js, Stripe</span>
+                            <a href="https://yessbangla.shop/" target="_blank" class="text-[var(--primary-color)] font-bold text-sm hover:underline flex items-center">
+                                Click to View &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="group bg-white rounded-lg shadow-sm border border-slate-300 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <!-- Screenshot / Image -->
+                    <div class="relative h-60 overflow-hidden bg-gray-200">
+                        <img src="/resources/img/demo_projects/ascension.png" alt="E-Commerce Platform" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        
+                        <!-- Category Badge -->
+                        <div class="absolute top-4 left-4 bg-[var(--primary-color)] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                            Company Website
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[var(--primary-color)] transition-colors">Ascension Accounting</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                            Ascension Accounting Specialises in a range of accounting services, providing exceptional support. We manage your books so you can focus less on worries and more on living. Our accounting firm operates entirely online.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-gray-400 font-medium">PHP, Laravel, Tailwind</span>
+                            <a href="https://ascension-accounting.yessbd.top/" target="_blank" class="text-[var(--primary-color)] font-bold text-sm hover:underline flex items-center">
+                                Click to View &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="group bg-white rounded-lg shadow-sm border border-slate-300 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <!-- Screenshot / Image -->
+                    <div class="relative h-60 overflow-hidden bg-gray-200">
+                        <img src="/resources/img/demo_projects/cbl.png" alt="E-Commerce Platform" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        
+                        <!-- Category Badge -->
+                        <div class="absolute top-4 left-4 bg-[var(--primary-color)] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                            Company Website
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[var(--primary-color)] transition-colors">Coast Bangladesh Limited (CBL)</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                            Coast Bangladesh Limited provides comprehensive Income Tax, VAT, and Business Advisory services. Your trusted partner for navigating complex legal matters with confidence.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-gray-400 font-medium">PHP, Laravel, Tailwind</span>
+                            <a href="https://cbl.yessbd.top/" target="_blank" class="text-[var(--primary-color)] font-bold text-sm hover:underline flex items-center">
+                                Click to View &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project Card 5 -->
+                <div class="group bg-white rounded-lg shadow-sm border border-slate-300 overflow-hidden hover:shadow-2xl hover:-translate-y-2 transition-all duration-300">
+                    <!-- Screenshot / Image -->
+                    <div class="relative h-60 overflow-hidden bg-gray-200">
+                        <img src="/resources/img/demo_projects/bharaghor.png" alt="E-Commerce Platform" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
+                        
+                        <!-- Category Badge -->
+                        <div class="absolute top-4 left-4 bg-[var(--primary-color)] text-white text-xs font-bold px-3 py-1 rounded-full shadow-lg">
+                            Market Place
+                        </div>
+                    </div>
+
+                    <!-- Content -->
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-slate-900 mb-2 group-hover:text-[var(--primary-color)] transition-colors">BharaGhor</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed mb-4">
+                            A smart house rental platform where landlords can list properties and renters can easily find, view, and book homes with streamlined management tools.
+                        </p>
+                        <div class="flex items-center justify-between border-t border-slate-100 pt-4">
+                            <span class="text-xs text-gray-400 font-medium">React, Node.js, Stripe</span>
+                            <a href="https://bharaghor-321e2.web.app/" target="_blank" class="text-[var(--primary-color)] font-bold text-sm hover:underline flex items-center">
+                                Click to View &rarr;
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- View More Button -->
+           <div class="flex justify-center mt-8">
+                <a href="#"
+                    class="inline-flex items-center gap-2 
+                        bg-[var(--primary-color)] 
+                        hover:bg-[var(--primary-hover)] 
+                        text-white 
+                        px-6 py-3 
+                        rounded-full 
+                        font-semibold 
+                        transition 
+                        shadow-lg">
+                    View All Projects →
+                </a>
+            </div>
+
+        </div>
+    </section>
+    <!-- Our Projects end -->
+
+    <!-- Others Products Section -->
+    <section id="others_products" class="relative py-10 pb-24 px-4 sm:px-6 lg:px-8 z-10 bg-white">
+        <div class="max-w-7xl mx-auto">
+            
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-slate-900">Our Software Products</h2>
+                <p class="mt-2 text-slate-500">Try our interactive demos to experience the power of our systems.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <!-- Card 1: CRM (Changed to Green) -->
+                <a href="https://crm.yessbd.top/login" target="_blank" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">CRM System</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Manage customer relationships, track leads, and automate sales pipelines effectively.</p>
+                    <span class="text-emerald-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 2: POS (Already Green, kept Teal) -->
+                <a href="https://yesspos.yessbangla.top/" target="_blank" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">POS Software</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Fast, reliable Point of Sale solution for retail and restaurant businesses.</p>
+                    <span class="text-emerald-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 3: ERP (Changed to Green-700) -->
+                <a href="#" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-700 mb-4 group-hover:bg-green-700 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">ERP System</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Integrated enterprise resource planning for manufacturing and large-scale operations.</p>
+                    <span class="text-green-700 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 4: Inventory (Kept Orange for contrast/nature vibe) -->
+                <a href="#" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-orange-50 rounded-xl flex items-center justify-center text-orange-600 mb-4 group-hover:bg-orange-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Inventory</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Track stock levels, warehouse transfers, and procurement in real-time.</p>
+                    <span class="text-orange-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 5: HRM (Changed to Teal) -->
+                <a href="https://yesshr.yessbangla.top/" target="_blank" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-teal-50 rounded-xl flex items-center justify-center text-teal-600 mb-4 group-hover:bg-teal-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">HR Management</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Comprehensive HR system for payroll, attendance, recruitment, and employee data.</p>
+                    <span class="text-teal-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 6: Accounting (Changed to Lime/Green) -->
+                <a href="#" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-lime-50 rounded-xl flex items-center justify-center text-lime-600 mb-4 group-hover:bg-lime-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Accounting</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Automate your bookkeeping, tax calculations, and financial reporting.</p>
+                    <span class="text-lime-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 7: School System (Changed to Light Green) -->
+                <a href="https://eschool.yessbd.top/" target="_blank" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-green-50 rounded-xl flex items-center justify-center text-green-600 mb-4 group-hover:bg-green-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">School System</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Manage students, teachers, exams, and fees in one educational platform.</p>
+                    <span class="text-green-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+                <!-- Card 8: Project Management (Changed to Emerald) -->
+                <a href="#" class="group bg-white p-6 rounded-2xl shadow-sm border border-slate-300 hover:shadow-xl  transition-all duration-300 flex flex-col h-full">
+                    <div class="w-12 h-12 bg-emerald-50 rounded-xl flex items-center justify-center text-emerald-600 mb-4 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"></path></svg>
+                    </div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Project Management</h3>
+                    <p class="text-sm text-slate-500 mb-4 flex-grow">Collaborate on tasks, track progress with Kanban boards, and Gantt charts.</p>
+                    <span class="text-emerald-600 text-sm font-semibold group-hover:underline flex items-center">
+                        View Demo <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path></svg>
+                    </span>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- technology we use start -->
+    <section id="technologies" class="bg-[aliceblue] text-slate-800 antialiased">
+
+        <!-- Section Container -->
+        <div class="py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                <!-- Section Header -->
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">Technology We Use</h2>
+                    <p class="text-lg text-slate-500 max-w-2xl mx-auto">
+                        We leverage the latest and most robust technologies to build scalable and secure IT solutions.
+                    </p>
+                </div>
+
+                <!-- Filter Buttons -->
+                <div class="flex flex-wrap justify-center gap-3 mb-12" id="filter-container">
+                    
+                    <!-- Button: All -->
+                    <button onclick="filterTech('all', this)" class="filter-btn active px-6 py-2 rounded-full border-2 border-emerald-600 bg-emerald-600 text-white font-medium transition-all shadow-md hover:shadow-lg hover:bg-emerald-700">
+                        All
+                    </button>
+
+                    <!-- Button: Frontend -->
+                    <button onclick="filterTech('frontend', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                        Frontend
+                    </button>
+
+                    <!-- Button: Backend -->
+                    <button onclick="filterTech('backend', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                        Backend
+                    </button>
+
+                    <!-- Button: Design -->
+                    <button onclick="filterTech('design', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                        Design
+                    </button>
+
+                    <!-- Button: Tools -->
+                    <button onclick="filterTech('tools', this)" class="filter-btn px-6 py-2 rounded-full border-2 border-gray-200 text-gray-600 font-medium hover:border-emerald-600 hover:text-emerald-600 transition-all bg-white">
+                        Tools
+                    </button>
+
+                </div>
+
+                <!-- Technology Grid -->
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6" id="tech-grid">
+                    
+                    <!-- Frontend Items -->
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="frontend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">React.js</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="frontend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Vue.js</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="frontend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg" alt="Tailwind" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Tailwind</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="frontend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" alt="Bootstrap" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Bootstrap</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="frontend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JS" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">JavaScript</h4>
+                    </div>
+
+                    <!-- Backend Items -->
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="backend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="NodeJS" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Node.js</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="backend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Python</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="backend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg" alt="Laravel" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Laravel</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="backend">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg" alt="Django" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Django</h4>
+                    </div>
+
+                    <!-- Design Items -->
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="design">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Figma</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="design">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/photoshop/photoshop-plain.svg" alt="Photoshop" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Photoshop</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="design">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xd/xd-plain.svg" alt="Adobe XD" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Adobe XD</h4>
+                    </div>
+
+                    <!-- Tools Items -->
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="tools">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Git</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="tools">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Docker</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="tools">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg" alt="AWS" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">AWS</h4>
+                    </div>
+
+                    <div class="tech-card fade-in group bg-white hover:bg-white border border-slate-300 p-6 rounded-xl shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col items-center justify-center text-center" data-category="tools">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux" class="h-16 w-16 mb-4 transition-transform group-hover:scale-110 drop-shadow-md">
+                        <h4 class="font-bold text-slate-800">Linux</h4>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- JavaScript Logic for Filtering -->
+        <script>
+            function filterTech(category, btnElement) {
+                // 1. Manage Active Button Styles
+                const buttons = document.querySelectorAll('.filter-btn');
+                
+                buttons.forEach(btn => {
+                    // Remove Active Styles (Green/White)
+                    btn.classList.remove('border-emerald-600', 'bg-emerald-600', 'text-white', 'shadow-md', 'hover:bg-emerald-700', 'active');
+                    
+                    // Add Inactive Styles (Gray)
+                    btn.classList.add('border-gray-200', 'text-gray-600', 'bg-white', 'hover:border-emerald-600', 'hover:text-emerald-600');
+                });
+
+                // Apply Active Styles to Clicked Button
+                btnElement.classList.remove('border-gray-200', 'text-gray-600', 'bg-white', 'hover:border-emerald-600', 'hover:text-emerald-600');
+                btnElement.classList.add('border-emerald-600', 'bg-emerald-600', 'text-white', 'shadow-md', 'hover:bg-emerald-700', 'active');
+
+                // 2. Filter Grid Items
+                const items = document.querySelectorAll('.tech-card');
+
+                items.forEach(item => {
+                    // Check if item matches category or if 'all' is selected
+                    if (category === 'all' || item.getAttribute('data-category') === category) {
+                        // Show item
+                        item.classList.remove('hidden');
+                        // Re-trigger fade animation
+                        item.classList.remove('fade-in');
+                        void item.offsetWidth; // trigger reflow
+                        item.classList.add('fade-in');
+                    } else {
+                        // Hide item
+                        item.classList.add('hidden');
+                    }
+                });
+            }
+        </script>
+
+    </section>
+    <!-- technology we use end -->
+
+    <!-- our core team members start -->
+    <section class="hidden relative py-20 overflow-hidden">
+        <!-- Dotted Background -->
+        <div class="absolute inset-0 -z-10 
+            bg-[radial-gradient(circle,_rgba(0,0,0,0.09)_1px,_transparent_1px)] 
+            [background-size:20px_20px]">
+        </div>
+
+        <!-- Blur Effect Layer -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full
+            bg-[var(--primary-color)] opacity-10 blur-3xl rounded-full -z-10">
+        </div>
+        <div class="max-w-7xl mx-auto px-6">
+            
+        <!-- Title -->
+        <div class="text-center mb-16">
+            <h1 class="text-3xl md:text-4xl font-extrabold text-slate-900 mb-4">
+                Our Team
+            </h1>
+
+            <p class="mt-4 max-w-2xl mx-auto text-gray-600 text-sm md:text-base leading-relaxed">
+                Meet the passionate professionals behind our success. Our team combines creativity, technology, and strategy to deliver impactful digital solutions.
+            </p>
+        </div>
+
+        <!-- Team Flex Container -->
+        <div class="flex flex-wrap justify-center gap-2 md:gap-8 ">
+
+            <!-- Card 1 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/tushi.png" class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Tushi Chakma</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Admin & HR</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/hiya.png" class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Hilary Tanzil Hiya</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Business Development</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/sadia.png"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Sadia Gazi</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Business Development</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/ovijit.jpeg"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Ovijeet Guha</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Motion Graphics Designer</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/mohima.png"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Mohima Chowdhury</h3>   
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Web Application Developer</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/sumaiya.png"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Farjana Yeasmin Sumaiya</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Web Application Developer</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/tanvi.png"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">Tanvirun Islam Anika</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Web Application Developer</p>
+                </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex md:hidden flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/NI Tushar.png"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">NI Tushar</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Technical Team Lead</p>
+                </div>
+            </div>
+
+        </div>
+        <!-- Team Flex Container -->
+        <div class="hidden md:flex mt-10 flex-wrap justify-center gap-2 md:gap-8 ">
+            <!-- Card 2 -->
+            <div class="mb-3 md:mb-0 flex flex-col items-center w-[45%]  sm:w-[45%] md:w-[23%] group ">
+                <!-- Image Container -->
+                <div class="relative w-20 h-20 md:w-32 md:h-32 rounded-full overflow-hidden border-4 border-[var(--primary-color)] shadow-md mb-2">
+                    <img src="/resources/img/teams/NI Tushar.png"
+                        class="w-full h-full object-cover bg-white rounded-full grayscale transition-all duration-700 ease-in-out group-hover:scale-110 group-hover:grayscale-0">
+                </div>
+                <!-- Text Content -->
+                <div class="text-center">
+                    <h3 class="text-[13px] md:text-xl font-bold text-gray-900">NI Tushar</h3>
+                    <p class="text-[10px] md:text-[12px] text-[var(--primary-color)] font-bold uppercase tracking-wider mt-1">Technical Team Lead</p>
+                </div>
+            </div>
+
+        </div>
+
+        </div>
+    </section>
+    <!-- our core team members end -->
+
+    <!-- Contact section start -->
+    <section id="contact" class="py-12 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+            <!-- Section Header -->
+            <div class="text-center mb-10">
+                <h2 class="text-2xl md:text-3xl font-bold text-slate-900 mb-3">
+                    Contact Us
+                </h2>
+                <p class="text-sm text-slate-500 max-w-xl mx-auto">
+                    Have a project in mind? Send us a message and we’ll respond shortly.
+                </p>
+            </div>
+
+            <!-- Main Container -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 bg-white border border-slate-900 rounded-2xl shadow-xl overflow-hidden">
+
+                <!-- LEFT SIDE -->
+                <div class="bg-gradient-to-l from-slate-900 via-slate-900 to-slate-900 text-white p-6 lg:p-8 flex flex-col justify-between relative">
+
+                    <div>
+                        <h3 class="text-lg font-semibold text-[var(--primary-color)] mb-4">Get in Touch</h3>
+                        <p class="text-xs text-gray-100 mb-6 leading-relaxed">
+                            We’re here to answer your questions and provide support.
+                        </p>
+
+                        <div class="space-y-4">
+
+                            <!-- Item -->
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                                    <i class="fa-solid fa-location-dot text-[var(--primary-color)]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold">Office</h4>
+                                    <p class="text-xs text-[var(--primary-color)]">Block#A, Road#3, House#127 (Green View) (1st Floor), Mirpur#12, Dhaka#1216</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                                    <i class="fa-regular fa-envelope text-[var(--primary-color)]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold">Email</h4>
+                                    <a href="mailto:yessbangla.bd@gmail.com" 
+                                    class="text-xs text-[var(--primary-color)] hover:underline">
+                                        yessbangla.bd@gmail.com
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                                    <i class="fa-solid fa-phone text-[var(--primary-color)]"></i>
+                                </div>
+                                <div>
+                                    <h4 class="text-sm font-semibold">Phone</h4>
+                                    <a href="tel:+8801805464341">
+                                        <p class="text-xs text-[var(--primary-color)]">
+                                            +8801805464341
+                                        </p>
+                                    </a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Social -->
+                    <div class="mt-6 flex space-x-2">
+                        <a href="https://www.facebook.com/yessbanglaltd" target="_blank" class="w-10 h-10 group rounded-full bg-white/10 hover:bg-[var(--primary-color)]  transition flex items-center justify-center text-[16px]">
+                            <i class="fa-brands fa-facebook text-[var(--primary-color)] group-hover:text-white"></i>
+                        </a>
+                        <a href="" class="w-10 h-10 group rounded-full bg-white/10 hover:bg-[var(--primary-color)] transition flex items-center justify-center text-text-[16px]">
+                            <i class="fa-brands fa-whatsapp text-[var(--primary-color)] group-hover:text-white"></i>
+                        </a>
+                        <a href="https://yessbd.com/" target="_blank" class="w-10 h-10 group rounded-full bg-white/10 hover:bg-[var(--primary-color)] transition flex items-center justify-center text-text-[16px]">
+                            <i class="fa-solid fa-globe text-[var(--primary-color)] group-hover:text-white"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="p-6 lg:p-8">
+                    <form class="space-y-4">
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <input type="text"
+                                class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:ring-2 focus:ring-[var(--primary-color)] outline-none"
+                                placeholder="First Name">
+
+                            <input type="text"
+                                class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:ring-2 focus:ring-[var(--primary-color)] outline-none"
+                                placeholder="Last Name">
+                        </div>
+
+                        <input type="email"
+                            class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:ring-2 focus:ring-[var(--primary-color)] outline-none"
+                            placeholder="Email Address">
+
+                        <textarea rows="4"
+                            class="w-full px-3 py-2 text-sm rounded-md border border-gray-300 focus:ring-2 focus:ring-[var(--primary-color)] outline-none"
+                            placeholder="Write your message..."></textarea>
+
+                        <button type="submit"
+                            class="w-full bg-[var(--primary-color)] hover:bg-[var(--primary-hover)] text-white text-sm font-semibold py-2.5 rounded-md transition">
+                            Send Message
+                        </button>
+
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- Contact section end -->
+
+    <button
+        id="scroll-top-btn"
+        type="button"
+        aria-label="Scroll to top"
+        class="fixed bottom-6 right-6 z-50 w-12 h-12 rounded-full bg-[var(--primary-color)] text-white shadow-lg shadow-slate-900/20 hover:bg-[var(--primary-hover)] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)] flex items-center justify-center">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 border-t border-slate-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <p class="text-sm">&copy; <script>document.write(new Date().getFullYear());</script> 
+                <a href="https://yessbd.com" target="_blank" class="text-[var(--primary-highlight)]">YessBangla</a> 
+                IT Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Script for Mobile Menu Toggle -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // Close mobile menu when clicking any link inside it
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        const scrollTopBtn = document.getElementById('scroll-top-btn');
+
+        function toggleScrollTopButton() {
+            scrollTopBtn.classList.toggle('show', window.scrollY > 300);
+        }
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        window.addEventListener('scroll', toggleScrollTopButton);
+        toggleScrollTopButton();
+    </script>
+
+    <script>
+        function underConstruction() {
+            Swal.fire({ 
+                icon: 'warning',
+                title: 'Coming Soon 🚀',
+                text: 'We are working on this application.',
+                showConfirmButton: true,
+                confirmButtonText: 'OK',
+                confirmButtonColor: '#10b981'
+            });
+        }
+    </script>
+
+    <script>
+        function filterProducts(category, btnElement) {
+            const buttons = document.querySelectorAll('.product-filter-btn');
+            const items = document.querySelectorAll('.product-card');
+            const productsGrid = document.getElementById('products-grid');
+            const filterRow = document.getElementById('product-filters');
+
+            buttons.forEach(btn => {
+                btn.classList.remove('border-emerald-600', 'bg-emerald-600', 'text-white', 'shadow-md', 'hover:bg-emerald-700', 'active');
+                btn.classList.add('border-gray-200', 'text-gray-600', 'bg-white', 'hover:border-emerald-600', 'hover:text-emerald-600');
+            });
+
+            btnElement.classList.remove('border-gray-200', 'text-gray-600', 'bg-white', 'hover:border-emerald-600', 'hover:text-emerald-600');
+            btnElement.classList.add('border-emerald-600', 'bg-emerald-600', 'text-white', 'shadow-md', 'hover:bg-emerald-700', 'active');
+
+            items.forEach(item => {
+                const matchesCategory = category === 'all' || item.getAttribute('data-category') === category;
+
+                if (matchesCategory) {
+                    item.classList.remove('hidden');
+                    item.classList.remove('fade-in');
+                    void item.offsetWidth;
+                    item.classList.add('fade-in');
+                } else {
+                    item.classList.add('hidden');
+                    item.classList.remove('fade-in');
+                }
+            });
+
+            if (productsGrid && filterRow) {
+                const navHeight = document.querySelector('nav.fixed')?.offsetHeight || 0;
+                const offset = filterRow.offsetHeight + navHeight;
+                const scrollTop = window.pageYOffset + productsGrid.getBoundingClientRect().top - offset - 8;
+                window.scrollTo({ top: scrollTop, behavior: 'smooth' });
+            }
+        }
+    </script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,3155 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Yess Bangla Private Limited | Complete IT &amp; Digital Solutions in Bangladesh | Yess Bangla Private Limited</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <meta name="keywords" content="">
+    <link rel="shortcut icon"
+      type="image/x-icon"
+      href="https://yessbd.com/uploads/Configuration/1786630550_uV9KMcmNWxyi.png">
+  
+    <!-- <link rel="stylesheet" href="https://yessbd.com/Backend/css/color.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5f7bc44e9f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Flipbook StyleSheet start -->
+    <link href="https://yessbd.com/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <link href="https://yessbd.com/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Flipbook main Js file -->
+    <script src="https://yessbd.com/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="https://yessbd.com/dflip/js/dflip.min.js" type="text/javascript"></script>
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Anek Bangla', 'sans-serif'],
+                    },
+                    colors: {
+                        aliceblue: 'aliceblue',
+                        white: '#ffffff',
+                        black: '#0f172a',
+                        muted: '#64748b',
+                        primary: '#0d9488',
+                        primarydark: '#013d38',
+                        hover: '#00ebd7',
+                        'primary-dark': '#00701A',
+                        'primary-deep': '#003D0F',
+                        ink: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Outfit', sans-serif;
+        }
+
+        *,
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Anek Bangla', sans-serif;
+        }
+
+        .mobile-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            color: #6b7280;
+        }
+        .mobile-link:hover {
+            background: #f3f4f6;
+            color: var(--primary-color);
+        }
+
+        .mobile-nav-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .mobile-nav-scroll::-webkit-scrollbar { display: none; }
+
+        /* ---- Animations (defined once) ---- */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.7s ease-out forwards;
+            opacity: 0;
+        }
+        .animation-delay-200 { animation-delay: 200ms; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.96); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-scale-in {
+            animation: scaleIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+        .float-anim { animation: float 6s ease-in-out infinite; }
+        .float-anim-delay { animation: float 7s ease-in-out 1s infinite; }
+        .float-anim-delay-2 { animation: float 8s ease-in-out 2s infinite; }
+
+        @keyframes floatFeature {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+        .float-feature { animation: floatFeature 4s ease-in-out infinite; }
+        .float-feature-delay-1 { animation-delay: 0s; }
+        .float-feature-delay-2 { animation-delay: 1.5s; }
+        .float-feature-delay-3 { animation-delay: 3s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ---- Hero / backgrounds ---- */
+        .bg-hero {
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 30%, rgba(6,13,10,0.35) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 20% 80%, rgba(15,61,46,0.2) 0%, transparent 60%),
+                linear-gradient(180deg,
+                    rgba(6,13,10,0.55) 0%,
+                    rgba(6,13,10,0.4) 30%,
+                    rgba(6,13,10,0.35) 50%,
+                    rgba(6,13,10,0.45) 70%,
+                    rgba(6,13,10,0.7) 85%,
+                    rgba(6,13,10,0.92) 100%
+                );
+        }
+
+        .hero-gradient {
+            background:
+                radial-gradient(ellipse 80% 60% at 10% 20%, rgba(20, 184, 166, 0.18) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 40% at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, #f0fdfa 0%, #f8fafc 25%, #fdf4ff 50%, #f8fafc 75%, #f0f9ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.6;
+            animation: float 20s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .orb-1 {
+            width: 400px; height: 400px;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.3), rgba(59, 130, 246, 0.2));
+            top: -100px; left: -100px; animation-delay: 0s;
+        }
+        .orb-2 {
+            width: 350px; height: 350px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.15));
+            bottom: -80px; right: -80px; animation-delay: -7s;
+        }
+        .orb-3 {
+            width: 250px; height: 250px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(20, 184, 166, 0.15));
+            top: 40%; right: 10%; animation-delay: -14s;
+        }
+
+        /* this class used */
+        .header-on-scroll { 
+            background: rgba(255, 255, 255, 0.43) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-color: transparent !important;
+        }
+
+        .card-glow { position: relative; overflow: hidden; }
+        .card-glow::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, transparent, var(--glow-color, #355B4F), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .card-glow:hover::before { opacity: 1; }
+
+        /* ---- Buttons ---- */
+        .btn-primary {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            box-shadow: 0 4px 14px -3px rgba(13, 148, 136, 0.4);
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        .btn-primary:hover::after { opacity: 1; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.5); }
+        .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px -2px rgba(13, 148, 136, 0.4); }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 1); border-color: var(--primary); color: var(--primary); }
+
+        /* ---- Dashboard / laptop mock / floating cards ---- */
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        .dashboard-card:hover {
+            border-color: rgba(13, 148, 136, 0.3);
+            box-shadow: 0 15px 40px -10px rgba(13, 148, 136, 0.15);
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .laptop-frame {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 24px 24px 0 0;
+            padding: 12px 14px 0;
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+        .laptop-frame::before {
+            content: '';
+            position: absolute;
+            top: 6px; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 4px;
+            background: #0f172a;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .laptop-screen { background: #0f172a; border-radius: 12px 12px 0 0; overflow: hidden; position: relative; }
+        .laptop-base {
+            height: 14px;
+            background: linear-gradient(180deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+            border-radius: 0 0 4px 4px;
+            margin: 0 -20px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+        .laptop-base::before {
+            content: '';
+            position: absolute;
+            top: 4px; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 4px;
+            background: #0f172a;
+            border-radius: 0 0 2px 2px;
+        }
+        .laptop-stand {
+            width: 120px; height: 4px;
+            background: linear-gradient(180deg, #334155, #1e293b);
+            margin: 0 auto;
+            border-radius: 0 0 2px 2px;
+        }
+
+        .floating-feature {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 4px 16px -4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            max-width: 200px;
+        }
+        .floating-feature:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.15), 0 8px 24px -8px rgba(0, 0, 0, 0.1);
+        }
+        .floating-feature .icon-wrap {
+            width: 40px; height: 40px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-item { opacity: 0.35; transition: all 0.3s ease; filter: grayscale(100%); }
+        .logo-item:hover { opacity: 1; filter: grayscale(0%); transform: translateY(-2px); }
+
+        button:focus-visible, a:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+        }
+
+        .pie-segment { transition: transform 0.3s ease; transform-origin: center; }
+        .pie-segment:hover { transform: scale(1.03); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        .stat-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 9999px;
+        }
+
+        .dashboard-content { background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%); }
+
+        /* ---- Charts ---- */
+        .chart-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+        .chart-area { opacity: 0.3; }
+        .chart-dot { transition: all 0.2s ease; cursor: pointer; }
+        .chart-dot:hover { r: 6; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .chart-grid-line { stroke: #e2e8f0; stroke-width: 1; stroke-dasharray: 4 4; }
+
+        .chart-tooltip {
+            position: absolute;
+            background: #0f172a;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 500;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s;
+            z-index: 100;
+            white-space: nowrap;
+        }
+        .chart-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%; left: 50%; transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #0f172a;
+        }
+
+        @keyframes drawLine { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+        @keyframes fillArea { from { opacity: 0; } to { opacity: 0.3; } }
+        .animate-line { stroke-dasharray: 1000; animation: drawLine 1.5s ease-out forwards; }
+        .animate-area { animation: fillArea 1s ease-out 0.5s forwards; opacity: 0; }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            70% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-dot { animation: popIn 0.3s ease-out forwards; }
+    </style>
+
+    
+</head>
+<body>
+    <!-- Sticky Social Icons -->
+    <div class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-3">
+        <div class="flex flex-col gap-3 shadow-xl">
+
+                            <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition duration-300">
+                    <i class="fab fa-facebook-f text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                class="w-8 h-8  rounded-full bg-gradient-to-br from-pink-500 to-yellow-500 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                <i class="fab fa-instagram text-white text-base"></i>
+            </a>
+                        
+                            <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" rel="noopener noreferrer"
+                class="w-8 h-8  rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition duration-300">
+                    <i class="fa-brands fa-linkedin text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-sky-500 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                    <i class="fab fa-twitter text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-red-700 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                    <i class="fab fa-youtube text-white text-base"></i>
+                </a>
+                    </div>
+    </div>
+
+    <div class="main">
+        <!-- HEADER Start -->
+        <header id="navbar" class="fixed top-0 left-0 right-0 z-[40] w-full max-w-[100vw] overflow-x-clip bg-transparent px-0 transition-all duration-300">
+            <!-- top bar -->
+            <div class="hidden md:block bg-primarydark py-2">
+                <div class="max-w-7xl mx-auto px-2">
+                <div class="topbar-inner flex flex-col gap-2 text-sm lg:flex-row lg:items-center lg:justify-between lg:gap-6">
+                    <div class="topbar-info text-center sm:text-left text-white">
+                        <a href="mailto:yessbangla.bd@gmail.com" class="transition hover:text-white">Contact Us: yessbangla.bd@gmail.com |</a>
+                        <a href="https://wa.me/881805464343?text=Hello%2C+I+would+like+to+know+more+about+your+services."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="transition hover:text-primary">
+                                WhatsApp: 01805464343
+                        </a>
+                    </div>
+
+                    <div class="topbar-social justify-center sm:justify-start lg:justify-end">
+                        <span class="text-white/75">Follow Us On:</span>
+
+                                                <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" aria-label="Facebook" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        
+                                                <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" aria-label="Instagram" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                                                
+                                                <a href="https://www.youtube.com/" target="_blank" aria-label="Twitter" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto my-0 md:my-2 px-4 rounded-0 md:rounded-full bg-white backdrop-blur-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)]">
+                <!-- bg-white/5 backdrop-blur-lg rounded-b-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)] -->
+                <div class="flex items-center justify-between h-auto py-3">
+                    <!-- Logo -->
+                    <a href="https://yessbd.com" class="flex items-center gap-3">
+                        <div class="w-auto h-10 rounded-md p-1 flex items-center justify-center overflow-hidden">
+                                                            <img src="https://yessbd.com/uploads/Configuration/1786630550_MhvzHrbFS0jx.png" alt="Logo" class="w-full h-full object-contain" width="40" height="40">
+                                                    </div>
+                        <div class="block">
+                            <h1 id="logo_text" class="text-sm md:text-lg font-semibold text-black">Yess Bangla Private Limited</h1>
+                            <p id="slogan_text" class="text-xs text-black">Where Solution Begins</p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a href="https://yessbd.com" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition text-primary">Home</a>
+                        <a href="https://yessbd.com/about" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">About</a>
+                        <a href="https://yessbd.com/services" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Services</a>
+
+                        <div class="relative group">
+                            <button onclick="window.location='https://yessbd.com/ventures'"
+                                class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition flex items-center gap-1">
+                                Ventures
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                           <div class="absolute left-0 top-[20px] w-[520px] rounded-lg
+                                shadow-xl
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-300
+                                bg-white
+                                p-3 grid grid-cols-2 gap-2">
+
+                                                                    <a href="https://yessbd.com/ventures/5?type=Shondhaan" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png" alt="Shondhaan" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Shondhaan</span>
+                                            <span class="block text-xs text-gray-800 truncate">Home &amp; Professional Services</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png" alt="Organic Haat" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Organic Haat</span>
+                                            <span class="block text-xs text-gray-800 truncate">Organic Marketplace</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png" alt="Yess Host" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Host</span>
+                                            <span class="block text-xs text-gray-800 truncate">Hosting &amp; Cloud Infrastructure</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Akash OTT</span>
+                                            <span class="block text-xs text-gray-800 truncate">Streaming Platform</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png" alt="Yess Soft" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Soft</span>
+                                            <span class="block text-xs text-gray-800 truncate">Software &amp; IT Solutions</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png" alt="Yess Event" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Event</span>
+                                            <span class="block text-xs text-gray-800 truncate">Event Management</span>
+                                        </span>
+                                    </a>
+                                                            </div>
+                        </div>
+
+                        <a href="https://yessbd.com/industries" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Industries</a>
+                        <a href="https://yessbd.com/insights" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Insights</a>
+                        <a href="https://yessbd.com/career" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Careers</a>
+                        <a href="https://yessbd.com/contact" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Contact</a>
+                    </nav>
+
+                    <!-- CTA -->
+                    <div class="hidden lg:flex items-center gap-6">
+                        <button id="consultationOpen" class="bg-primary hover:bg-hover px-4 py-2 rounded-full text-white hover:text-black text-sm font-medium transition">
+                            LET'S TALK
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="headerMenuBtn" class="hidden lg:hidden p-2 text-black hover:bg-white/10 rounded-lg transition" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                        <svg id="menuIcon" class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M3 12h18M3 6h18M3 18h18"/>
+                        </svg>
+                        <svg id="closeIcon" class="w-6 h-6 hidden text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileQuickNav" class="md:hidden relative w-full max-w-full mx-auto my-0 px-4 bg-white backdrop-blur-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)]">
+                <nav class="mobile-nav-scroll flex min-w-0 max-w-full items-center gap-6 overflow-x-auto py-2.5 pr-2 text-sm font-medium whitespace-nowrap" aria-label="Quick navigation">
+                    <a href="https://yessbd.com" class="shrink-0 text-primary">Home</a>
+                    <a href="https://yessbd.com/about" class="shrink-0 text-gray-700">About</a>
+                    <a href="https://yessbd.com/services" class="shrink-0 text-gray-700">Services</a>
+
+                    <div class="relative shrink-0">
+                        <button type="button" data-mobile-dropdown-toggle aria-expanded="false" aria-controls="mobileVenturesMenu" class="inline-flex items-center gap-1 text-gray-700">
+                            Ventures
+                            <svg class="h-3.5 w-3.5 transition-transform" data-mobile-dropdown-icon fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <a href="https://yessbd.com/industries" class="shrink-0 text-gray-700">Industries</a>
+                    <a href="https://yessbd.com/insights" class="shrink-0 text-gray-700">Insights</a>
+                    <a href="https://yessbd.com/career" class="shrink-0 text-gray-700">Careers</a>
+                    <a href="https://yessbd.com/contact" class="shrink-0 text-gray-700">Contact</a>
+                </nav>
+                <div id="mobileVenturesMenu" data-mobile-dropdown-menu class="absolute left-4 top-full z-[70] mt-2 hidden w-64 rounded-lg bg-white p-2 shadow-xl ring-1 ring-black/5">
+                                            <a href="https://yessbd.com/ventures/5?type=Shondhaan" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png" alt="Shondhaan" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Shondhaan</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png" alt="Organic Haat" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Organic Haat</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png" alt="Yess Host" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Host</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Akash OTT</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png" alt="Yess Soft" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Soft</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png" alt="Yess Event" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Event</span>
+                        </a>
+                                    </div>
+            </div>
+
+        </header>
+        <!-- HEADER End -->
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden fixed bottom-16 left-0 right-0 z-[60] lg:hidden bg-slate-700 backdrop-blur-lg border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
+            <nav class="max-w-7xl mx-auto px-4 py-6 flex flex-col gap-1">
+                <a href="https://yessbd.com" class="mobile-link text-primary">Home</a>
+                <a href="https://yessbd.com/about" class="mobile-link text-white">About</a>
+                <a href="https://yessbd.com/services" class="mobile-link text-white">Services</a>
+                <a href="https://yessbd.com/clients" class="mobile-link text-white">Clients</a>
+                <a href="https://yessbd.com/ventures" class="mobile-link text-white">Ventures</a>                    
+                <a href="https://yessbd.com/contact" class="mobile-link text-white">Contact Us</a>
+
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <button id="consultationOpen" class="bg-[#328F6C] hover:bg-[#28785A] block w-full text-center px-4 py-2 rounded-md text-white font-medium transition">
+                        LET'S TALK
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Bottom Navigation -->
+        <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 h-16 bg-white border-t border-gray-200 shadow-[0_-2px_12px_rgba(0,0,0,0.1)]" aria-label="Mobile navigation">
+            <div class="grid h-full grid-cols-5 items-center">
+                <a href="https://yessbd.com" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-primary" aria-label="Home">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg>
+                    <span>Home</span>
+                </a>
+                <a href="https://yessbd.com/about" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="About">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 11v5m0-8h.01"/></svg>
+                    <span>About</span>
+                </a>
+                <a href="https://yessbd.com/services" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Services">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/><path stroke-linecap="round" d="M8 7v0m4 5v0m-2 5v0"/></svg>
+                    <span>Services</span>
+                </a>
+                <a href="https://yessbd.com/contact" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Contact">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v12H8l-4 4V5Z"/><path stroke-linecap="round" d="M8 9h8M8 13h5"/></svg>
+                    <span>Contact</span>
+                </a>
+                <button id="menuBtn" type="button" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Open more menu" aria-controls="mobileMenu" aria-expanded="false">
+                    <svg id="bottomMoreIcon" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+                    <span>More</span>
+                </button>
+            </div>
+        </nav>
+
+        <div style="min-height: 90vh">
+            
+<div class="bg-cover bg-center bg-no-repeat w-full h-full fixed -z-0"
+    style="background-image: url('https://yessbd.com/Frontend/img/yess_bangla_hero_bg.png');">
+</div>
+<!-- hero section start -->
+<section class="relative py-4 lg:py-0 min-h-[78vh] lg:min-h-[80vh] flex items-center overflow-hidden">
+    <div class="absolute z-10 h-full w-full inset-0 bg-black/80 backdrop-blur-sm"></div>
+    <!-- Main Content -->
+    <div class="relative z-20 w-full max-w-7xl mx-auto px-4 md:px-1 py-2 mt-20 lg:mt-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center">
+            <!-- LEFT CONTENT -->
+            <div class="text-center lg:text-left space-y-7">
+
+                <!-- Small Heading -->
+                <div class="opacity-0-init animate-slide-up-delay-2">
+                    <p class="text-white text-xs font-semibold uppercase tracking-widest text-readable-sm">
+                        Business Consulting All Solutions
+                    </p>
+                </div>
+
+                <!-- Main Heading -->
+                <div class="space-y-4 opacity-0-init animate-slide-up-delay-2">
+                    <h1
+                        class="text-2xl sm:text-2xl lg:text-3xl xl:text-4xl font-bold leading-[1.08] tracking-tight text-readable">
+
+                        <span class="text-white">
+                            We Provide
+                        </span>
+
+                        <br>
+
+                        <span class="text-hover text-primary-color">
+                            Complete Business Solutions
+                        </span>
+
+                    </h1>
+                </div>
+
+                <!-- Description -->
+                <div class="opacity-0-init animate-slide-up-delay-3">
+
+                    <p
+                        class="text-[13px] text-neutral-300 leading-relaxed max-w-2xl mx-auto lg:mx-0 text-readable-sm">
+
+                        Apexa helps you to convert your data into a
+                        <span class="text-white font-semibold">
+                            strategic asset
+                        </span>
+                        and get
+                        <span class="text-brand-300 font-semibold">
+                            top-notch business insights
+                        </span>
+                        powered by AI-driven analytics and intelligence.
+
+                    </p>
+
+                </div>
+
+                <!-- CTA -->
+                <div
+                    class="flex flex-wrap items-center justify-center lg:justify-start gap-4 opacity-0-init animate-slide-up-delay-4">
+
+                    <button type="button" id="consultationOpen" class="btn-primary group inline-flex items-center gap-2 px-6 py-3 rounded-xl
+                        bg-gradient-to-r from-primary to-hover
+                        text-black font-semibold text-sm
+                        shadow-lg shadow-brand-500/30
+                        hover:shadow-brand-500/50
+                        hover:scale-[1.03]
+                        active:scale-[0.98]
+                        transition-all duration-300
+                        text-readable-sm">
+
+                        Start Free Consultation
+
+                        <i data-lucide="arrow-right"
+                            class="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300">
+                        </i>
+
+                    </button>
+
+                </div>
+
+            </div>
+            <!-- RIGHT FLOATING CARDS -->
+            <div class="relative w-full mx-auto lg:ml-auto">
+                <!-- Coin view -->
+                <div class="">
+                    <style>
+                        @keyframes floatA { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-14px); } }
+                        @keyframes floatB { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-9px); } }
+                        @keyframes floatC { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-16px); } }
+                        @keyframes floatD { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-11px); } }
+
+                        .float-a { animation: floatA 3.6s ease-in-out infinite; animation-delay: 0s; }
+                        .float-b { animation: floatB 4.3s ease-in-out infinite; animation-delay: .5s; }
+                        .float-c { animation: floatC 3.9s ease-in-out infinite; animation-delay: .2s; }
+                        .float-d { animation: floatD 4.7s ease-in-out infinite; animation-delay: .8s; }
+
+                        @media (prefers-reduced-motion: reduce) {
+                            .float-a, .float-b, .float-c, .float-d { animation: none; }
+                        }
+                    </style>
+                    <!-- Zig-Zag Coins -->
+                    <div id="coins-wrapper" class="relative">
+
+                        <!-- Connecting line (dynamically synced to each coin's live position) -->
+                        <svg id="connector-svg" class="hidden md:block absolute inset-0 w-full h-full pointer-events-none" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                            <polyline
+                                id="connector-line"
+                                points="12.5,35 37.5,65 62.5,35 87.5,65"
+                                fill="none"
+                                stroke="#D4D4D4"
+                                stroke-width="0.9"
+                                stroke-dasharray="2.5 2.5"
+                                vector-effect="non-scaling-stroke"
+                            />
+                        </svg>
+
+                        <div class="relative grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10 place-items-center">
+                            <!-- 1 · Yess Soft — UP -->
+                            <a href="https://shondhaan.com" target="_blank" class="flex flex-col items-center gap-4 md:translate-y-0 cursor-pointer">
+                                <div class="coin-circle float-a relative w-[140px] h-[140px] md:w-[150px] md:h-[150px] shadow-[0_12px_40px_rgba(0,0,0,0.18)] rounded-full">
+                                    <!-- Coin base -->
+                                    <img src="Frontend/img/coin.png" alt="" class="w-full h-full object-cover rounded-full" />
+                                    <!-- Icon overlay with p-2 inset -->
+                                    <div class="absolute p-5 inset-0 rounded-full flex items-center justify-center overflow-hidden">
+                                        <img src="Frontend/img/hero_section/icons/shondhaan-full.png" alt="Yess Soft" class="w-full h-full object-cover rounded-full" />
+                                    </div>
+                                </div>
+                                <!-- <span class="text-neutral-700 text-[13px] md:text-sm font-semibold tracking-wide">Yess Soft</span> -->
+                            </a>
+                            <!-- 2 · Shondhaan — DOWN -->
+                            <a href="https://organichaat.top" target="_blank" class="flex flex-col items-center gap-4 md:translate-y-12 cursor-pointer">
+                                <div class="coin-circle float-b relative w-[140px] h-[140px] md:w-[150px] md:h-[150px] shadow-[0_12px_40px_rgba(0,0,0,0.18)] rounded-full">
+                                    <img src="Frontend/img/coin.png" alt="" class="w-full h-full object-cover rounded-full" />
+                                    <div class="absolute inset-0 p-5 rounded-full flex items-center justify-center overflow-hidden">
+                                        <img src="Frontend/img/hero_section/icons/organic-haat.png" alt="Shondhaan" class="bg-white w-full h-full object-cover rounded-full" />
+                                    </div>
+                                </div>
+                                <!-- <span class="text-neutral-700 text-[13px] md:text-sm font-semibold tracking-wide">Shondhaan</span> -->
+                            </a>
+                            <!-- 3 · Yessa Organic Haat — UP -->
+                            <a href="https://akash.tv" target="_blank" class="flex flex-col items-center gap-4 md:translate-y-0 cursor-pointer">
+                                <div class="coin-circle float-c relative w-[140px] h-[140px] md:w-[150px] md:h-[150px] shadow-[0_12px_40px_rgba(0,0,0,0.18)] rounded-full">
+                                    <img src="Frontend/img/coin.png" alt="" class="w-full h-full object-cover rounded-full" />
+                                    <div class="absolute inset-0 p-5 rounded-full flex items-center justify-center overflow-hidden">
+                                        <img src="Frontend/img/hero_section/icons/akash-tv.png" alt="Yessa Organic Haat" class="bg-white w-full h-full object-cover rounded-full" />
+                                    </div>
+                                </div>
+                                <!-- <span class="text-neutral-700 text-[13px] md:text-sm font-semibold tracking-wide">Yessa Organic Haat</span> -->
+                            </a>
+                            <!-- 4 · Akash OTT — DOWN -->
+                            <a href="https://yessbangla.top" target="_blank" class="flex flex-col items-center gap-4 md:translate-y-12 cursor-pointer">
+                                <div class="coin-circle float-d relative w-[140px] h-[140px] md:w-[150px] md:h-[150px] shadow-[0_12px_40px_rgba(0,0,0,0.18)] rounded-full">
+                                    <img src="Frontend/img/coin.png" alt="" class="w-full h-full object-cover rounded-full" />
+                                    <div class="absolute inset-0 p-5 rounded-full flex items-center justify-center overflow-hidden">
+                                        <img src="Frontend/img/hero_section/icons/yesssoft.png" alt="Akash OTT" class="bg-white w-full h-full object-cover rounded-full" />
+                                    </div>
+                                </div>
+                                <!-- <span class="text-neutral-700 text-[13px] md:text-sm font-semibold tracking-wide">Akash OTT</span> -->
+                            </a>
+                        </div>
+                    </div>
+                    <script>
+                        const wrapper = document.getElementById('coins-wrapper');
+                        const line = document.getElementById('connector-line');
+                        const coins = document.querySelectorAll('.coin-circle');
+
+                        function updateConnectorLine() {
+                            const wrapperRect = wrapper.getBoundingClientRect();
+
+                            const points = Array.from(coins).map((coin) => {
+                                const r = coin.getBoundingClientRect();
+                                const cx = r.left + r.width / 2 - wrapperRect.left;
+                                const cy = r.top + r.height / 2 - wrapperRect.top;
+                                const xPct = (cx / wrapperRect.width) * 100;
+                                const yPct = (cy / wrapperRect.height) * 100;
+                                return `${xPct},${yPct}`;
+                            }).join(' ');
+
+                            line.setAttribute('points', points);
+                            requestAnimationFrame(updateConnectorLine);
+                        }
+
+                        requestAnimationFrame(updateConnectorLine);
+                    </script>
+                </div>
+                <!-- Card view -->
+                <div class="hidden grid-cols-2 gap-4 md:gap-6">
+                    <!-- Card 1 -->
+                    <a href="https://shondhaan.com" target='_blank' class="hero-service-card floating-card-1 group relative overflow-hidden
+                        rounded-2xl border border-white/10
+                        bg-white/10 backdrop-blur-md
+                        shadow-2xl shadow-black/20
+                        transition-all duration-500
+                        hover:-translate-y-3
+                        hover:scale-[1.03]
+                        hover:border-white/30
+                        hover:bg-white/15">
+
+                        <div class="relative h-44 md:h-[140px] overflow-hidden">
+
+                            <img src="/Frontend/img/hero_section/shondhaan.png" alt="Web Development" class="w-full h-full object-cover
+                                transition-transform duration-700
+                                group-hover:scale-110">
+
+                            <!-- Overlay -->
+                            <div class="absolute inset-0 bg-gradient-to-t
+                                from-black/80 via-black/20 to-transparent">
+                            </div>
+
+                            <!-- Content -->
+                            <div class="absolute -bottom-3 left-0 right-0 p-4">
+
+                                <h3 class="text-white text-center font-semibold text-[12px]">
+                                    Home Service Provider
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Card 2 -->
+                    <a href="https://organichaat.top" target='_blank' class="hero-service-card floating-card-2 group relative overflow-hidden
+                        rounded-2xl border border-white/10
+                        bg-white/10 backdrop-blur-md
+                        shadow-2xl shadow-black/20
+                        transition-all duration-500
+                        hover:-translate-y-3
+                        hover:scale-[1.03]
+                        hover:border-white/30
+                        hover:bg-white/15">
+
+                        <div class="relative h-44 md:h-[140px] overflow-hidden">
+
+                            <img src="/Frontend/img/hero_section/organic.png" alt="Software Solutions" class="w-full h-full object-cover
+                                transition-transform duration-700
+                                group-hover:scale-110">
+
+                            <div class="absolute inset-0 bg-gradient-to-t
+                                from-black/80 via-black/20 to-transparent">
+                            </div>
+
+                            <div class="absolute -bottom-3 left-0 right-0 p-4">
+                                <h3 class="text-white text-center font-semibold text-[12px]">
+                                    Organic Products
+                                </h3>
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Card 3 -->
+                    <a href="https://akash.tv" target='_blank' class="hero-service-card floating-card-3 group relative overflow-hidden
+                        rounded-2xl border border-white/10
+                        bg-white/10 backdrop-blur-md
+                        shadow-2xl shadow-black/20
+                        transition-all duration-500
+                        hover:-translate-y-3
+                        hover:scale-[1.03]
+                        hover:border-white/30
+                        hover:bg-white/15">
+
+                        <div class="relative h-44 md:h-[140px] overflow-hidden">
+
+                            <img src="/Frontend/img/hero_section/akash.png" alt="Digital Marketing" class="w-full h-full object-cover
+                                transition-transform duration-700
+                                group-hover:scale-110">
+
+                            <div class="absolute inset-0 bg-gradient-to-t
+                                from-black/80 via-black/20 to-transparent">
+                            </div>
+
+                            <div class="absolute -bottom-3 left-0 right-0 p-4">
+
+                                <h3 class="text-white text-center font-semibold text-[12px]">
+                                    OTT Platform
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+
+                    <!-- Card 4 -->
+                    <a href="https://yessbangla.top" target='_blank' class="hero-service-card floating-card-4 group relative overflow-hidden
+                        rounded-2xl border border-white/10
+                        bg-white/10 backdrop-blur-md
+                        shadow-2xl shadow-black/20
+                        transition-all duration-500
+                        hover:-translate-y-3
+                        hover:scale-[1.03]
+                        hover:border-white/30
+                        hover:bg-white/15">
+
+                        <div class="relative h-44 md:h-[140px] overflow-hidden">
+
+                            <img src="/Frontend/img/hero_section/yesssoft.png" alt="Creative Design" class="w-full h-full object-cover
+                                transition-transform duration-700
+                                group-hover:scale-110">
+
+                            <div class="absolute inset-0 bg-gradient-to-t
+                                from-black/80 via-black/20 to-transparent">
+                            </div>
+
+                            <div class="absolute -bottom-3 left-0 right-0 p-4">
+
+                                <h3 class="text-white text-center font-semibold text-[12px]">
+                                    Software Solution
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<style>
+    .hero-service-card {
+        will-change: transform;
+    }
+
+    /* Different floating movement for each card */
+    .floating-card-1 {
+        animation: floatingCard1 5s ease-in-out infinite;
+    }
+
+    .floating-card-2 {
+        animation: floatingCard2 6s ease-in-out infinite;
+    }
+
+    .floating-card-3 {
+        animation: floatingCard3 5.5s ease-in-out infinite;
+    }
+
+    .floating-card-4 {
+        animation: floatingCard4 6.5s ease-in-out infinite;
+    }
+
+
+    @keyframes floatingCard1 {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(-10px) rotate(-0.5deg);
+        }
+
+    }
+
+
+    @keyframes floatingCard2 {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(12px) rotate(0.5deg);
+        }
+
+    }
+
+
+    @keyframes floatingCard3 {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(9px) rotate(-0.5deg);
+        }
+
+    }
+
+
+    @keyframes floatingCard4 {
+
+        0%,
+        100% {
+            transform: translateY(0px) rotate(0deg);
+        }
+
+        50% {
+            transform: translateY(-12px) rotate(0.5deg);
+        }
+
+    }
+
+
+    /* Pause floating when hovering */
+    .hero-service-card:hover {
+        animation-play-state: paused;
+    }
+
+
+    /* Mobile adjustment */
+    @media (max-width: 767px) {
+
+        .hero-service-card .relative.h-44 {
+            height: 170px;
+        }
+
+    }
+
+
+    /* Accessibility */
+    @media (prefers-reduced-motion: reduce) {
+
+        .hero-service-card {
+            animation: none !important;
+            transition: none !important;
+        }
+
+    }
+</style>
+
+<script>
+    // OPTIMIZATION: mobileMenuBtn may not exist on every page — guard against null
+    // so a missing element doesn't throw and block the rest of the script from running.
+    document.addEventListener('DOMContentLoaded', function() {
+        lucide.createIcons();
+
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const mobileMenuClose = document.getElementById('mobileMenuClose');
+
+        if (mobileMenuBtn && mobileMenu) {
+            mobileMenuBtn.addEventListener('click', () => {
+                mobileMenu.classList.remove('hidden');
+                mobileMenu.classList.add('flex');
+            });
+        }
+        if (mobileMenuClose && mobileMenu) {
+            mobileMenuClose.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                mobileMenu.classList.remove('flex');
+            });
+        }
+    });
+</script>
+
+<!-- Ready when you are -->
+<main class="bg-aliceblue relative flex-1 flex items-center justify-center px-5 sm:px-8 py-4 sm:py-8">
+    <div class="w-full max-w-7xl space-y-8 sm:space-y-10">
+
+        <!-- Header Section -->
+        <div class="text-center space-y-3 fade-up fade-up-d1">
+            <p class="text-[11px] uppercase tracking-[0.18em] text-zinc-400 font-medium">Ready when you are</p>
+            <h1
+                class="serif italic text-xl sm:text-2xl md:text-3xl lg:text-4xl text-zinc-800 leading-snug tracking-tight font-bold">
+                Let's build what's next <span class="text-[#328f6c]">—</span> together.
+            </h1>
+            <p class="text-sm sm:text-[15px] text-zinc-400 max-w-lg mx-auto leading-relaxed">Talk to our team, browse
+                what we deliver, or take our profile with you.</p>
+        </div>
+
+        <!-- Section Label -->
+        <div class="fade-up fade-up-d2">
+            <p class="text-[10px] uppercase tracking-[0.15em] text-zinc-400 font-semibold px-1">What we do <span
+                    class="text-zinc-300 mx-1">·</span> Yess Bangla Ventures at a glance</p>
+        </div>
+
+        <!-- Two Column Layout -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-5 items-start">
+
+            <!-- LEFT: Ecosystem Cards -->
+            <div class="lg:col-span-5 fade-up fade-up-d3">
+                <div class="grid grid-cols-3 gap-3">
+                                            <a href="https://yessbd.com/ventures/5?type=Shondhaan"
+                            class="group flex flex-col max-h-[180px] bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-[#328f6c]/40 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div class="aspect-square overflow-hidden h-full p-3">
+                                <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png"
+                                    alt="Shondhaan" width="300"
+                                    height="300" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2.5 pb-2.5 h-1/3">
+                                <h3
+                                    class="text-[14px] font-semibold text-black group-hover:text-[#328f6c] transition-colors truncate">
+                                    Shondhaan</h3>
+                                <p class="text-[10px] text-zinc-400 mt-0.5 truncate">Home &amp; Professional Services</p>
+                            </div>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/8?type=Organic%20Haat"
+                            class="group flex flex-col max-h-[180px] bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-[#328f6c]/40 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div class="aspect-square overflow-hidden h-full p-3">
+                                <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png"
+                                    alt="Organic Haat" width="300"
+                                    height="300" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2.5 pb-2.5 h-1/3">
+                                <h3
+                                    class="text-[14px] font-semibold text-black group-hover:text-[#328f6c] transition-colors truncate">
+                                    Organic Haat</h3>
+                                <p class="text-[10px] text-zinc-400 mt-0.5 truncate">Organic Marketplace</p>
+                            </div>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/7?type=Yess%20Host"
+                            class="group flex flex-col max-h-[180px] bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-[#328f6c]/40 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div class="aspect-square overflow-hidden h-full p-3">
+                                <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png"
+                                    alt="Yess Host" width="300"
+                                    height="300" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2.5 pb-2.5 h-1/3">
+                                <h3
+                                    class="text-[14px] font-semibold text-black group-hover:text-[#328f6c] transition-colors truncate">
+                                    Yess Host</h3>
+                                <p class="text-[10px] text-zinc-400 mt-0.5 truncate">Hosting &amp; Cloud Infrastructure</p>
+                            </div>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/9?type=Akash%20OTT"
+                            class="group flex flex-col max-h-[180px] bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-[#328f6c]/40 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div class="aspect-square overflow-hidden h-full p-3">
+                                <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png"
+                                    alt="Akash OTT" width="300"
+                                    height="300" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2.5 pb-2.5 h-1/3">
+                                <h3
+                                    class="text-[14px] font-semibold text-black group-hover:text-[#328f6c] transition-colors truncate">
+                                    Akash OTT</h3>
+                                <p class="text-[10px] text-zinc-400 mt-0.5 truncate">Streaming Platform</p>
+                            </div>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/10?type=Yess%20Soft"
+                            class="group flex flex-col max-h-[180px] bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-[#328f6c]/40 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div class="aspect-square overflow-hidden h-full p-3">
+                                <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png"
+                                    alt="Yess Soft" width="300"
+                                    height="300" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2.5 pb-2.5 h-1/3">
+                                <h3
+                                    class="text-[14px] font-semibold text-black group-hover:text-[#328f6c] transition-colors truncate">
+                                    Yess Soft</h3>
+                                <p class="text-[10px] text-zinc-400 mt-0.5 truncate">Software &amp; IT Solutions</p>
+                            </div>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/6?type=Yess%20Event"
+                            class="group flex flex-col max-h-[180px] bg-white border border-zinc-200 rounded-xl overflow-hidden hover:border-[#328f6c]/40 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div class="aspect-square overflow-hidden h-full p-3">
+                                <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png"
+                                    alt="Yess Event" width="300"
+                                    height="300" loading="lazy" decoding="async"
+                                    class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-transform duration-500">
+                            </div>
+                            <div class="px-2.5 pb-2.5 h-1/3">
+                                <h3
+                                    class="text-[14px] font-semibold text-black group-hover:text-[#328f6c] transition-colors truncate">
+                                    Yess Event</h3>
+                                <p class="text-[10px] text-zinc-400 mt-0.5 truncate">Event Management</p>
+                            </div>
+                        </a>
+                                    </div>
+            </div>
+
+            <!-- RIGHT: Company Profile + Actions -->
+            <div class="lg:col-span-7 space-y-4 fade-up fade-up-d4">
+
+                <!-- Company Profile -->
+                <div class="bg-white border border-zinc-200 rounded-2xl p-5 sm:p-7 shadow-xl shadow-zinc-200/50">
+                    <p class="text-[10px] uppercase tracking-[0.2em] text-[#328f6c] font-semibold mb-1">Choose your edition</p>
+                    <h2 class="text-lg sm:text-xl font-bold text-zinc-900 tracking-tight mb-5">Company Profile <span
+                            class="text-zinc-400 font-normal">· PDF</span></h2>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                        <!-- English -->
+                        <div
+                            class="group relative bg-zinc-50 border border-zinc-200 rounded-xl p-4 hover:border-[#328f6c]/40 hover:bg-[#328f6c]/5 transition-all duration-200">
+                            <div class="flex items-start justify-between mb-3">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-white border border-zinc-200 flex items-center justify-center group-hover:bg-[#328f6c]/10 group-hover:border-[#328f6c]/30 transition-all duration-200">
+                                    <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#328f6c] transition-colors"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                                    </svg>
+                                </div>
+                                <span
+                                    class="text-[10px] uppercase tracking-wider text-zinc-400 font-semibold bg-white px-2 py-0.5 rounded-md border border-zinc-200">EN</span>
+                            </div>
+                            <h3 class="text-sm font-semibold text-zinc-800 mb-1">English Edition</h3>
+                            <div class="space-y-0.5 mb-3">
+                                <p class="text-[11px] text-zinc-400">17 pages</p>
+                                <p class="text-[11px] text-zinc-400">v1.1 · May 9, 2026</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <svg class="w-3 h-3 text-zinc-300" fill="none" stroke="currentColor"
+                                        stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                    </svg>
+                                    <span class="text-[10px] text-zinc-400 font-medium">PIN protected</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button type="button" class="_df_button download-btn flex border-0 items-center bg-[#328f6c] hover:bg-[#2a7a5c] text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm shadow-[#328f6c]/20"
+                                            source="https://yessbd.com/uploads/site-files/company_profile_en_6a8a9131a594d.pdf">
+                                        Open
+                                    </button>
+                                    <button type="button" data-download-request data-download-name="English Edition"
+                                        data-download-url="https://yessbd.com/uploads/site-files/company_profile_en_6a8a9131a594d.pdf"
+                                        class="download-btn flex items-center gap-1.5 bg-[#328f6c] hover:bg-[#2a7a5c] text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm shadow-[#328f6c]/20">
+                                        <svg class="w-3.5 h-3.5 btn-arrow" fill="none" stroke="currentColor"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                        </svg>
+                                        <span class="btn-label">Download</span>
+                                        <svg class="w-3.5 h-3.5 btn-tick hidden" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                    </button>
+                                    <!-- <button type="button" onclick="handleDownload(this, 'English Edition', 'https://yessbd.com/uploads/site-files/company_profile_en_6a8a9131a594d.pdf')"
+                                        class="hidden download-btn items-center gap-1.5 bg-[#328f6c] hover:bg-[#2a7a5c] text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm shadow-[#328f6c]/20">
+                                        <svg class="w-3.5 h-3.5 btn-arrow" fill="none" stroke="currentColor"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                        </svg>
+                                        <span class="btn-label">Download</span>
+                                        <svg class="w-3.5 h-3.5 btn-tick hidden" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Bangla -->
+                        <div
+                            class="group relative bg-zinc-50 border border-zinc-200 rounded-xl p-4 hover:border-[#328f6c]/40 hover:bg-[#328f6c]/5 transition-all duration-200">
+                            <div class="flex items-start justify-between mb-3">
+                                <div
+                                    class="w-10 h-10 rounded-xl bg-white border border-zinc-200 flex items-center justify-center group-hover:bg-[#328f6c]/10 group-hover:border-[#328f6c]/30 transition-all duration-200">
+                                    <svg class="w-5 h-5 text-zinc-400 group-hover:text-[#328f6c] transition-colors"
+                                        fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m5.231 13.481L15 17.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v16.5c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Zm3.75 11.625a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z" />
+                                    </svg>
+                                </div>
+                                <span
+                                    class="text-[10px] uppercase tracking-wider text-zinc-400 font-semibold bg-white px-2 py-0.5 rounded-md border border-zinc-200">BN</span>
+                            </div>
+                            <h3 class="text-sm font-semibold text-zinc-800 mb-1">বাংলা সংস্করণ</h3>
+                            <div class="space-y-0.5 mb-3">
+                                <p class="text-[11px] text-zinc-400">১৭ পৃষ্ঠা</p>
+                                <p class="text-[11px] text-zinc-400">v1.2 · মে ৯, ২০২৬</p>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-center gap-1.5">
+                                    <svg class="w-3 h-3 text-zinc-300" fill="none" stroke="currentColor"
+                                        stroke-width="2" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
+                                            d="M16.5 10.5V6.75a4.5 4.5 0 1 0-9 0v3.75m-.75 11.25h10.5a2.25 2.25 0 0 0 2.25-2.25v-6.75a2.25 2.25 0 0 0-2.25-2.25H6.75a2.25 2.25 0 0 0-2.25 2.25v6.75a2.25 2.25 0 0 0 2.25 2.25Z" />
+                                    </svg>
+                                    <span class="text-[10px] text-zinc-400 font-medium">PIN সুরক্ষিত</span>
+                                </div>
+                                <div class="flex gap-2">
+                                    <button type="button" class="_df_button download-btn border-0 flex items-center bg-[#328f6c] hover:bg-[#2a7a5c] text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm shadow-[#328f6c]/20"
+                                            source="https://yessbd.com/uploads/site-files/company_profile_bn_6a8a9131a5dd3.pdf">
+                                        Open
+                                    </button>
+                                    <button type="button" data-download-request data-download-name="বাংলা সংস্করণ"
+                                        data-download-url="https://yessbd.com/uploads/site-files/company_profile_bn_6a8a9131a5dd3.pdf"
+                                        class="flex download-btn items-center gap-1.5 bg-[#328f6c] hover:bg-[#2a7a5c] text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm shadow-[#328f6c]/20">
+                                        <svg class="w-3.5 h-3.5 btn-arrow" fill="none" stroke="currentColor"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                        </svg>
+                                        <span class="btn-label">Download</span>
+                                        <svg class="w-3.5 h-3.5 btn-tick hidden" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                    </button>
+                                    <!-- <button type="button" onclick="handleDownload(this, 'বাংলা সংস্করণ', 'https://yessbd.com/uploads/site-files/company_profile_bn_6a8a9131a5dd3.pdf')"
+                                        class="hidden download-btn items-center gap-1.5 bg-[#328f6c] hover:bg-[#2a7a5c] text-white text-[11px] font-semibold px-3 py-1.5 rounded-lg transition-all duration-200 active:scale-95 shadow-sm shadow-[#328f6c]/20">
+                                        <svg class="w-3.5 h-3.5 btn-arrow" fill="none" stroke="currentColor"
+                                            stroke-width="2" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M3 16.5v2.25A2.25 2.25 0 0 0 5.25 21h13.5A2.25 2.25 0 0 0 21 18.75V16.5M16.5 12 12 16.5m0 0L7.5 12m4.5 4.5V3" />
+                                        </svg>
+                                        <span class="btn-label">Download</span>
+                                        <svg class="w-3.5 h-3.5 btn-tick hidden" fill="none" stroke="currentColor"
+                                            stroke-width="2.5" viewBox="0 0 24 24">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="m4.5 12.75 6 6 9-13.5" />
+                                        </svg>
+                                    </button> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Us & Explore Services -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 fade-up fade-up-d5">
+
+                    <!-- Contact Us Card -->
+                    <a href="#"
+                        class="group bg-white border border-zinc-200 rounded-xl p-5 hover:border-[#328f6c]/30 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                        <div
+                            class="w-11 h-11 rounded-xl bg-[#328f6c]/10 border border-[#328f6c]/20 flex items-center justify-center mb-3.5 group-hover:bg-[#328f6c]/20 transition-colors duration-200">
+                            <svg class="w-5 h-5 text-[#328f6c]" fill="none" stroke="currentColor" stroke-width="1.5"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round"
+                                    d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>
+                        </div>
+                        <h3 class="text-sm font-semibold text-zinc-800 group-hover:text-zinc-900 transition-colors">
+                            Contact us</h3>
+                        <p class="text-[11px] text-zinc-400 mt-1 leading-relaxed">Replies within a working day</p>
+                        <div class="flex items-center gap-1.5 mt-3.5 text-[#328f6c]">
+                            <span class="text-[11px] font-semibold">Get in touch</span>
+                            <svg class="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform duration-200"
+                                fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                            </svg>
+                        </div>
+                    </a>
+
+                    <!-- Explore Services Card -->
+                    <div class="relative">
+                        <button id="servicesBtn"
+                            class="group w-full text-left bg-white border border-zinc-200 rounded-xl p-5 hover:border-[#328f6c]/30 hover:shadow-lg hover:shadow-[#328f6c]/8 transition-all duration-200">
+                            <div
+                                class="w-11 h-11 rounded-xl bg-[#328f6c]/10 border border-[#328f6c]/20 flex items-center justify-center mb-3.5 group-hover:bg-[#328f6c]/20 transition-colors duration-200">
+                                <svg class="w-5 h-5 text-[#328f6c]" fill="none" stroke="currentColor" stroke-width="1.5"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+                                </svg>
+                            </div>
+                            <h3 class="text-sm font-semibold text-zinc-800 group-hover:text-zinc-900 transition-colors">
+                                Explore services</h3>
+                            <p class="text-[11px] text-zinc-400 mt-1 leading-relaxed">Consulting, IT & more</p>
+                            <div class="flex items-center gap-1.5 mt-3.5 text-[#328f6c]">
+                                <span class="text-[11px] font-semibold">View all</span>
+                                <svg id="servicesArrow" class="w-3.5 h-3.5 transition-transform duration-200"
+                                    fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
+                                        d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div id="servicesDropdown"
+                            class="hidden absolute left-0 right-0 top-full mt-2 bg-white border border-zinc-200 rounded-xl overflow-hidden shadow-xl shadow-zinc-200/60 z-10">
+                            <a href="#"
+                                class="flex items-center gap-3 px-4 py-2.5 hover:bg-zinc-50 transition-colors duration-150 border-b border-zinc-100">
+                                <div
+                                    class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center text-[10px] font-bold text-zinc-500 shrink-0">
+                                    IT</div>
+                                <div>
+                                    <p class="text-[13px] text-zinc-700 font-medium">IT Solutions</p>
+                                    <p class="text-[10px] text-zinc-400">Software, Infrastructure & Cloud</p>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-3 px-4 py-2.5 hover:bg-zinc-50 transition-colors duration-150 border-b border-zinc-100">
+                                <div
+                                    class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center text-[10px] font-bold text-zinc-500 shrink-0">
+                                    CN</div>
+                                <div>
+                                    <p class="text-[13px] text-zinc-700 font-medium">Consulting</p>
+                                    <p class="text-[10px] text-zinc-400">Strategy, Growth & Operations</p>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-3 px-4 py-2.5 hover:bg-zinc-50 transition-colors duration-150 border-b border-zinc-100">
+                                <div
+                                    class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center text-[10px] font-bold text-zinc-500 shrink-0">
+                                    DM</div>
+                                <div>
+                                    <p class="text-[13px] text-zinc-700 font-medium">Digital Marketing</p>
+                                    <p class="text-[10px] text-zinc-400">SEO, Ads & Social Media</p>
+                                </div>
+                            </a>
+                            <a href="#"
+                                class="flex items-center gap-3 px-4 py-2.5 hover:bg-zinc-50 transition-colors duration-150">
+                                <div
+                                    class="w-7 h-7 rounded-lg bg-zinc-100 flex items-center justify-center text-[10px] font-bold text-zinc-500 shrink-0">
+                                    DS</div>
+                                <div>
+                                    <p class="text-[13px] text-zinc-700 font-medium">Design Services</p>
+                                    <p class="text-[10px] text-zinc-400">Branding, UI/UX & Graphics</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</main>
+
+<!-- about section start -->
+<section class="relative overflow-hidden bg-white">
+
+    <!-- Subtle decorative blurs -->
+    <div
+        class="absolute top-1/2 -left-40 w-[500px] h-[500px] bg-brand-accent rounded-full opacity-[0.06] blur-3xl pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand-dark rounded-full opacity-[0.04] blur-3xl pointer-events-none">
+    </div>
+
+    <div class="relative max-w-7xl mx-auto px-4 py-8 md:py-10 lg:py-12">
+
+        <!-- ========== MAIN GRID ========== -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
+
+            <!-- ===== LEFT: Image + Badge ===== -->
+            <div class="lg:col-span-5 relative order-1">
+
+                <div class="relative group">
+                    <!-- Main image -->
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl shadow-brand-dark/10">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=900&fit=crop&q=80"
+                            alt="IT company team group photo" width="700" height="900" loading="lazy" decoding="async"
+                            class="w-full h-[420px] sm:h-[500px] lg:h-[560px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-t from-brand-dark/80 via-brand-dark/20 to-transparent">
+                        </div>
+                    </div>
+
+                    <!-- Project Badge -->
+                    <div class="absolute bottom-5 left-5 right-5 sm:bottom-6 sm:left-6 sm:right-auto">
+                        <div
+                            class="bg-white/20 backdrop-blur-sm rounded-xl px-6 py-5 sm:px-8 sm:py-6 shadow-xl shadow-brand-dark/10 border border-slate-100">
+                            <div class="flex items-end gap-3">
+                                <span class="text-white font-serif text-5xl sm:text-6xl leading-none">27+</span>
+                                <div class="pb-1">
+                                    <span
+                                        class="block text-white text-xs font-semibold tracking-[0.15em] uppercase">Completed</span>
+                                    <span class="block text-white text-sm font-medium">Projects</span>
+                                </div>
+                            </div>
+                            <div class="mt-3 w-10 h-1 bg-brand-accent rounded-full"></div>
+                        </div>
+                    </div>
+
+                    <!-- Decorative outline behind -->
+                    <div
+                        class="absolute -z-10 -bottom-4 -left-4 w-full h-full border-2 border-brand-accent/20 rounded-2xl transition-all duration-500 group-hover:-bottom-5 group-hover:-left-5">
+                    </div>
+                </div>
+
+                <!-- Floating small image — pure Tailwind -->
+                <div
+                    class="hidden absolute -top-6 -right-6 w-36 h-36 rounded-xl overflow-hidden shadow-xl border-4 border-white animate-float hover:animate-none hover:rotate-0 cursor-pointer">
+                    <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=300&h=300&fit=crop&q=80"
+                        alt="Team celebration high five" width="300" height="300" loading="lazy" decoding="async"
+                        class="w-full h-full object-cover">
+                </div>
+
+            </div>
+
+            <!-- ===== RIGHT: Content ===== -->
+            <div class="lg:col-span-7 order-2">
+
+                <!-- Badge -->
+                <div
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-brand-dark text-white text-xs font-medium tracking-[0.2em] uppercase mb-4">
+                    <span class="w-2 h-2 rounded-full bg-brand-accent animate-pulse"></span>
+                    Simply Know About
+                </div>
+
+                <!-- Heading -->
+                <h2
+                    class="font-serif text-2xl sm:text-3xl lg:text-[1.6rem] lg:whitespace-nowrap font-normal tracking-tight text-brand-dark leading-[1.08] mb-6">
+                    We Help People To Make Their Businesses
+                    <span class="relative inline-block">
+                        <span class="relative z-10">Next Level</span>
+                        <span class="absolute bottom-1 left-0 w-full h-3 bg-brand-accent/40 -z-0 rounded-sm"></span>
+                    </span>
+                </h2>
+
+                <!-- Service Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-10">
+
+                    <!-- Card 1 -->
+                    <div
+                        class="group relative bg-slate-50 rounded-xl p-7 border border-slate-200/60 transition-all duration-500 hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 hover:border-brand-accent/40 hover:-translate-y-1 cursor-default">
+                        <div
+                            class="w-12 h-12 rounded-lg border border-primary bg-brand-dark flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-brand-accent">
+                            <i data-lucide="briefcase"
+                                class="w-5 h-5 text-brand-accent transition-colors duration-300 group-hover:text-primary"></i>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-normal text-brand-dark mb-2 tracking-tight">
+                            Business Solutions</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed font-light">Efficient services to optimize
+                            business operations and drive sustainable growth.</p>
+                        <div
+                            class="absolute bottom-0 left-6 right-6 h-0.5 bg-gradient-to-r from-brand-accent/0 via-brand-accent/60 to-brand-accent/0 scale-x-0 transition-transform duration-500 group-hover:scale-x-100 origin-center rounded-full">
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div
+                        class="group relative bg-slate-50 rounded-xl p-7 border border-slate-200/60 transition-all duration-500 hover:bg-white hover:shadow-xl hover:shadow-slate-200/50 hover:border-brand-accent/40 hover:-translate-y-1 cursor-default">
+                        <div
+                            class="w-12 h-12 rounded-lg border border-primary flex items-center justify-center mb-5 transition-all duration-300 group-hover:bg-brand-accent">
+                            <i data-lucide="shield-check"
+                                class="w-5 h-5 text-brand-accent transition-colors duration-300 group-hover:text-primary"></i>
+                        </div>
+                        <h3 class="font-serif text-xl sm:text-2xl font-normal text-brand-dark mb-2 tracking-tight">
+                            Quality Services</h3>
+                        <p class="text-slate-500 text-sm leading-relaxed font-light">Reliable, efficient, and
+                            customer-focused solutions built on trust and precision.</p>
+                        <div
+                            class="absolute bottom-0 left-6 right-6 h-0.5 bg-gradient-to-r from-brand-accent/0 via-brand-accent/60 to-brand-accent/0 scale-x-0 transition-transform duration-500 group-hover:scale-x-100 origin-center rounded-full">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-base sm:text-lg text-slate-500 leading-relaxed font-light max-w-xl">
+                    We cope with tasks of various complexity levels, provide long-term guarantees, and regularly master
+                    new technologies for specific areas of practice. Our portfolio includes
+                    <span class="text-brand-dark font-medium">dozens</span>
+                    of successfully delivered projects.
+                </p>
+
+                <!-- CTA -->
+                <div class="mt-8 flex flex-wrap items-center gap-4">
+                    <a href="#"
+                        class="border border-primary bg-primarydark rounded-full inline-flex items-center gap-2 text-white px-7 py-3.5 text-sm font-medium tracking-wide hover:bg-brand-accent-hover hover:-translate-y-0.5 transition-all duration-300 shadow-sm hover:shadow-md">
+                        Learn More
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </a>
+                    <a href="#"
+                        class="inline-flex border border-primary rounded-full px-7 py-3.5 items-center gap-2 text-primary text-sm font-medium hover:text-brand-dark-hover transition-colors duration-150 group/btn">
+                        View Portfolio
+                        <i data-lucide="arrow-up-right"
+                            class="w-4 h-4 transition-transform duration-150 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5"></i>
+                    </a>
+                </div>
+
+                <!-- Divider -->
+                <div class="hidden sm:flex items-center gap-3 mt-10">
+                    <span class="w-10 h-px bg-slate-200"></span>
+                    <span class="w-1.5 h-1.5 rounded-full bg-brand-accent"></span>
+                    <span class="w-10 h-px bg-slate-200"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- about section end -->
+
+<!-- Our service section start -->
+<section class="py-12 bg-aliceblue md:py-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+
+    <!-- Decorative Background Elements -->
+    <div
+        class="absolute top-20 -left-32 w-80 h-80 bg-forest-200/30 dark:bg-forest-800/20 rounded-full blur-3xl float-anim -z-10">
+    </div>
+    <div
+        class="absolute bottom-10 -right-24 w-96 h-96 bg-forest-100/40 dark:bg-forest-900/30 rounded-full blur-3xl float-anim-delay -z-10">
+    </div>
+    <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-forest-500/5 dark:bg-forest-400/3 rounded-full blur-3xl float-anim-delay-2 -z-10">
+    </div>
+
+    <!-- Subtle Grid Pattern -->
+    <div class="absolute inset-0 opacity-[0.03] dark:opacity-[0.05] -z-10"
+        style="background-image: radial-gradient(circle, #355B4F 1px, transparent 1px); background-size: 32px 32px;">
+    </div>
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Section Header -->
+        <div class="text-center max-w-3xl mx-auto mb-4">
+            <div
+                class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-primary/40 border border-primary mb-7">
+                <span class="w-2 h-2 rounded-full bg-primary shadow-[0_0_8px_rgba(53,91,79,0.5)]"></span>
+                <span class="text-xs font-semibold uppercase tracking-[0.15em] text-primary">Our Services</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold tracking-tight text-primary leading-[1.15] mb-4">
+                What We Offer</span>
+            </h2>
+            <p class="text-base sm:text-lg text-black/80 leading-relaxed max-w-2xl mx-auto">
+                We offer effective wide-area business solutions designed to empower brands and businesses across
+                Bangladesh with cutting-edge technology.
+            </p>
+            <!-- Decorative Line -->
+            <div class="mt-8 flex items-center justify-center gap-2">
+                <span class="w-8 h-px bg-forest-300 dark:bg-forest-700"></span>
+                <span class="w-2 h-2 rounded-full border-2 border-forest-400 dark:border-forest-600"></span>
+                <span class="w-8 h-px bg-forest-300 dark:bg-forest-700"></span>
+            </div>
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-5">
+
+            <!-- Card 1: Akash OTT -->
+            <div class="card-glow group relative bg-gradient-to-br from-primary to-primarydark border border-forest-100 dark:border-forest-800/60 rounded-2xl p-5 md:p-6 hover:shadow-2xl hover:shadow-forest-500/8 dark:hover:shadow-forest-400/5 hover:border-forest-300 dark:hover:border-forest-600 transition-all duration-300 hover:-translate-y-1"
+                style="--glow-color: #355B4F;">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-white/15 backdrop-blur-sm border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+                    <i data-lucide="tv" class="w-7 h-7 text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-white mb-3">Shondhaan</h3>
+                <p class="text-white text-sm leading-relaxed">A new Bangladeshi digital
+                    streaming platform launched by YESS Bangla Communications under Akash TV, bringing premium
+                    entertainment to your screens.</p>
+                <div
+                    class="mt-6 pt-5 border-t border-forest-50 dark:border-forest-800/40 flex items-center justify-between">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-xs font-medium text-white bg-forest-50 dark:bg-forest-800/40 px-3 py-1 rounded-full">
+                        <i data-lucide="play-circle" class="w-3.5 h-3.5"></i> Streaming
+                    </span>
+                    <div
+                        class="flex items-center gap-1.5 text-white text-sm font-medium group-hover:gap-2.5 transition-all duration-300">
+                        <span>Explore</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Akash News -->
+            <div class="card-glow group relative bg-white dark:bg-forest-900/50 border border-forest-100 dark:border-forest-800/60 rounded-2xl p-5 md:p-6 hover:shadow-2xl hover:shadow-forest-500/8 dark:hover:shadow-forest-400/5 hover:border-forest-300 dark:hover:border-forest-600 transition-all duration-300 hover:-translate-y-1"
+                style="--glow-color: #2D6B5A;">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primarydark flex items-center justify-center mb-6 shadow-lg shadow-[#2D6B5A]/20 group-hover:shadow-[#2D6B5A]/40 group-hover:scale-110 transition-all duration-300">
+                    <i data-lucide="newspaper" class="w-7 h-7 text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">Akash News</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">A new Bangladeshi digital news
+                    streaming platform launched by YESS Bangla Communications under Akash, delivering real-time news you
+                    can trust.</p>
+                <div
+                    class="mt-6 pt-5 border-t border-forest-50 dark:border-forest-800/40 flex items-center justify-between">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-xs font-medium text-[#2D6B5A] dark:text-[#7DB89D] bg-[#2D6B5A]/8 dark:bg-[#2D6B5A]/15 px-3 py-1 rounded-full">
+                        <i data-lucide="radio" class="w-3.5 h-3.5"></i> News
+                    </span>
+                    <div
+                        class="flex items-center gap-1.5 text-[#2D6B5A] dark:text-[#7DB89D] text-sm font-medium group-hover:gap-2.5 transition-all duration-300">
+                        <span>Explore</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3: YESS One Stop Solution -->
+            <div class="card-glow group relative bg-white dark:bg-forest-900/50 border border-forest-100 dark:border-forest-800/60 rounded-2xl p-5 md:p-6 hover:shadow-2xl hover:shadow-forest-500/8 dark:hover:shadow-forest-400/5 hover:border-forest-300 dark:hover:border-forest-600 transition-all duration-300 hover:-translate-y-1"
+                style="--glow-color: #3F6E5B;">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primarydark flex items-center justify-center mb-6 shadow-lg shadow-[#3F6E5B]/20 group-hover:shadow-[#3F6E5B]/40 group-hover:scale-110 transition-all duration-300">
+                    <i data-lucide="layout-grid" class="w-7 h-7 text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">YESS One Stop Solution</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Comprehensive service provider
+                    offering technology solutions, IT support, home services like cleaning, and all types of home
+                    services from one platform.</p>
+                <div
+                    class="mt-6 pt-5 border-t border-forest-50 dark:border-forest-800/40 flex items-center justify-between">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-xs font-medium text-[#3F6E5B] dark:text-[#7DB89D] bg-[#3F6E5B]/8 dark:bg-[#3F6E5B]/15 px-3 py-1 rounded-full">
+                        <i data-lucide="wrench" class="w-3.5 h-3.5"></i> Services
+                    </span>
+                    <div
+                        class="flex items-center gap-1.5 text-[#3F6E5B] dark:text-[#7DB89D] text-sm font-medium group-hover:gap-2.5 transition-all duration-300">
+                        <span>Explore</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4: Web Development -->
+            <div class="card-glow group relative bg-white dark:bg-forest-900/50 border border-forest-100 dark:border-forest-800/60 rounded-2xl p-5 md:p-6 hover:shadow-2xl hover:shadow-forest-500/8 dark:hover:shadow-forest-400/5 hover:border-forest-300 dark:hover:border-forest-600 transition-all duration-300 hover:-translate-y-1"
+                style="--glow-color: #4A7A6A;">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primarydark flex items-center justify-center mb-6 shadow-lg shadow-[#4A7A6A]/20 group-hover:shadow-[#4A7A6A]/40 group-hover:scale-110 transition-all duration-300">
+                    <i data-lucide="code-2" class="w-7 h-7 text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">Web Development</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Full-stack development using HTML,
+                    CSS, JavaScript, PHP, and Laravel. We handle both frontend and backend with responsive design for
+                    all devices.</p>
+                <div
+                    class="mt-6 pt-5 border-t border-forest-50 dark:border-forest-800/40 flex items-center justify-between">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-xs font-medium text-[#4A7A6A] dark:text-[#7DB89D] bg-[#4A7A6A]/8 dark:bg-[#4A7A6A]/15 px-3 py-1 rounded-full">
+                        <i data-lucide="terminal" class="w-3.5 h-3.5"></i> Development
+                    </span>
+                    <div
+                        class="flex items-center gap-1.5 text-[#4A7A6A] dark:text-[#7DB89D] text-sm font-medium group-hover:gap-2.5 transition-all duration-300">
+                        <span>Explore</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5: Web Design -->
+            <div class="card-glow group relative bg-white dark:bg-forest-900/50 border border-forest-100 dark:border-forest-800/60 rounded-2xl p-5 md:p-6 hover:shadow-2xl hover:shadow-forest-500/8 dark:hover:shadow-forest-400/5 hover:border-forest-300 dark:hover:border-forest-600 transition-all duration-300 hover:-translate-y-1"
+                style="--glow-color: #2E5454;">
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primarydark flex items-center justify-center mb-6 shadow-lg shadow-[#2E5454]/20 group-hover:shadow-[#2E5454]/40 group-hover:scale-110 transition-all duration-300">
+                    <i data-lucide="palette" class="w-7 h-7 text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-slate-900 dark:text-white mb-3">Web Design</h3>
+                <p class="text-slate-500 dark:text-slate-400 text-sm leading-relaxed">Creating visually appealing and
+                    functional websites by combining layout, color, typography, and user-friendly elements for an
+                    enhanced experience across all devices.</p>
+                <div
+                    class="mt-6 pt-5 border-t border-forest-50 dark:border-forest-800/40 flex items-center justify-between">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-xs font-medium text-[#2E5454] dark:text-[#7DB89D] bg-[#2E5454]/8 dark:bg-[#2E5454]/15 px-3 py-1 rounded-full">
+                        <i class="fa-brands fa-figma"></i> Design
+                    </span>
+                    <div
+                        class="flex items-center gap-1.5 text-[#2E5454] dark:text-[#7DB89D] text-sm font-medium group-hover:gap-2.5 transition-all duration-300">
+                        <span>Explore</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6: Yess Bangla Shop -->
+            <div class="card-glow group relative bg-white border border-forest-400/30 dark:border-forest-500/30 rounded-2xl p-5 md:p-6 hover:shadow-2xl hover:shadow-forest-500/20 transition-all duration-300 hover:-translate-y-1"
+                style="--glow-color: #C9982E;">
+                <!-- Gold accent glow on hover -->
+                <div
+                    class="absolute top-0 left-0 right-0 h-[3px] bg-gradient-to-r from-transparent via-gold-500 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400 rounded-t-2xl">
+                </div>
+                <div
+                    class="w-14 h-14 rounded-2xl bg-gradient-to-br from-primary to-primarydark border border-white/20 flex items-center justify-center mb-6 group-hover:scale-110 group-hover:bg-white/20 transition-all duration-300">
+                    <i data-lucide="shopping-bag" class="w-7 h-7 text-white"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-black mb-3">Yess Bangla Shop</h3>
+                <p class="text-forest-100/80 text-sm leading-relaxed">E-commerce platform for buying and selling goods
+                    online. Faster, convenient shopping with secure digital payments and doorstep delivery from
+                    anywhere.</p>
+                <div class="mt-6 pt-5 border-t border-white/10 flex items-center justify-between">
+                    <span
+                        class="inline-flex items-center gap-1.5 text-xs font-medium text-gold-400 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full">
+                        <i data-lucide="store" class="w-3.5 h-3.5"></i> E-Commerce
+                    </span>
+                    <div
+                        class="flex items-center gap-1.5 text-gold-400 text-sm font-medium group-hover:gap-2.5 transition-all duration-300">
+                        <span>Shop Now</span>
+                        <i data-lucide="arrow-right" class="w-4 h-4"></i>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom CTA -->
+        <div class="mt-14 md:mt-18 text-center">
+            <p class="text-sm text-black mb-5">Need a custom solution for your business?</p>
+            <a href="#"
+                class="inline-flex items-center gap-2.5 px-7 py-3.5 bg-gradient-to-r from-primary to-hover hover:bg-hover hover:text-white text-black text-sm font-semibold rounded-xl shadow-lg hover:shadow-forest-500/40 transition-all duration-200">
+                <span>Contact Us</span>
+                <i class="fa-solid fa-phone"></i>
+            </a>
+        </div>
+
+    </div>
+</section>
+<!-- Our service section end -->
+
+<!-- reviews section start -->
+<section class="relative py-16 px-4 bg-aliceblue">
+    <div class="container mx-auto max-w-6xl">
+
+        <!-- Grid Layout -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <!-- CARD 1 -->
+            <div
+                class="rounded-xl border border-[#0C2C21]/10 bg-white/80 p-6 shadow-sm shadow-[#0C2C21]/5 backdrop-blur-sm transition-transform hover:-translate-y-1 duration-300">
+                <div class="flex items-center gap-5">
+                    <div
+                        class="flex-shrink-0 w-[60px] h-[60px] bg-[#0C2C21]/10 rounded-lg flex items-center justify-center border border-[#0C2C21]/15">
+                        <i data-lucide="briefcase-business" class="w-8 h-8 text-[#0C2C21]"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-4xl font-extrabold text-[#0C2C21] mb-1">27<span class="text-[#328F6C]">+</span>
+                        </p>
+                        <p class="text-sm font-bold text-[#0C2C21]/70 uppercase tracking-wide">Successfully Completed
+                            Projects</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 2 -->
+            <div
+                class="rounded-xl border border-[#0C2C21]/10 bg-white/80 p-6 shadow-sm shadow-[#0C2C21]/5 backdrop-blur-sm transition-transform hover:-translate-y-1 duration-300">
+                <div class="flex items-center gap-5">
+                    <div
+                        class="flex-shrink-0 w-[60px] h-[60px] bg-[#0C2C21]/10 rounded-lg flex items-center justify-center border border-[#0C2C21]/15">
+                        <i data-lucide="users" class="w-8 h-8 text-[#0C2C21]"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-4xl font-extrabold text-[#0C2C21] mb-1">600<span class="text-[#328F6C]">+</span>
+                        </p>
+                        <p class="text-sm font-bold text-[#0C2C21]/70 uppercase tracking-wide">Satisfied 100% Our
+                            Clients</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3 -->
+            <div
+                class="rounded-xl border border-[#0C2C21]/10 bg-white/80 p-6 shadow-sm shadow-[#0C2C21]/5 backdrop-blur-sm transition-transform hover:-translate-y-1 duration-300">
+                <div class="flex items-center gap-5">
+                    <div
+                        class="flex-shrink-0 w-[60px] h-[60px] bg-[#0C2C21]/10 rounded-lg flex items-center justify-center border border-[#0C2C21]/15">
+                        <i data-lucide="map-pin" class="w-8 h-8 text-[#0C2C21]"></i>
+                    </div>
+                    <div class="flex-grow">
+                        <p class="text-4xl font-extrabold text-[#0C2C21] mb-1">BD</p>
+                        <p class="text-sm font-bold text-[#0C2C21]/70 uppercase tracking-wide">All Over The Bangladesh
+                            We Are Available</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- reviews section end -->
+
+<!-- CTA Section -->
+<section class="relative overflow-hidden bg-transparent text-[#0F3D2E]">
+    <div class="absolute z-0 h-full w-full bg-black/50 backdrop-blur-sm"></div>
+    <!-- Background Glow Effects -->
+    <div
+        class="absolute top-0 right-0 w-[500px] h-[500px] rounded-full bg-brand/[0.03] blur-[120px] pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-0 left-0 w-[400px] h-[400px] rounded-full bg-brand/[0.02] blur-[100px] pointer-events-none">
+    </div>
+
+    <!-- Decorative Corner Lines -->
+    <div class="absolute top-2 md:top-8 left-2 md:left-8 w-16 h-16 border-t border-l border-brand/10 rounded-tl-3xl pointer-events-none">
+    </div>
+    <div
+        class="absolute bottom-2 md:bottom-8 right-2 md:right-8 w-16 h-16 border-b border-r border-brand/10 rounded-br-3xl pointer-events-none">
+    </div>
+    <div class="absolute bottom-2 md:bottom-8 left-2 md:left-8 w-16 h-16 border-b border-l border-brand/10 rounded-bl-3xl pointer-events-none">
+    </div>
+    <div
+        class="absolute top-2 md:top-8 right-2 md:right-8 w-16 h-16 border-r border-t border-brand/10 rounded-tr-3xl pointer-events-none">
+    </div>
+
+    <div class="relative max-w-5xl mx-auto px-6 pt-0 pb-8 md:pb-10 lg:pb-12">
+        <div class="flex justify-center mb-10">
+            <div class="w-16 h-[2px] bg-gradient-to-r from-transparent via-brand/30 to-transparent"></div>
+        </div>
+
+        <!-- Main Heading -->
+        <h2
+            class="border-black text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-medium text-center text-white leading-[0.95] tracking-tight mb-6">
+            Offering the best<br class="hidden sm:block">
+            <span class="bg-gradient-to-b from-brand to-brand/60 bg-clip-text text-white">experience of</span><br
+                class="sm:hidden">
+            <span class="relative inline-block ml-1">
+                <span class="text-primary font-semibold">business</span>
+                <svg class="absolute -bottom-2 left-0 w-full" viewBox="0 0 120 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M2 6C20 2 50 1 118 4" stroke="#00faa7" stroke-width="2" stroke-linecap="round"
+                        opacity="0.25" />
+                </svg>
+            </span>
+            and <span class="text-primary font-semibold">IT services</span>.
+        </h2>
+
+        <!-- Description -->
+        <p class="sm:text-lg text-white text-center max-w-2xl mx-auto leading-relaxed mb-12">
+            Tell us about your goals — we'll respond within
+            <span class="text-brand font-medium">one business day</span>
+            with a tailored proposal.
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="flex flex-col sm:flex-row items-center justify-center gap-4 mb-4">
+            <!-- Send a Message -->
+            <a href="#" id="msgBtn"
+                class="group relative w-full sm:w-auto inline-flex items-center justify-center gap-2.5 px-8 py-3.5 bg-primary text-white text-sm font-semibold rounded-full overflow-hidden transition-all duration-300 hover:bg-[#14503B] hover:shadow-[0_0_40px_rgba(15,61,46,0.25)] active:scale-95">
+
+                <span class="relative z-10 flex items-center gap-2.5 text-white transition-colors duration-300">
+                    <svg class="w-4 h-4 text-white" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 01-2.25 2.25h-15a2.25 2.25 0 01-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0019.5 4.5h-15a2.25 2.25 0 00-2.25 2.25m19.5 0v.243a2.25 2.25 0 01-1.07 1.916l-7.5 4.615a2.25 2.25 0 01-2.36 0L3.32 8.91a2.25 2.25 0 01-1.07-1.916V6.75" />
+                    </svg>
+                    Send a message
+                </span>
+
+                <div
+                    class="absolute inset-0 bg-[#14503B] translate-y-full group-hover:translate-y-0 transition-transform duration-300 ease-in-out">
+                </div>
+            </a>
+
+            <!-- Phone Number -->
+            <a href="tel:+8801805464343"
+                class="group w-full sm:w-auto inline-flex items-center justify-center gap-3 px-8 py-3.5 border border-brand/15 rounded-full text-white text-sm font-medium transition-all duration-300 hover:border-brand/30 hover:text-brand hover:bg-brand/[0.04] active:scale-95">
+                <span
+                    class="flex items-center justify-center rounded-full bg-brand/[0.06] transition-all duration-300 group-hover:bg-brand/[0.1]">
+                    <svg class="w-3.5 h-3.5 text-brand/70" fill="none" stroke="currentColor" stroke-width="2"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z" />
+                    </svg>
+                </span>
+                <span class="tracking-wide">+880 1805-464343</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- Company profile download request modal -->
+<div id="downloadRequestModal" class="hidden fixed inset-0 z-[70] overflow-y-auto bg-black/60 px-4 py-8 backdrop-blur-sm"
+    role="dialog" aria-modal="true" aria-labelledby="downloadRequestTitle">
+    <div class="flex min-h-full items-center justify-center">
+        <div class="w-full max-w-md rounded-2xl bg-white p-6 shadow-2xl sm:p-8">
+            <div class="mb-6 flex items-start justify-between gap-4">
+                <div>
+                    <p class="text-[10px] font-semibold uppercase tracking-[0.2em] text-[#328f6c]">Company profile</p>
+                    <h2 id="downloadRequestTitle" class="mt-1 text-xl font-bold text-zinc-900">Send Download Request</h2>
+                    <p class="mt-2 text-sm text-zinc-500">We will send company profile to you email.</p>
+                </div>
+                <button type="button" id="downloadRequestClose" class="rounded-lg p-2 text-zinc-400 transition hover:bg-zinc-100 hover:text-zinc-700"
+                    aria-label="Close download form">
+                    <i data-lucide="x" class="h-5 w-5"></i>
+                </button>
+            </div>
+
+            <form method="POST" action="https://yessbd.com/download-request" class="space-y-4">
+                <input type="hidden" name="_token" value="GHcuqAzmXDSMPdS6HboHhjMvLMe1jj6Fq62lzMDx" autocomplete="off">                <div>
+                    <label for="downloadRequestName" class="mb-1.5 block text-sm font-medium text-zinc-700">Name</label>
+                    <input id="downloadRequestName" name="name" type="text" required autocomplete="name"
+                        class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="Your name">
+                </div>
+                <div>
+                    <label for="downloadRequestEmail" class="mb-1.5 block text-sm font-medium text-zinc-700">Email</label>
+                    <input id="downloadRequestEmail" name="email" type="email" required autocomplete="email"
+                        class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="you@example.com">
+                </div>
+                <div>
+                    <label for="downloadRequestPhone" class="mb-1.5 block text-sm font-medium text-zinc-700">Phone</label>
+                    <input id="downloadRequestPhone" name="phone" type="tel" required autocomplete="tel"
+                        class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="Your phone number">
+                </div>
+                <input type="hidden" name="profile_topic" value="yessbd profile">
+                <div>
+                    <label for="downloadRequestDescription" class="mb-1.5 block text-sm font-medium text-zinc-700">Description <span class="font-normal text-zinc-400">(optional)</span></label>
+                    <textarea id="downloadRequestDescription" name="description" rows="3"
+                        class="w-full resize-y rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"
+                        placeholder="Tell us anything else you would like to share"></textarea>
+                </div>
+                <button type="submit" class="flex w-full items-center justify-center gap-2 rounded-lg bg-[#328f6c] px-4 py-3 text-sm font-semibold text-white transition hover:bg-[#2a7a5c] active:scale-[0.99]">
+                    Send Download Request
+                    <i class="fa-regular fa-paper-plane"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- Toast Notification -->
+<div id="toast"
+    class="fixed bottom-6 right-6 z-50 transform translate-y-4 opacity-0 pointer-events-none transition-all duration-500 ease-out">
+    <div
+        class="flex items-center gap-3 px-5 py-3.5 bg-white border border-brand/10 rounded-2xl shadow-[0_4px_40px_rgba(15,61,46,0.12)]">
+        <div class="w-8 h-8 rounded-full bg-brand/[0.08] flex items-center justify-center flex-shrink-0">
+            <svg class="w-4 h-4 text-brand" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+            </svg>
+        </div>
+        <div>
+            <p class="text-sm text-brand font-medium">Message panel opening...</p>
+            <p class="text-xs text-brand/40">We'll get back to you within 24hrs</p>
+        </div>
+    </div>
+</div>
+
+<section class="relative py-10 md:py-14 lg:py-16 overflow-hidden bg-aliceblue">
+    <!-- Background Glow -->
+    <div
+        class="absolute top-2/5 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[500px] bg-[radial-gradient(circle_at_center,rgba(50,143,108,0.06)_0%,rgba(0,0,0,0)_70%)] pointer-events-none">
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-6">
+
+        <!-- Header -->
+        <div class="text-center max-w-3xl mx-auto mb-4">
+            <h2 class="reveal text-xl md:text-2xl lg:text-3xl font-medium tracking-tight leading-[1.1] mb-6 text-brand">
+                How we work
+            </h2>
+            <p class="reveal delay-100 text-lg md:text-xl font-light leading-relaxed text-gray-500">
+                A proven, four-step delivery process
+            </p>
+            <p class="reveal delay-200 text-sm md:text-base font-light leading-relaxed text-gray-400 mt-3">
+                Clarity at every stage — from first conversation to long-term growth.
+            </p>
+        </div>
+
+        <!-- Steps Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-5 lg:gap-0 relative">
+
+            <!-- Step 01 -->
+            <div class="reveal delay-100 relative px-4 lg:px-3">
+                <div
+                    class="bg-white border border-[#e8ebe9] rounded-2xl p-5 md:p-6 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-brand/40 hover:-translate-y-1.5 hover:shadow-[0_25px_60px_-15px_rgba(50,143,108,0.18)]">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-11 h-11 rounded-xl border border-brand/15 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:bg-brand group-hover:border-brand group-hover:shadow-[0_0_24px_-5px_rgba(50,143,108,0.4)]">
+                            <span class="iconify text-black transition-colors duration-300" data-icon="lucide:search"
+                                data-width="20" data-height="20">
+                                <i class="fa-solid fa-business-time"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 mb-1.5">Discover</h3>
+                            <p class="text-sm font-light leading-relaxed text-gray-500">
+                                We listen, audit and understand your business, customers and constraints.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Connector -->
+                <div
+                    class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-8 w-16 h-0.5 bg-gradient-to-r from-brand/30 to-brand/5 rounded-full">
+                    <div
+                        class="absolute -right-[3px] -top-[2.5px] w-[7px] h-[7px] rounded-full border-[1.5px] border-brand/35 bg-white">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="reveal delay-200 relative px-4 lg:px-3">
+                <div
+                    class="bg-white border border-[#e8ebe9] rounded-2xl p-5 md:p-6 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-brand/40 hover:-translate-y-1.5 hover:shadow-[0_25px_60px_-15px_rgba(50,143,108,0.18)]">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-11 h-11 rounded-xl bg-brand-light border border-brand/15 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <span class="iconify text-black transition-colors duration-300" data-icon="lucide:map"
+                                data-width="20" data-height="20">
+                                <i class="fa-solid fa-user-gear"></i>
+                            </span>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 mb-1.5">Strategise</h3>
+                            <p class="text-sm font-light leading-relaxed text-gray-500">
+                                We design a clear, prioritised roadmap with measurable outcomes.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-8 w-16 h-0.5 bg-gradient-to-r from-brand/30 to-brand/5 rounded-full">
+                    <div
+                        class="absolute -right-[3px] -top-[2.5px] w-[7px] h-[7px] rounded-full border-[1.5px] border-brand/35 bg-white">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="reveal delay-300 relative px-4 lg:px-3">
+                <div
+                    class="bg-white border border-[#e8ebe9] rounded-2xl p-5 md:p-6 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-brand/40 hover:-translate-y-1.5 hover:shadow-[0_25px_60px_-15px_rgba(50,143,108,0.18)]">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-11 h-11 rounded-xl bg-brand-light border border-brand/15 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <span class="iconify text-black transition-colors duration-300" data-icon="lucide:rocket"
+                                data-width="20" data-height="20"><i class="fa-brands fa-space-awesome"></i></span>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 mb-1.5">Build & Launch</h3>
+                            <p class="text-sm font-light leading-relaxed text-gray-500">
+                                Our cross-functional team executes with speed, quality and transparency.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div
+                    class="hidden lg:block absolute top-1/2 -translate-y-1/2 -right-8 w-16 h-0.5 bg-gradient-to-r from-brand/30 to-brand/5 rounded-full">
+                    <div
+                        class="absolute -right-[3px] -top-[2.5px] w-[7px] h-[7px] rounded-full border-[1.5px] border-brand/35 bg-white">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="reveal delay-400 relative px-4 lg:px-3">
+                <div
+                    class="bg-white border border-[#e8ebe9] rounded-2xl p-5 md:p-6 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)] hover:border-brand/40 hover:-translate-y-1.5 hover:shadow-[0_25px_60px_-15px_rgba(50,143,108,0.18)]">
+                    <div class="flex items-start gap-4">
+                        <div
+                            class="w-11 h-11 rounded-xl bg-brand-light border border-brand/15 flex items-center justify-center shrink-0 transition-all duration-400 ease-[cubic-bezier(0.16,1,0.3,1)]">
+                            <span class="iconify text-black transition-colors duration-300"
+                                data-icon="lucide:trending-up" data-width="20" data-height="20"><i class="fa-solid fa-compass-drafting"></i></span>
+                        </div>
+                        <div>
+                            <h3 class="text-base font-medium text-gray-900 mb-1.5">Grow</h3>
+                            <p class="text-sm font-light leading-relaxed text-gray-500">
+                                We measure, iterate and scale what works — together with you.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- testimonial start -->
+<style>
+    /* Hide scrollbar but keep scrolling */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE & Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+</style>
+<section class="hero-bg relative pt-6 pb-20 px-4 sm:px-0 lg:px-0 overflow-hidden">
+    <div class="absolute bottom-0 left-0 right-0 h-full w-full bg-[#060d0a8d] z-[5]"></div>
+    <div class="container relative z-10 mx-auto max-w-6xl">
+        <!-- Header -->
+        <div class="text-center mb-12 max-w-3xl mx-auto">
+            <span
+                class="inline-block px-3 py-1 bg-white/15 text-emerald-200 rounded-full text-xs font-bold tracking-widest uppercase mb-4">Testimonials</span>
+            <h2 class="text-3xl md:text-4xl font-extrabold text-white mb-4">People Say The Nicest Things</h2>
+            <p class="text-white/75 text-lg leading-relaxed">
+                Our genuine review section speaks volumes about joy we bring to our customers. People say nicest things
+                about us, and we couldn't be more grateful.
+            </p>
+        </div>
+
+        <!-- Carousel Wrapper -->
+        <div class="relative group">
+
+            <!-- Left Navigation Arrow -->
+            <button onclick="scrollCarousel('left')"
+                class="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-2 md:translate-x-2 lg:-translate-x-6 z-20 w-12 h-12 bg-white rounded-full shadow-xl border border-slate-100 flex items-center justify-center text-slate-600 hover:text-slate-900 hover:scale-110 transition-all hidden md:flex focus:outline-none focus:ring-2 focus:ring-slate-300">
+                <i data-lucide="chevron-left" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Right Navigation Arrow -->
+            <button onclick="scrollCarousel('right')"
+                class="absolute right-0 top-1/2 -translate-y-1/2 translate-x-2 md:-translate-x-2 lg:translate-x-6 z-20 w-12 h-12 bg-white rounded-full shadow-xl border border-slate-100 flex items-center justify-center text-slate-600 hover:text-slate-900 hover:scale-110 transition-all hidden md:flex focus:outline-none focus:ring-2 focus:ring-slate-300">
+                <i data-lucide="chevron-right" class="w-6 h-6"></i>
+            </button>
+
+            <!-- Scrollable Window -->
+            <div id="carousel-window"
+                class="flex overflow-x-auto gap-6 pb-8 no-scrollbar scroll-smooth snap-x snap-mandatory px-2 md:px-10 cursor-grab active:cursor-grabbing select-none">
+
+                <!-- Card 1 -->
+                <div class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(50%-12px)]">
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 h-full flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="flex text-amber-400">
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm">5/5</span>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 leading-relaxed">
+                                "He helped us a lot in handling our Company registration, Tax, Accounting & Business
+                                advisory. I recommend everyone to get service from here."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-slate-100 pt-4">
+                            <div
+                                class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 font-bold overflow-hidden border shadow">
+                                <img class="h-full w-full" src="https://yessbd.com/Frontend/testimonials/Imtiaz.png"
+                                    alt="Imtiaz Siddique" width="48" height="48" loading="lazy" decoding="async">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Imtiaz Siddique</h4>
+                                <p class="text-xs text-slate-500 uppercase tracking-wide">Managing Director, Hypatia
+                                    Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(50%-12px)]">
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 h-full flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="flex text-amber-400">
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="w-5 h-5 text-slate-300"></i>
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm">4/5</span>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 leading-relaxed">
+                                "It is a reliable & firmly helpful for any new Entrepreneur because of they provide
+                                skillful & good work. Take help from them you will be win in business."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-slate-100 pt-4">
+                            <div
+                                class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 font-bold overflow-hidden border shadow">
+                                <img class="h-full w-full" src="https://yessbd.com/Frontend/testimonials/Dayal.png"
+                                    alt="Dayal Chandra Nath" width="48" height="48" loading="lazy" decoding="async">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Dayal Chandra Nath</h4>
+                                <p class="text-xs text-slate-500 uppercase tracking-wide">MD, COSI International Ltd.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="snap-center shrink-0 w-full md:w-[calc(50%-12px)] lg:w-[calc(50%-12px)]">
+                    <div
+                        class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200 h-full flex flex-col justify-between hover:shadow-lg transition-shadow duration-300">
+                        <div>
+                            <div class="flex items-center gap-3 mb-4">
+                                <div class="flex text-amber-400">
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <i data-lucide="star" class="fill-current w-5 h-5"></i>
+                                    <div class="relative w-5 h-5">
+                                        <i data-lucide="star"
+                                            class="fill-current w-5 h-5 text-amber-400 absolute inset-0"></i>
+                                        <div class="absolute inset-0 bg-white w-1/2 h-full"
+                                            style="clip-path: inset(0 50% 0 0);"></div>
+                                    </div>
+                                </div>
+                                <span class="font-bold text-slate-800 text-sm">4.5/5</span>
+                            </div>
+                            <p class="text-slate-600 italic mb-6 leading-relaxed">
+                                "I like to way he finishes my company registration i would like to recommend you to work
+                                with him. He is really good man and he have good helping hand."
+                            </p>
+                        </div>
+                        <div class="flex items-center gap-4 border-t border-slate-100 pt-4">
+                            <div
+                                class="w-12 h-12 bg-slate-100 rounded-full flex items-center justify-center text-slate-500 font-bold overflow-hidden border shadow">
+                                <img class="h-full w-full" src="https://yessbd.com/Frontend/testimonials/Shahabul.png"
+                                    alt="Md. Shahabul Islam" width="48" height="48" loading="lazy" decoding="async">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-slate-900 text-sm">Md. Shahabul Islam</h4>
+                                <p class="text-xs text-slate-500 uppercase tracking-wide">MD, Hitech Concept Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- testimonial end -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // ---------- Icons ----------
+        if (window.lucide) lucide.createIcons();
+
+        // ---------- Services dropdown ----------
+        const servicesBtn = document.getElementById('servicesBtn');
+        const servicesDropdown = document.getElementById('servicesDropdown');
+        const servicesArrow = document.getElementById('servicesArrow');
+        let isOpen = false;
+
+        if (servicesBtn && servicesDropdown && servicesArrow) {
+            servicesBtn.addEventListener('click', () => {
+                isOpen = !isOpen;
+                servicesDropdown.classList.toggle('hidden', !isOpen);
+                servicesArrow.style.transform = isOpen ? 'rotate(180deg)' : 'rotate(0deg)';
+            });
+
+            document.addEventListener('click', (e) => {
+                if (!servicesBtn.contains(e.target) && !servicesDropdown.contains(e.target)) {
+                    isOpen = false;
+                    servicesDropdown.classList.add('hidden');
+                    servicesArrow.style.transform = 'rotate(0deg)';
+                }
+            });
+        }
+
+        // ---------- Company profile download request form ----------
+        const downloadRequestModal = document.getElementById('downloadRequestModal');
+        const downloadRequestForm = document.getElementById('downloadRequestForm');
+        const downloadRequestClose = document.getElementById('downloadRequestClose');
+        let requestedDownloadButton = null;
+
+        const closeDownloadRequest = () => {
+            downloadRequestModal?.classList.add('hidden');
+            requestedDownloadButton = null;
+        };
+
+        document.querySelectorAll('[data-download-request]').forEach(button => {
+            button.addEventListener('click', () => {
+                requestedDownloadButton = button;
+                downloadRequestForm?.reset();
+                downloadRequestModal?.classList.remove('hidden');
+                document.getElementById('downloadRequestName')?.focus();
+            });
+        });
+
+        downloadRequestClose?.addEventListener('click', closeDownloadRequest);
+        downloadRequestModal?.addEventListener('click', event => {
+            if (event.target === downloadRequestModal) closeDownloadRequest();
+        });
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && !downloadRequestModal?.classList.contains('hidden')) {
+                closeDownloadRequest();
+            }
+        });
+
+        downloadRequestForm?.addEventListener('submit', event => {
+            event.preventDefault();
+            if (!requestedDownloadButton) return;
+
+            const button = requestedDownloadButton;
+            const name = button.dataset.downloadName;
+            const fileUrl = button.dataset.downloadUrl;
+            closeDownloadRequest();
+            window.handleDownload(button, name, fileUrl);
+        });
+
+        // ---------- Company profile download buttons ----------
+        window.handleDownload = function(btn, name, fileUrl) {
+            if (btn.disabled) return;
+
+            if (!fileUrl) {
+                showToast(`${name} is not available yet`);
+                return;
+            }
+
+            btn.disabled = true;
+
+            const downloadLink = document.createElement('a');
+            downloadLink.href = fileUrl;
+            downloadLink.download = '';
+            document.body.appendChild(downloadLink);
+            downloadLink.click();
+            downloadLink.remove();
+
+            const label = btn.querySelector('.btn-label');
+            const arrow = btn.querySelector('.btn-arrow');
+            const tick = btn.querySelector('.btn-tick');
+
+            label.textContent = 'Preparing...';
+            arrow.classList.add('hidden');
+
+            setTimeout(() => {
+                label.textContent = 'Done';
+                tick.classList.remove('hidden');
+                btn.classList.add('btn-done');
+                btn.classList.remove('bg-[#328f6c]', 'hover:bg-[#2a7a5c]', 'shadow-[#328f6c]/20');
+                btn.classList.add('bg-emerald-600');
+
+                showToast(`${name} ready to download`);
+
+                setTimeout(() => {
+                    label.textContent = 'Download';
+                    arrow.classList.remove('hidden');
+                    tick.classList.add('hidden');
+                    btn.classList.remove('btn-done', 'bg-emerald-600');
+                    btn.classList.add('bg-[#328f6c]', 'hover:bg-[#2a7a5c]',
+                        'shadow-[#328f6c]/20');
+                    btn.disabled = false;
+                }, 2500);
+            }, 1200);
+        };
+
+        function showToast(msg) {
+            const toast = document.getElementById('toast');
+            if (!toast) return;
+            const toastMsg = toast.querySelector('#toastMsg') || toast;
+            toastMsg.textContent = msg;
+            toast.classList.remove('translate-y-20', 'opacity-0', 'pointer-events-none');
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0', 'pointer-events-none');
+            }, 2200);
+        }
+
+        // ---------- Revenue chart (only runs if the chart SVG exists on the page) ----------
+        function createPath(data, width, height, padding, maxVal) {
+            const points = [];
+            const stepX = (width - padding * 2) / (data.length - 1);
+
+            data.forEach((val, i) => {
+                const x = padding + i * stepX;
+                const y = height - padding - ((val / maxVal) * (height - padding * 2));
+                points.push({
+                    x,
+                    y
+                });
+            });
+
+            let path = `M ${points[0].x} ${points[0].y}`;
+            for (let i = 1; i < points.length; i++) {
+                const prev = points[i - 1];
+                const curr = points[i];
+                const cpX = (prev.x + curr.x) / 2;
+                path += ` C ${cpX} ${prev.y}, ${cpX} ${curr.y}, ${curr.x} ${curr.y}`;
+            }
+            return {
+                path,
+                points
+            };
+        }
+
+        function createAreaPath(linePath, width, height, padding) {
+            return `${linePath} L ${width - padding} ${height - padding} L ${padding} ${height - padding} Z`;
+        }
+
+        function renderChart() {
+            const svg = document.getElementById('revenueChart');
+            if (!svg) return;
+
+            const revenueData = [1800, 2100, 1900, 2400, 2200, 2600, 2710];
+            const expensesData = [1200, 1400, 1100, 1600, 1300, 1500, 1450];
+            const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul'];
+            const maxVal = Math.max(...revenueData, ...expensesData);
+
+            const width = 400;
+            const height = 140;
+            const padding = 10;
+
+            const revenue = createPath(revenueData, width, height, padding, maxVal);
+            const revenueArea = createAreaPath(revenue.path, width, height, padding);
+            document.getElementById('revenueLine')?.setAttribute('d', revenue.path);
+            document.getElementById('revenueArea')?.setAttribute('d', revenueArea);
+
+            const expenses = createPath(expensesData, width, height, padding, maxVal);
+            const expensesArea = createAreaPath(expenses.path, width, height, padding);
+            document.getElementById('expensesLine')?.setAttribute('d', expenses.path);
+            document.getElementById('expensesArea')?.setAttribute('d', expensesArea);
+
+            const revenueDots = document.getElementById('revenueDots');
+            const expensesDots = document.getElementById('expensesDots');
+
+            if (revenueDots && expensesDots) {
+                revenue.points.forEach((point, i) => {
+                    const revDot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    revDot.setAttribute('cx', point.x);
+                    revDot.setAttribute('cy', point.y);
+                    revDot.setAttribute('r', '4');
+                    revDot.setAttribute('fill', '#0d9488');
+                    revDot.setAttribute('class', 'chart-dot animate-dot');
+                    revDot.style.animationDelay = `${0.8 + i * 0.1}s`;
+                    revDot.dataset.value = `$${revenueData[i].toLocaleString()}`;
+                    revDot.dataset.month = months[i];
+                    revDot.dataset.type = 'Revenue';
+                    revenueDots.appendChild(revDot);
+
+                    const expDot = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+                    expDot.setAttribute('cx', expenses.points[i].x);
+                    expDot.setAttribute('cy', expenses.points[i].y);
+                    expDot.setAttribute('r', '4');
+                    expDot.setAttribute('fill', '#3b82f6');
+                    expDot.setAttribute('class', 'chart-dot animate-dot');
+                    expDot.style.animationDelay = `${0.9 + i * 0.1}s`;
+                    expDot.dataset.value = `$${expensesData[i].toLocaleString()}`;
+                    expDot.dataset.month = months[i];
+                    expDot.dataset.type = 'Expenses';
+                    expensesDots.appendChild(expDot);
+                });
+            }
+
+            const gridGroup = svg.querySelector('.grid-lines');
+            if (gridGroup) {
+                for (let i = 1; i <= 4; i++) {
+                    const y = padding + (i * (height - padding * 2) / 5);
+                    const line = document.createElementNS('http://www.w3.org/2000/svg', 'line');
+                    line.setAttribute('x1', padding);
+                    line.setAttribute('y1', y);
+                    line.setAttribute('x2', width - padding);
+                    line.setAttribute('y2', y);
+                    line.setAttribute('class', 'chart-grid-line');
+                    gridGroup.appendChild(line);
+                }
+            }
+
+            const tooltip = document.getElementById('chartTooltip');
+            const container = document.getElementById('chartContainer');
+
+            if (tooltip && container) {
+                svg.querySelectorAll('.chart-dot').forEach(dot => {
+                    dot.addEventListener('mouseenter', () => {
+                        const rect = container.getBoundingClientRect();
+                        const x = parseFloat(dot.getAttribute('cx'));
+                        const y = parseFloat(dot.getAttribute('cy'));
+                        const scaleX = rect.width / width;
+                        const scaleY = rect.height / height;
+
+                        tooltip.innerHTML =
+                            `<strong>${dot.dataset.month}</strong><br>${dot.dataset.type}: ${dot.dataset.value}`;
+                        tooltip.style.left = `${x * scaleX}px`;
+                        tooltip.style.top = `${y * scaleY - 40}px`;
+                        tooltip.style.opacity = '1';
+                        tooltip.style.transform = 'translateX(-50%)';
+                    });
+
+                    dot.addEventListener('mouseleave', () => {
+                        tooltip.style.opacity = '0';
+                    });
+                });
+            }
+        }
+
+        // ---------- Scroll reveal (single merged observer, replaces 3 duplicates) ----------
+        function initScrollReveal() {
+            const revealElements = document.querySelectorAll('.reveal');
+            if (!revealElements.length) return;
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('active');
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+            revealElements.forEach(el => observer.observe(el));
+        }
+
+        function initFeatureReveal() {
+            const features = document.querySelectorAll('.reveal-feature');
+            features.forEach((feature, index) => {
+                const direction = feature.dataset.direction;
+                feature.style.opacity = '0';
+                feature.style.transform = direction === 'left' ? 'translateX(-30px)' : 'translateX(30px)';
+
+                setTimeout(() => {
+                    feature.style.transition = 'all 0.6s cubic-bezier(0.4, 0, 0.2, 1)';
+                    feature.style.opacity = '1';
+                    feature.style.transform = 'translateX(0)';
+                }, 600 + (index * 150));
+            });
+        }
+
+        function addRipple(e) {
+            const btn = e.currentTarget;
+            const rect = btn.getBoundingClientRect();
+            const size = Math.max(rect.width, rect.height);
+            const ripple = document.createElement('span');
+            Object.assign(ripple.style, {
+                position: 'absolute',
+                background: 'rgba(255,255,255,0.35)',
+                borderRadius: '50%',
+                transform: 'scale(0)',
+                animation: 'ripple 0.5s ease-out',
+                pointerEvents: 'none',
+                width: size + 'px',
+                height: size + 'px',
+                left: (e.clientX - rect.left - size / 2) + 'px',
+                top: (e.clientY - rect.top - size / 2) + 'px'
+            });
+            btn.appendChild(ripple);
+            setTimeout(() => ripple.remove(), 500);
+        }
+
+        renderChart();
+        initScrollReveal();
+        initFeatureReveal();
+        document.querySelectorAll('.btn-primary').forEach(btn => btn.addEventListener('click', addRipple));
+
+        const styleSheet = document.createElement('style');
+        styleSheet.textContent = `@keyframes ripple { to { transform: scale(4); opacity: 0; } }`;
+        document.head.appendChild(styleSheet);
+
+        // ---------- Testimonial carousel ----------
+        const carousel = document.getElementById('carousel-window');
+        if (carousel) {
+            let isDown = false;
+            let startX;
+            let scrollLeft;
+            let autoPlayTimer;
+
+            carousel.addEventListener('mousedown', (e) => {
+                isDown = true;
+                stopAutoPlay();
+                carousel.classList.remove('cursor-grab');
+                carousel.classList.add('cursor-grabbing');
+                startX = e.pageX - carousel.offsetLeft;
+                scrollLeft = carousel.scrollLeft;
+            });
+
+            carousel.addEventListener('mouseleave', () => {
+                isDown = false;
+                startAutoPlay();
+                carousel.classList.add('cursor-grab');
+                carousel.classList.remove('cursor-grabbing');
+            });
+
+            carousel.addEventListener('mouseup', () => {
+                isDown = false;
+                startAutoPlay();
+                carousel.classList.add('cursor-grab');
+                carousel.classList.remove('cursor-grabbing');
+            });
+
+            carousel.addEventListener('mousemove', (e) => {
+                if (!isDown) return;
+                e.preventDefault();
+                const x = e.pageX - carousel.offsetLeft;
+                const walk = (x - startX) * 2;
+                carousel.scrollLeft = scrollLeft - walk;
+            });
+
+            function autoPlay() {
+                const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+                if (carousel.scrollLeft >= maxScrollLeft - 1) {
+                    carousel.scrollTo({
+                        left: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    window.scrollCarousel('right');
+                }
+            }
+
+            function startAutoPlay() {
+                stopAutoPlay();
+                autoPlayTimer = setInterval(autoPlay, 4000);
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayTimer);
+            }
+
+            carousel.addEventListener('mouseenter', stopAutoPlay);
+            startAutoPlay();
+        }
+
+        window.scrollCarousel = function(direction) {
+            if (!carousel) return;
+            const scrollAmount = (carousel.offsetWidth / 2);
+            carousel.scrollBy({
+                left: direction === 'left' ? -scrollAmount : scrollAmount,
+                behavior: 'smooth'
+            });
+        };
+
+    });
+</script>
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="bg-[#060D0A] relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+
+                    <!-- Brand -->
+                    <div class="lg:col-span-4">
+                        <div class="flex gap-2">
+                            <div class="inline-flex items-center rounded-md bg-white p-1 shadow-[0_2px_8px_rgba(15,36,29,0.18)] mb-5">
+                                <img src="https://yessbd.com/Frontend/img/yess-bangla-logo.png" alt="Yess Bangla Logo" class="h-10 w-auto object-contain">
+                            </div>
+                            <div class="block">
+                                <h1 id="logo_text" class="text-sm md:text-lg font-semibold text-white">Yess Bangla Private Limited</h1>
+                                <p id="slogan_text" class="text-xs text-white">Where Solution Begins</p>
+                            </div>                  
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-white/70">A full-service business consulting and IT solutions company helping organisations across Bangladesh scale with confidence.</p>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                                                        <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                                                                                    <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                                                                                    <a href="https://www.instagram.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                                                                                    <a href="https://www.x.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                                                                                     <a href="https://www.youtube.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                                                    </div>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="lg:col-span-2">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Company</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="https://yessbd.com/about" class="text-white/60 hover:text-[#3AD9A6] transition-colors">About Us <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/services" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Services <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/ventures" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Ventures <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/industries" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Industries <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/insights" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Insights <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/career" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Careers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/contact" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Contact <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Ventures -->
+                    <div class="lg:col-span-3">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Our Ventures</h4>
+                        <ul class="space-y-3 text-sm">
+                                                            <li><a href="https://yessbd.com/ventures/5?type=Shondhaan" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Shondhaan <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Organic Haat <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Host <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Akash OTT <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Soft <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Event <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                    </ul>
+                    </div>
+
+                    <!-- Get In Touch -->
+                    <div class="lg:col-span-3">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Get in touch</h4>
+                        <ul class="space-y-4 text-sm mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+                                    <circle cx="12" cy="11" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="text-white/60 leading-relaxed">
+                                    Block-A, Road-3, House-127 (Green View), 1st Floor, Mirpur-12, Dhaka-1216
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <a href="tel:+8801805464343" class="text-white/60 hover:text-[#3AD9A6] transition-colors">+880 1805-464343</a>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:yessbangla.bd@gmail.com" class="text-white/60 hover:text-[#3AD9A6] transition-colors break-all">yessbangla.bd@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <form onsubmit="return false;" class="flex">
+                            <input type="email" placeholder="Your email"
+                                   class="bg-white/5 border border-white/10 rounded-l-lg px-3.5 py-2.5 text-sm text-white outline-none w-full placeholder:text-white/40">
+                            <button type="submit" class="bg-[#10B67F] hover:opacity-90 text-white text-sm font-semibold px-5 rounded-r-lg whitespace-nowrap transition-opacity">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollToTop"
+            type="button"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+            class="hidden fixed bottom-20 md:bottom-5 right-5 z-50 w-11 h-11 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-all duration-300 hover:bg-hover hover:text-black hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m5 15 7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Consultation modal -->
+    <div id="consultationModal" class="hidden fixed inset-0 z-50 overflow-y-auto" role="dialog"
+        aria-modal="true" aria-labelledby="consultationModalTitle">
+        <div id="consultationBackdrop" class="fixed inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <div class="relative flex min-h-full items-center justify-center p-4 sm:p-6">
+            <div class="relative my-8 w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+                <div class="flex items-start justify-between border-b border-zinc-200 px-5 py-4 sm:px-7">
+                    <div>
+                        <p class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#328f6c]">Let's talk</p>
+                        <h2 id="consultationModalTitle" class="mt-1 text-xl font-bold text-zinc-900">Start Free Consultation</h2>
+                    </div>
+                    <button type="button" id="consultationClose" aria-label="Close consultation form"
+                        class="rounded-lg p-2 text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-700">
+                        <i data-lucide="x" class="h-5 w-5"></i>
+                    </button>
+                </div>
+
+                <form method="POST" action="https://yessbd.com/book-consultancy" class="space-y-4 px-5 py-5 sm:px-7 sm:py-6">
+                    <input type="hidden" name="_token" value="GHcuqAzmXDSMPdS6HboHhjMvLMe1jj6Fq62lzMDx" autocomplete="off">                    
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div>
+                            <label for="consultationName" class="mb-1.5 block text-sm font-medium text-zinc-700">Your name</label>
+                            <input id="consultationName" name="name" type="text" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationEmail" class="mb-1.5 block text-sm font-medium text-zinc-700">Email</label>
+                            <input id="consultationEmail" name="email" type="email" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationPhone" class="mb-1.5 block text-sm font-medium text-zinc-700">Phone</label>
+                            <input id="consultationPhone" name="phone" type="tel" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationSubject" class="mb-1.5 block text-sm font-medium text-zinc-700">Subject</label>
+                            <input id="consultationSubject" name="subject" type="text" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                    </div>
+
+                    <div>
+                        <label for="consultationService" class="mb-1.5 block text-sm font-medium text-zinc-700">Select a venture or service</label>
+                        <select id="consultationService" name="service" required
+                            class="w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                            <option value="">Choose an option</option>
+                                                            <option value="Shondhaan" >
+                                    Shondhaan
+                                </option>
+                                                            <option value="Organic Haat" >
+                                    Organic Haat
+                                </option>
+                                                            <option value="Yess Host" >
+                                    Yess Host
+                                </option>
+                                                            <option value="Akash OTT" >
+                                    Akash OTT
+                                </option>
+                                                            <option value="Yess Soft" >
+                                    Yess Soft
+                                </option>
+                                                            <option value="Yess Event" >
+                                    Yess Event
+                                </option>
+                                                        <option value="Other service" >Other service</option>
+                            <option value="General consultation" >General consultation</option>
+                            <option value="Partnership" >Partnership</option>
+                        </select>
+                                            </div>
+
+                    <div>
+                        <label for="consultationDescription" class="mb-1.5 block text-sm font-medium text-zinc-700">Description</label>
+                        <textarea id="consultationDescription" name="description" rows="4"
+                            class="w-full resize-y rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"></textarea>
+                                            </div>
+
+                    <div class="flex flex-col-reverse gap-3 border-t border-zinc-200 pt-4 sm:flex-row sm:justify-end">
+                        <button type="reset" class="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-5 py-2.5 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-50">Clear</button>
+                        <button type="submit" class="inline-flex items-center justify-center rounded-lg bg-[#328f6c] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2a7a5c] focus:outline-none focus:ring-2 focus:ring-[#328f6c]/40">Submit request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const consultationModal = document.getElementById('consultationModal');
+        const consultationOpen = document.getElementById('consultationOpen');
+        const consultationClose = document.getElementById('consultationClose');
+        const consultationBackdrop = document.getElementById('consultationBackdrop');
+
+        const closeConsultation = () => consultationModal?.classList.add('hidden');
+
+        consultationOpen?.addEventListener('click', () => {
+            consultationModal.classList.remove('hidden');
+            document.getElementById('consultationName')?.focus();
+        });
+        consultationClose?.addEventListener('click', closeConsultation);
+        consultationBackdrop?.addEventListener('click', closeConsultation);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeConsultation();
+        });
+    </script>
+
+    <!-- ============ Non-critical scripts moved to the bottom, deferred ============ -->
+    <script src="https://kit.fontawesome.com/9f57283aa3.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const navbar = document.getElementById("navbar");
+            const header = navbar;
+            const navMenuBtn = header.querySelector('#headerMenuBtn');
+            const navLogoText = document.querySelector('#logo_text');
+            const navSlogan = document.querySelector('#slogan_text');
+
+          function updateHeaderOnScroll() {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > 20) {
+                    header.classList.add('header-on-scroll');
+                    header.classList.remove('bg-transparent', 'border-transparent');
+
+                    // Logo and slogan → black
+                    if (navLogoText) {
+                        navLogoText.classList.remove('text-white', 'text-primary');
+                        navLogoText.classList.add('text-black');
+                    }
+
+                    if (navSlogan) {
+                        navSlogan.classList.remove('text-white', 'text-primary');
+                        navSlogan.classList.add('text-black');
+                    }
+
+                } else {
+                    header.classList.remove('header-on-scroll');
+                    header.classList.add('bg-transparent', 'border-transparent');
+
+                    // Logo and slogan → white
+                    if (navLogoText) {
+                        navLogoText.classList.remove('text-white', 'text-primary');
+                        navLogoText.classList.add('text-black');
+                    }
+
+                    if (navSlogan) {
+                        navSlogan.classList.remove('text-white', 'text-primary');
+                        navSlogan.classList.add('text-black');
+                    }
+                }
+
+                if (navMenuBtn) {
+                    navMenuBtn.classList.remove('text-gray-900');
+
+                    if (currentScrollY > 20) {
+                        navMenuBtn.classList.add('text-gray-900');
+                    } else {
+                        navMenuBtn.classList.add('text-white');
+                    }
+                }
+            }
+            window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+            updateHeaderOnScroll();
+
+            // Show the scroll-to-top button after the user moves down the page.
+            const scrollToTop = document.getElementById('scrollToTop');
+            function updateScrollToTopVisibility() {
+                scrollToTop.classList.toggle('hidden', window.scrollY <= 300);
+                scrollToTop.classList.toggle('flex', window.scrollY > 300);
+            }
+            scrollToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            window.addEventListener('scroll', updateScrollToTopVisibility, { passive: true });
+            updateScrollToTopVisibility();
+
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menuBtn');
+            const headerMenuBtn = document.getElementById('headerMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            function toggleMobileMenu() {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                menuBtn.setAttribute('aria-expanded', String(isOpen));
+                headerMenuBtn.setAttribute('aria-expanded', String(isOpen));
+            }
+
+            if (menuBtn) menuBtn.addEventListener('click', toggleMobileMenu);
+            if (headerMenuBtn) headerMenuBtn.addEventListener('click', toggleMobileMenu);
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    headerMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Keep the quick-nav dropdown independent from the full mobile menu.
+            const mobileQuickNav = document.getElementById('mobileQuickNav');
+            const mobileDropdownToggle = mobileQuickNav?.querySelector('[data-mobile-dropdown-toggle]');
+            const mobileDropdownMenu = mobileQuickNav?.querySelector('[data-mobile-dropdown-menu]');
+            const mobileDropdownIcon = mobileQuickNav?.querySelector('[data-mobile-dropdown-icon]');
+
+            function closeMobileDropdown() {
+                mobileDropdownMenu?.classList.add('hidden');
+                mobileDropdownToggle?.setAttribute('aria-expanded', 'false');
+                mobileDropdownIcon?.classList.remove('rotate-180');
+            }
+
+            mobileDropdownToggle?.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const isOpen = mobileDropdownMenu?.classList.toggle('hidden') === false;
+                mobileDropdownToggle.setAttribute('aria-expanded', String(isOpen));
+                mobileDropdownIcon?.classList.toggle('rotate-180', isOpen);
+            });
+
+            document.addEventListener('click', (event) => {
+                if (mobileQuickNav && !mobileQuickNav.contains(event.target)) {
+                    closeMobileDropdown();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') closeMobileDropdown();
+            });
+        });
+    </script>
+
+    </body>
+</html>

@@ -1,0 +1,2555 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Careers | Yess Bangla Private Limited</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <meta name="keywords" content="">
+    <link rel="shortcut icon"
+      type="image/x-icon"
+      href="https://yessbd.com/uploads/Configuration/1786630550_uV9KMcmNWxyi.png">
+  
+    <!-- <link rel="stylesheet" href="https://yessbd.com/Backend/css/color.css"> -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/5f7bc44e9f.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Bangla:wght@100..800&display=swap" rel="stylesheet">
+
+    <!-- Flipbook StyleSheet start -->
+    <link href="https://yessbd.com/dflip/css/dflip.min.css" rel="stylesheet" type="text/css">
+    <link href="https://yessbd.com/dflip/css/themify-icons.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Flipbook main Js file -->
+    <script src="https://yessbd.com/dflip/js/libs/jquery.min.js" type="text/javascript"></script>
+    <script src="https://yessbd.com/dflip/js/dflip.min.js" type="text/javascript"></script>
+
+
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        display: ['Space Grotesk', 'sans-serif'],
+                        body: ['Anek Bangla', 'sans-serif'],
+                    },
+                    colors: {
+                        aliceblue: 'aliceblue',
+                        white: '#ffffff',
+                        black: '#0f172a',
+                        muted: '#64748b',
+                        primary: '#0d9488',
+                        primarydark: '#013d38',
+                        hover: '#00ebd7',
+                        'primary-dark': '#00701A',
+                        'primary-deep': '#003D0F',
+                        ink: '#0A0A0A',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+
+        * { box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', 'Outfit', sans-serif;
+        }
+
+        *,
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Anek Bangla', sans-serif;
+        }
+
+        .mobile-link {
+            display: block;
+            padding: 0.75rem 1rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            color: #6b7280;
+        }
+        .mobile-link:hover {
+            background: #f3f4f6;
+            color: var(--primary-color);
+        }
+
+        .mobile-nav-scroll {
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+        }
+        .mobile-nav-scroll::-webkit-scrollbar { display: none; }
+
+        /* ---- Animations (defined once) ---- */
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .animate-fade-in-up {
+            animation: fadeInUp 0.7s ease-out forwards;
+            opacity: 0;
+        }
+        .animation-delay-200 { animation-delay: 200ms; }
+        .delay-100 { animation-delay: 0.1s; }
+        .delay-200 { animation-delay: 0.2s; }
+        .delay-300 { animation-delay: 0.3s; }
+        .delay-400 { animation-delay: 0.4s; }
+
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.96); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .animate-scale-in {
+            animation: scaleIn 0.8s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            33% { transform: translate(30px, -30px) scale(1.05); }
+            66% { transform: translate(-20px, 20px) scale(0.95); }
+        }
+        .float-anim { animation: float 6s ease-in-out infinite; }
+        .float-anim-delay { animation: float 7s ease-in-out 1s infinite; }
+        .float-anim-delay-2 { animation: float 8s ease-in-out 2s infinite; }
+
+        @keyframes floatFeature {
+            0%, 100% { transform: translateY(0px); }
+            50% { transform: translateY(-12px); }
+        }
+        .float-feature { animation: floatFeature 4s ease-in-out infinite; }
+        .float-feature-delay-1 { animation-delay: 0s; }
+        .float-feature-delay-2 { animation-delay: 1.5s; }
+        .float-feature-delay-3 { animation-delay: 3s; }
+
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                transition-duration: 0.01ms !important;
+            }
+        }
+
+        /* ---- Hero / backgrounds ---- */
+        .bg-hero {
+            background:
+                radial-gradient(ellipse 80% 60% at 50% 30%, rgba(6,13,10,0.35) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 40% at 20% 80%, rgba(15,61,46,0.2) 0%, transparent 60%),
+                linear-gradient(180deg,
+                    rgba(6,13,10,0.55) 0%,
+                    rgba(6,13,10,0.4) 30%,
+                    rgba(6,13,10,0.35) 50%,
+                    rgba(6,13,10,0.45) 70%,
+                    rgba(6,13,10,0.7) 85%,
+                    rgba(6,13,10,0.92) 100%
+                );
+        }
+
+        .hero-gradient {
+            background:
+                radial-gradient(ellipse 80% 60% at 10% 20%, rgba(20, 184, 166, 0.18) 0%, transparent 50%),
+                radial-gradient(ellipse 60% 50% at 90% 80%, rgba(168, 85, 247, 0.15) 0%, transparent 50%),
+                radial-gradient(ellipse 70% 40% at 50% 50%, rgba(59, 130, 246, 0.1) 0%, transparent 50%),
+                linear-gradient(135deg, #f0fdfa 0%, #f8fafc 25%, #fdf4ff 50%, #f8fafc 75%, #f0f9ff 100%);
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-gradient::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+            opacity: 0.03;
+            pointer-events: none;
+        }
+
+        .orb {
+            position: absolute;
+            border-radius: 50%;
+            filter: blur(80px);
+            opacity: 0.6;
+            animation: float 20s ease-in-out infinite;
+            pointer-events: none;
+        }
+        .orb-1 {
+            width: 400px; height: 400px;
+            background: linear-gradient(135deg, rgba(20, 184, 166, 0.3), rgba(59, 130, 246, 0.2));
+            top: -100px; left: -100px; animation-delay: 0s;
+        }
+        .orb-2 {
+            width: 350px; height: 350px;
+            background: linear-gradient(135deg, rgba(168, 85, 247, 0.25), rgba(236, 72, 153, 0.15));
+            bottom: -80px; right: -80px; animation-delay: -7s;
+        }
+        .orb-3 {
+            width: 250px; height: 250px;
+            background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(20, 184, 166, 0.15));
+            top: 40%; right: 10%; animation-delay: -14s;
+        }
+
+        /* this class used */
+        .header-on-scroll { 
+            background: rgba(255, 255, 255, 0.43) !important;
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border-color: transparent !important;
+        }
+
+        .card-glow { position: relative; overflow: hidden; }
+        .card-glow::before {
+            content: '';
+            position: absolute;
+            top: 0; left: 0; right: 0; height: 3px;
+            background: linear-gradient(90deg, transparent, var(--glow-color, #355B4F), transparent);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+        .card-glow:hover::before { opacity: 1; }
+
+        /* ---- Buttons ---- */
+        .btn-primary {
+            background: linear-gradient(135deg, #0d9488 0%, #0f766e 100%);
+            box-shadow: 0 4px 14px -3px rgba(13, 148, 136, 0.4);
+            transition: all 0.25s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .btn-primary::after {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(135deg, rgba(255,255,255,0.25) 0%, transparent 60%);
+            opacity: 0;
+            transition: opacity 0.25s;
+        }
+        .btn-primary:hover::after { opacity: 1; }
+        .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -5px rgba(13, 148, 136, 0.5); }
+        .btn-primary:active { transform: translateY(0); box-shadow: 0 2px 8px -2px rgba(13, 148, 136, 0.4); }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1.5px solid rgba(255, 255, 255, 0.5);
+            transition: all 0.25s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+        }
+        .btn-secondary:hover { background: rgba(255, 255, 255, 1); border-color: var(--primary); color: var(--primary); }
+
+        /* ---- Dashboard / laptop mock / floating cards ---- */
+        .dashboard-card {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.04);
+        }
+        .dashboard-card:hover {
+            border-color: rgba(13, 148, 136, 0.3);
+            box-shadow: 0 15px 40px -10px rgba(13, 148, 136, 0.15);
+            transform: translateY(-3px);
+            background: rgba(255, 255, 255, 0.95);
+        }
+
+        .laptop-frame {
+            background: linear-gradient(145deg, #1e293b 0%, #0f172a 100%);
+            border-radius: 24px 24px 0 0;
+            padding: 12px 14px 0;
+            box-shadow: 0 50px 100px -20px rgba(0, 0, 0, 0.25), 0 30px 60px -30px rgba(0, 0, 0, 0.3), inset 0 1px 0 rgba(255,255,255,0.1);
+            position: relative;
+        }
+        .laptop-frame::before {
+            content: '';
+            position: absolute;
+            top: 6px; left: 50%; transform: translateX(-50%);
+            width: 80px; height: 4px;
+            background: #0f172a;
+            border-radius: 2px;
+            box-shadow: inset 0 1px 2px rgba(0,0,0,0.5);
+        }
+        .laptop-screen { background: #0f172a; border-radius: 12px 12px 0 0; overflow: hidden; position: relative; }
+        .laptop-base {
+            height: 14px;
+            background: linear-gradient(180deg, #1e293b 0%, #334155 50%, #1e293b 100%);
+            border-radius: 0 0 4px 4px;
+            margin: 0 -20px;
+            position: relative;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.05);
+        }
+        .laptop-base::before {
+            content: '';
+            position: absolute;
+            top: 4px; left: 50%; transform: translateX(-50%);
+            width: 60px; height: 4px;
+            background: #0f172a;
+            border-radius: 0 0 2px 2px;
+        }
+        .laptop-stand {
+            width: 120px; height: 4px;
+            background: linear-gradient(180deg, #334155, #1e293b);
+            margin: 0 auto;
+            border-radius: 0 0 2px 2px;
+        }
+
+        .floating-feature {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.8);
+            border-radius: 16px;
+            padding: 16px 20px;
+            box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.1), 0 4px 16px -4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            cursor: pointer;
+            max-width: 200px;
+        }
+        .floating-feature:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 20px 50px -15px rgba(0, 0, 0, 0.15), 0 8px 24px -8px rgba(0, 0, 0, 0.1);
+        }
+        .floating-feature .icon-wrap {
+            width: 40px; height: 40px;
+            border-radius: 10px;
+            display: flex; align-items: center; justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        .logo-item { opacity: 0.35; transition: all 0.3s ease; filter: grayscale(100%); }
+        .logo-item:hover { opacity: 1; filter: grayscale(0%); transform: translateY(-2px); }
+
+        button:focus-visible, a:focus-visible {
+            outline: 2px solid var(--primary);
+            outline-offset: 3px;
+        }
+
+        .pie-segment { transition: transform 0.3s ease; transform-origin: center; }
+        .pie-segment:hover { transform: scale(1.03); }
+
+        .reveal {
+            opacity: 0;
+            transform: translateY(24px);
+            transition: all 0.7s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .reveal.visible { opacity: 1; transform: translateY(0); }
+
+        .stat-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            padding: 3px 8px;
+            border-radius: 9999px;
+        }
+
+        .dashboard-content { background: linear-gradient(180deg, #f8fafc 0%, #f1f5f9 100%); }
+
+        /* ---- Charts ---- */
+        .chart-line { fill: none; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+        .chart-area { opacity: 0.3; }
+        .chart-dot { transition: all 0.2s ease; cursor: pointer; }
+        .chart-dot:hover { r: 6; filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2)); }
+        .chart-grid-line { stroke: #e2e8f0; stroke-width: 1; stroke-dasharray: 4 4; }
+
+        .chart-tooltip {
+            position: absolute;
+            background: #0f172a;
+            color: white;
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 500;
+            pointer-events: none;
+            opacity: 0;
+            transition: opacity 0.15s;
+            z-index: 100;
+            white-space: nowrap;
+        }
+        .chart-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 100%; left: 50%; transform: translateX(-50%);
+            border: 5px solid transparent;
+            border-top-color: #0f172a;
+        }
+
+        @keyframes drawLine { from { stroke-dashoffset: 1000; } to { stroke-dashoffset: 0; } }
+        @keyframes fillArea { from { opacity: 0; } to { opacity: 0.3; } }
+        .animate-line { stroke-dasharray: 1000; animation: drawLine 1.5s ease-out forwards; }
+        .animate-area { animation: fillArea 1s ease-out 0.5s forwards; opacity: 0; }
+
+        @keyframes popIn {
+            0% { transform: scale(0); opacity: 0; }
+            70% { transform: scale(1.2); }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-dot { animation: popIn 0.3s ease-out forwards; }
+    </style>
+
+    <style>
+@keyframes kenburns {
+    0% {
+        transform: scale(1.05) translate(-1%, -1%);
+    }
+
+    100% {
+        transform: scale(1.12) translate(1%, 1%);
+    }
+}
+
+.kenburns {
+    animation: kenburns 24s ease-in-out infinite alternate;
+}
+
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 1200ms cubic-bezier(.22, 1, .36, 1), transform 1200ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.reveal.is-in {
+    opacity: 1;
+    transform: none;
+}
+
+.delay-1 {
+    transition-delay: 120ms;
+}
+
+.delay-2 {
+    transition-delay: 240ms;
+}
+
+.delay-3 {
+    transition-delay: 360ms;
+}
+
+.delay-4 {
+    transition-delay: 480ms;
+}
+
+.hairline {
+    height: 1px;
+    background: rgba(10, 10, 10, 0.15);
+}
+
+.dot-grid-dark {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+    background-size: 32px 32px;
+}
+
+.dot-grid-light {
+    background-image: radial-gradient(rgba(10, 10, 10, 0.05) 1px, transparent 1px);
+    background-size: 28px 28px;
+}
+
+.flow-num {
+    font-variant-numeric: tabular-nums;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -6px;
+    height: 2px;
+    background: #009222;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 400ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.nav-link:hover::after {
+    transform: scaleX(1);
+}
+
+.pill {
+    border: 1px solid rgba(10, 10, 10, 0.18);
+    transition: all 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.pill:hover {
+    border-color: #009222;
+    color: #009222;
+}
+
+.pill.is-active {
+    background: #009222;
+    border-color: #009222;
+    color: #FFFFFF;
+}
+
+.search-input {
+    transition: border-color 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.search-input:focus {
+    outline: none;
+}
+
+.role-card {
+    transition: border-color 400ms cubic-bezier(.16, 1, .3, 1), transform 400ms cubic-bezier(.16, 1, .3, 1);
+    cursor: pointer;
+}
+
+.role-card:hover {
+    border-color: #009222;
+    transform: translateY(-2px);
+}
+
+.role-card:hover .role-arrow {
+    transform: translateX(4px);
+}
+
+.role-arrow {
+    transition: transform 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.select-wrap {
+    position: relative;
+}
+
+.select-wrap::after {
+    content: '↓';
+    position: absolute;
+    right: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 12px;
+    color: rgba(10, 10, 10, 0.5);
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 500ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.faq-item.open .faq-answer {
+    max-height: 400px;
+}
+
+.faq-item.open .faq-icon {
+    transform: rotate(45deg);
+}
+
+.faq-icon {
+    transition: transform 400ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.modal-backdrop {
+    opacity: 0;
+    transition: opacity 400ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.modal-backdrop.is-open {
+    opacity: 1;
+}
+
+.modal-content {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+    transition: opacity 500ms cubic-bezier(.22, 1, .36, 1), transform 500ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.modal-content.is-open {
+    opacity: 1;
+    transform: none;
+}
+
+.dropzone {
+    transition: border-color 300ms cubic-bezier(.22, 1, .36, 1), background 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.dropzone:hover {
+    border-color: #009222;
+    background: rgba(0, 146, 34, 0.04);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .kenburns {
+        animation: none;
+    }
+
+    .reveal {
+        transition: none;
+        opacity: 1;
+        transform: none;
+    }
+
+    .faq-answer,
+    .modal-backdrop,
+    .modal-content {
+        transition: none;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- Sticky Social Icons -->
+    <div class="fixed right-0 top-1/2 -translate-y-1/2 z-50 flex flex-col items-center gap-3">
+        <div class="flex flex-col gap-3 shadow-xl">
+
+                            <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition duration-300">
+                    <i class="fab fa-facebook-f text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer"
+                class="w-8 h-8  rounded-full bg-gradient-to-br from-pink-500 to-yellow-500 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                <i class="fab fa-instagram text-white text-base"></i>
+            </a>
+                        
+                            <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" rel="noopener noreferrer"
+                class="w-8 h-8  rounded-full bg-blue-600 flex items-center justify-center shadow-lg hover:scale-110 hover:bg-blue-700 transition duration-300">
+                    <i class="fa-brands fa-linkedin text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.x.com/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-sky-500 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                    <i class="fab fa-twitter text-white text-base"></i>
+                </a>
+            
+                            <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer"
+                   class="w-8 h-8  rounded-full bg-red-700 flex items-center justify-center shadow-md hover:scale-110 transition duration-300">
+                    <i class="fab fa-youtube text-white text-base"></i>
+                </a>
+                    </div>
+    </div>
+
+    <div class="main">
+        <!-- HEADER Start -->
+        <header id="navbar" class="fixed top-0 left-0 right-0 z-[40] w-full max-w-[100vw] overflow-x-clip bg-transparent px-0 transition-all duration-300">
+            <!-- top bar -->
+            <div class="hidden md:block bg-primarydark py-2">
+                <div class="max-w-7xl mx-auto px-2">
+                <div class="topbar-inner flex flex-col gap-2 text-sm lg:flex-row lg:items-center lg:justify-between lg:gap-6">
+                    <div class="topbar-info text-center sm:text-left text-white">
+                        <a href="mailto:yessbangla.bd@gmail.com" class="transition hover:text-white">Contact Us: yessbangla.bd@gmail.com |</a>
+                        <a href="https://wa.me/881805464343?text=Hello%2C+I+would+like+to+know+more+about+your+services."
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="transition hover:text-primary">
+                                WhatsApp: 01805464343
+                        </a>
+                    </div>
+
+                    <div class="topbar-social justify-center sm:justify-start lg:justify-end">
+                        <span class="text-white/75">Follow Us On:</span>
+
+                                                <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" aria-label="Facebook" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        
+                                                <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" aria-label="Instagram" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                                                
+                                                <a href="https://www.youtube.com/" target="_blank" aria-label="Twitter" class="px-1 inline-flex items-center text-white hover:text-hover">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <div class="max-w-7xl mx-auto my-0 md:my-2 px-4 rounded-0 md:rounded-full bg-white backdrop-blur-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)]">
+                <!-- bg-white/5 backdrop-blur-lg rounded-b-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)] -->
+                <div class="flex items-center justify-between h-auto py-3">
+                    <!-- Logo -->
+                    <a href="https://yessbd.com" class="flex items-center gap-3">
+                        <div class="w-auto h-10 rounded-md p-1 flex items-center justify-center overflow-hidden">
+                                                            <img src="https://yessbd.com/uploads/Configuration/1786630550_MhvzHrbFS0jx.png" alt="Logo" class="w-full h-full object-contain" width="40" height="40">
+                                                    </div>
+                        <div class="block">
+                            <h1 id="logo_text" class="text-sm md:text-lg font-semibold text-black">Yess Bangla Private Limited</h1>
+                            <p id="slogan_text" class="text-xs text-black">Where Solution Begins</p>
+                        </div>
+                    </a>
+
+                    <!-- Desktop Navigation -->
+                    <nav class="hidden lg:flex items-center gap-8">
+                        <a href="https://yessbd.com" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Home</a>
+                        <a href="https://yessbd.com/about" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">About</a>
+                        <a href="https://yessbd.com/services" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Services</a>
+
+                        <div class="relative group">
+                            <button onclick="window.location='https://yessbd.com/ventures'"
+                                class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition flex items-center gap-1">
+                                Ventures
+                                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path d="M6 9l6 6 6-6"/>
+                                </svg>
+                            </button>
+                           <div class="absolute left-0 top-[20px] w-[520px] rounded-lg
+                                shadow-xl
+                                opacity-0 invisible
+                                group-hover:opacity-100 group-hover:visible
+                                transition-all duration-300
+                                bg-white
+                                p-3 grid grid-cols-2 gap-2">
+
+                                                                    <a href="https://yessbd.com/ventures/5?type=Shondhaan" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png" alt="Shondhaan" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Shondhaan</span>
+                                            <span class="block text-xs text-gray-800 truncate">Home &amp; Professional Services</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png" alt="Organic Haat" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Organic Haat</span>
+                                            <span class="block text-xs text-gray-800 truncate">Organic Marketplace</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png" alt="Yess Host" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Host</span>
+                                            <span class="block text-xs text-gray-800 truncate">Hosting &amp; Cloud Infrastructure</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Akash OTT</span>
+                                            <span class="block text-xs text-gray-800 truncate">Streaming Platform</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png" alt="Yess Soft" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Soft</span>
+                                            <span class="block text-xs text-gray-800 truncate">Software &amp; IT Solutions</span>
+                                        </span>
+                                    </a>
+                                                                    <a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="flex items-center gap-3 rounded-md px-4 py-3 text-black hover:text-primary hover:bg-gray-50 transition">
+                                        <span class="w-9 h-9 shrink-0 rounded-md overflow-hidden bg-gray-100 flex items-center justify-center">
+                                                                                            <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png" alt="Yess Event" class="w-full h-full object-cover">
+                                                                                    </span>
+                                        <span class="min-w-0">
+                                            <span class="block text-sm font-semibold truncate">Yess Event</span>
+                                            <span class="block text-xs text-gray-800 truncate">Event Management</span>
+                                        </span>
+                                    </a>
+                                                            </div>
+                        </div>
+
+                        <a href="https://yessbd.com/industries" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Industries</a>
+                        <a href="https://yessbd.com/insights" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Insights</a>
+                        <a href="https://yessbd.com/career" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition text-primary">Careers</a>
+                        <a href="https://yessbd.com/contact" class="nav-color-toggle text-black text-sm font-medium hover:text-hover transition ">Contact</a>
+                    </nav>
+
+                    <!-- CTA -->
+                    <div class="hidden lg:flex items-center gap-6">
+                        <button id="consultationOpen" class="bg-primary hover:bg-hover px-4 py-2 rounded-full text-white hover:text-black text-sm font-medium transition">
+                            LET'S TALK
+                        </button>
+                    </div>
+
+                    <!-- Mobile Menu Button -->
+                    <button id="headerMenuBtn" class="hidden lg:hidden p-2 text-black hover:bg-white/10 rounded-lg transition" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+                        <svg id="menuIcon" class="w-6 h-6 text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M3 12h18M3 6h18M3 18h18"/>
+                        </svg>
+                        <svg id="closeIcon" class="w-6 h-6 hidden text-black" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                            <path d="M18 6L6 18M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
+            <div id="mobileQuickNav" class="md:hidden relative w-full max-w-full mx-auto my-0 px-4 bg-white backdrop-blur-lg shadow-[0_2px_8px_rgba(15,36,29,0.18)]">
+                <nav class="mobile-nav-scroll flex min-w-0 max-w-full items-center gap-6 overflow-x-auto py-2.5 pr-2 text-sm font-medium whitespace-nowrap" aria-label="Quick navigation">
+                    <a href="https://yessbd.com" class="shrink-0 text-gray-700">Home</a>
+                    <a href="https://yessbd.com/about" class="shrink-0 text-gray-700">About</a>
+                    <a href="https://yessbd.com/services" class="shrink-0 text-gray-700">Services</a>
+
+                    <div class="relative shrink-0">
+                        <button type="button" data-mobile-dropdown-toggle aria-expanded="false" aria-controls="mobileVenturesMenu" class="inline-flex items-center gap-1 text-gray-700">
+                            Ventures
+                            <svg class="h-3.5 w-3.5 transition-transform" data-mobile-dropdown-icon fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+                                <path d="m6 9 6 6 6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <a href="https://yessbd.com/industries" class="shrink-0 text-gray-700">Industries</a>
+                    <a href="https://yessbd.com/insights" class="shrink-0 text-gray-700">Insights</a>
+                    <a href="https://yessbd.com/career" class="shrink-0 text-primary">Careers</a>
+                    <a href="https://yessbd.com/contact" class="shrink-0 text-gray-700">Contact</a>
+                </nav>
+                <div id="mobileVenturesMenu" data-mobile-dropdown-menu class="absolute left-4 top-full z-[70] mt-2 hidden w-64 rounded-lg bg-white p-2 shadow-xl ring-1 ring-black/5">
+                                            <a href="https://yessbd.com/ventures/5?type=Shondhaan" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8985aa9c491.png" alt="Shondhaan" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Shondhaan</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a89646fd80dd.png" alt="Organic Haat" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Organic Haat</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a896e39e2f28.png" alt="Yess Host" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Host</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a89616e99721.png" alt="Akash OTT" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Akash OTT</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8951c6b8477.png" alt="Yess Soft" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Soft</span>
+                        </a>
+                                            <a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="flex items-center gap-2 rounded-md px-3 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-primary">
+                            <span class="flex h-8 w-8 shrink-0 items-center justify-center overflow-hidden rounded-md bg-gray-100">
+                                                                    <img src="https://yessbd.com/uploads/logo/logo_6a8975c2b891b.png" alt="Yess Event" class="h-full w-full object-cover" width="32" height="32">
+                                                            </span>
+                            <span class="min-w-0 truncate">Yess Event</span>
+                        </a>
+                                    </div>
+            </div>
+
+        </header>
+        <!-- HEADER End -->
+
+        <!-- Mobile Menu -->
+        <div id="mobileMenu" class="hidden fixed bottom-16 left-0 right-0 z-[60] lg:hidden bg-slate-700 backdrop-blur-lg border-t border-gray-200 shadow-[0_-4px_16px_rgba(0,0,0,0.12)]">
+            <nav class="max-w-7xl mx-auto px-4 py-6 flex flex-col gap-1">
+                <a href="https://yessbd.com" class="mobile-link text-white">Home</a>
+                <a href="https://yessbd.com/about" class="mobile-link text-white">About</a>
+                <a href="https://yessbd.com/services" class="mobile-link text-white">Services</a>
+                <a href="https://yessbd.com/clients" class="mobile-link text-white">Clients</a>
+                <a href="https://yessbd.com/ventures" class="mobile-link text-white">Ventures</a>                    
+                <a href="https://yessbd.com/contact" class="mobile-link text-white">Contact Us</a>
+
+                <div class="mt-4 pt-4 border-t border-gray-200">
+                    <button id="consultationOpen" class="bg-[#328F6C] hover:bg-[#28785A] block w-full text-center px-4 py-2 rounded-md text-white font-medium transition">
+                        LET'S TALK
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <!-- Mobile Bottom Navigation -->
+        <nav class="lg:hidden fixed bottom-0 left-0 right-0 z-50 h-16 bg-white border-t border-gray-200 shadow-[0_-2px_12px_rgba(0,0,0,0.1)]" aria-label="Mobile navigation">
+            <div class="grid h-full grid-cols-5 items-center">
+                <a href="https://yessbd.com" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Home">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V10Z"/></svg>
+                    <span>Home</span>
+                </a>
+                <a href="https://yessbd.com/about" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="About">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path stroke-linecap="round" d="M12 11v5m0-8h.01"/></svg>
+                    <span>About</span>
+                </a>
+                <a href="https://yessbd.com/services" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Services">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 7h16M4 12h16M4 17h16"/><path stroke-linecap="round" d="M8 7v0m4 5v0m-2 5v0"/></svg>
+                    <span>Services</span>
+                </a>
+                <a href="https://yessbd.com/contact" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Contact">
+                    <svg class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 5h16v12H8l-4 4V5Z"/><path stroke-linecap="round" d="M8 9h8M8 13h5"/></svg>
+                    <span>Contact</span>
+                </a>
+                <button id="menuBtn" type="button" class="flex h-full flex-col items-center justify-center gap-1 text-[10px] text-gray-600" aria-label="Open more menu" aria-controls="mobileMenu" aria-expanded="false">
+                    <svg id="bottomMoreIcon" class="h-5 w-5" fill="none" stroke="currentColor" stroke-width="1.8" viewBox="0 0 24 24" aria-hidden="true"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></svg>
+                    <span>More</span>
+                </button>
+            </div>
+        </nav>
+
+        <div style="min-height: 90vh">
+            
+
+<!-- ============ HERO (BENTO STYLE) ============ -->
+<section class="relative min-h-screen bg-ink overflow-hidden pt-20">
+    <!-- Dot grid background -->
+    <div class="absolute inset-0 dot-grid-dark opacity-40"></div>
+    <!-- Ambient green glow -->
+    <div class="absolute -top-40 -right-40 w-[700px] h-[700px] opacity-40 pointer-events-none"
+        style="background: radial-gradient(circle, rgba(0,146,34,0.5) 0%, transparent 65%);"></div>
+    <div class="absolute bottom-0 left-0 w-[500px] h-[500px] opacity-20 pointer-events-none"
+        style="background: radial-gradient(circle, rgba(0,146,34,0.4) 0%, transparent 70%);"></div>
+
+    <div
+        class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 py-12 lg:py-16 min-h-[calc(100vh-5rem)] flex flex-col justify-between gap-12">
+
+        <!-- Top: Headline + floating card -->
+        <div class="flex-1 grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+
+            <!-- Left: text content -->
+            <div class="lg:col-span-7">
+                <div class="flex flex-wrap items-center gap-3 mb-8 reveal">
+                    <span
+                        class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-white text-xs font-medium tracking-label uppercase px-4 py-1.5 rounded-full backdrop-blur-sm">
+                        <span class="w-1.5 h-1.5 bg-primary rounded-full"></span>
+                        IT Solutions · Dhaka, BD
+                    </span>
+                    <span
+                        class="inline-flex items-center gap-2 bg-primary/20 border border-primary/40 text-primary text-xs font-medium tracking-label uppercase px-4 py-1.5 rounded-full backdrop-blur-sm">
+                        Hiring · 12 roles
+                    </span>
+                </div>
+
+                <h1
+                    class="font-display font-bold text-white text-[12vw] leading-[0.85] sm:text-5xl tracking-[-0.025em] mb-8 reveal delay-1">
+                    Build a career<br>
+                    that builds <span class="text-primary">Bangladesh.</span>
+                </h1>
+
+                <p class="text-white/70 text-lg lg:text-xl leading-relaxed max-w-xl mb-10 reveal delay-2">
+                    YessBangla is an IT solutions studio shaping the next decade of business and technology in South
+                    Asia — infrastructure, financial systems, public-sector platforms.
+                </p>
+
+                <div class="flex flex-col sm:flex-row gap-4 reveal delay-3">
+                    <a href="#positions"
+                        class="group inline-flex items-center gap-3 bg-primary text-white px-7 py-4 text-sm font-medium rounded-full hover:bg-white hover:text-ink transition-colors duration-400">
+                        <span>See 12 open roles</span>
+                        <span class="text-base group-hover:translate-x-1 transition-transform duration-300">→</span>
+                    </a>
+                    <a href="#why"
+                        class="inline-flex items-center gap-3 border border-white/30 text-white px-7 py-4 text-sm font-medium rounded-full hover:bg-white/10 transition-colors duration-400">
+                        Why YessBangla
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right: floating roles preview card -->
+            <div class="lg:col-span-5 reveal delay-2">
+                <div class="bg-white/5 backdrop-blur-md border border-white/15 rounded-2xl p-6 lg:p-7">
+                    <div class="flex items-center justify-between mb-6 pb-5 border-b border-white/10">
+                        <div>
+                            <div class="text-xs font-medium tracking-label-wide uppercase text-white/50 mb-1">Featured
+                                roles</div>
+                            <div class="font-display font-bold text-white text-lg">Just opened</div>
+                        </div>
+                        <div class="w-12 h-12 rounded-full bg-primary flex items-center justify-center">
+                            <span class="font-display font-bold text-white">12</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-1">
+                        <div
+                            class="flex items-center justify-between p-3 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                            <div>
+                                <div class="text-white text-sm font-medium mb-1">Senior Full-Stack Engineer</div>
+                                <div class="text-white/40 text-xs">Dhaka · Full-time · Senior</div>
+                            </div>
+                            <span class="text-primary text-sm group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-between p-3 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                            <div>
+                                <div class="text-white text-sm font-medium mb-1">Product Designer · UI/UX</div>
+                                <div class="text-white/40 text-xs">Dhaka · Full-time · Mid</div>
+                            </div>
+                            <span class="text-primary text-sm group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                        <div
+                            class="flex items-center justify-between p-3 rounded-xl hover:bg-white/5 transition-colors cursor-pointer group">
+                            <div>
+                                <div class="text-white text-sm font-medium mb-1">Strategy Consultant</div>
+                                <div class="text-white/40 text-xs">Dhaka · Full-time · Senior</div>
+                            </div>
+                            <span class="text-primary text-sm group-hover:translate-x-1 transition-transform">→</span>
+                        </div>
+                    </div>
+
+                    <a href="#positions"
+                        class="mt-4 inline-flex items-center gap-2 text-primary text-xs font-medium tracking-label-wide uppercase hover:gap-3 transition-all">
+                        See all roles <span>→</span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Bottom: stats strip -->
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 pt-8 border-t border-white/15 reveal delay-4">
+            <div>
+                <div class="text-white/50 text-xs font-medium tracking-label-wide uppercase mb-2">Team members</div>
+                <div class="font-display font-bold text-white text-3xl lg:text-4xl tracking-[-0.02em] flow-num">
+                    <span data-counter="120">0</span><span class="text-primary">+</span>
+                </div>
+            </div>
+            <div>
+                <div class="text-white/50 text-xs font-medium tracking-label-wide uppercase mb-2">Open roles</div>
+                <div class="font-display font-bold text-white text-3xl lg:text-4xl tracking-[-0.02em] flow-num">
+                    <span data-counter="12">0</span>
+                </div>
+            </div>
+            <div>
+                <div class="text-white/50 text-xs font-medium tracking-label-wide uppercase mb-2">Industries</div>
+                <div class="font-display font-bold text-white text-3xl lg:text-4xl tracking-[-0.02em] flow-num">
+                    <span data-counter="9">0</span>
+                </div>
+            </div>
+            <div>
+                <div class="text-white/50 text-xs font-medium tracking-label-wide uppercase mb-2">Glassdoor</div>
+                <div class="font-display font-bold text-white text-3xl lg:text-4xl tracking-[-0.02em] flow-num">
+                    <span data-counter="4.8" data-decimals="1">0</span><span class="text-primary text-2xl">/5</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ============ FIND YOUR ROLE (UNCHANGED) ============ -->
+<section id="positions" class="bg-[aliceblue] py-6">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center gap-4 mb-6 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-ink/60 text-xs font-medium tracking-label-wide uppercase">Open positions · 12
+                active</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 mb-16">
+            <h2
+                class="lg:col-span-7 font-display font-bold text-ink text-4xl sm:text-5xl leading-[0.9] tracking-[-0.02em] reveal">
+                Find your role.</h2>
+            <p class="lg:col-span-5 lg:pt-4 text-ink/70 text-base lg:text-lg leading-relaxed reveal delay-1">
+                Twelve active positions across four practices. Filter by team, location or seniority — or search by
+                keyword. Tap any card to begin your application.
+            </p>
+        </div>
+
+        <div class="bg-white border border-black/10 rounded-2xl p-6 lg:p-8 mb-10 reveal">
+            <div class="flex items-center gap-4 mb-6 pb-6 border-b border-black/10">
+                <svg class="w-5 h-5 text-ink/40 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                    stroke-width="2">
+                    <circle cx="11" cy="11" r="7" />
+                    <path d="m21 21-4.3-4.3" />
+                </svg>
+                <input type="text" placeholder="Search by role, keyword or team — try 'backend' or 'banking'"
+                    class="search-input flex-1 bg-transparent border-0 text-ink placeholder-ink/40 text-base font-medium focus:outline-none" />
+                <button
+                    class="text-xs font-medium tracking-label-wide uppercase text-ink/50 hover:text-primary transition-colors rounded-full px-3 py-1.5 hover:bg-black/5">Clear</button>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 mb-6">
+                <span class="text-xs font-medium tracking-label-wide uppercase text-ink/40 mr-2">Practice</span>
+                <button
+                    class="pill is-active px-4 py-2 text-xs font-medium tracking-label uppercase rounded-full">All</button>
+                <button
+                    class="pill px-4 py-2 text-xs font-medium tracking-label uppercase rounded-full">Engineering</button>
+                <button class="pill px-4 py-2 text-xs font-medium tracking-label uppercase rounded-full">Design</button>
+                <button
+                    class="pill px-4 py-2 text-xs font-medium tracking-label uppercase rounded-full">Consulting</button>
+                <button
+                    class="pill px-4 py-2 text-xs font-medium tracking-label uppercase rounded-full">Operations</button>
+                <button
+                    class="pill px-4 py-2 text-xs font-medium tracking-label uppercase rounded-full">Research</button>
+            </div>
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                <div>
+                    <label class="block text-xs font-medium tracking-label-wide uppercase text-ink/40 mb-2">Type</label>
+                    <div class="select-wrap">
+                        <select
+                            class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors appearance-none">
+                            <option>All types</option>
+                            <option>Full-time</option>
+                            <option>Contract</option>
+                            <option>Internship</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label
+                        class="block text-xs font-medium tracking-label-wide uppercase text-ink/40 mb-2">Location</label>
+                    <div class="select-wrap">
+                        <select
+                            class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors appearance-none">
+                            <option>All locations</option>
+                            <option>Dhaka HQ</option>
+                            <option>Remote (BD)</option>
+                            <option>Hybrid</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label
+                        class="block text-xs font-medium tracking-label-wide uppercase text-ink/40 mb-2">Level</label>
+                    <div class="select-wrap">
+                        <select
+                            class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors appearance-none">
+                            <option>All levels</option>
+                            <option>Junior</option>
+                            <option>Mid</option>
+                            <option>Senior</option>
+                            <option>Principal</option>
+                        </select>
+                    </div>
+                </div>
+                <div>
+                    <label class="block text-xs font-medium tracking-label-wide uppercase text-ink/40 mb-2">Sort
+                        by</label>
+                    <div class="select-wrap">
+                        <select
+                            class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors appearance-none">
+                            <option>Newest first</option>
+                            <option>Oldest first</option>
+                            <option>A → Z</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex items-center justify-between mb-8 reveal">
+            <div class="text-xs font-medium tracking-label-wide uppercase text-ink/50">Showing 6 of 12 roles</div>
+            <div class="text-xs font-medium tracking-label-wide uppercase text-ink/50">Updated · 03 Nov 2024</div>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="role-card group block bg-white border border-black/15 p-6 lg:p-7 rounded-xl reveal"
+                data-role-title="Senior Full-Stack Engineer"
+                data-role-desc="Build and own the next generation of our core banking platform — Scala, Postgres, React, and a regulated release cadence.">
+                <div class="flex items-start justify-between mb-5">
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-primary border border-primary/30 px-2.5 py-1 rounded-full">Engineering</span>
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-ink/60 bg-ink/5 px-2.5 py-1 rounded-full">Senior</span>
+                </div>
+                <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] leading-tight mb-3">
+                    Senior Full-Stack Engineer</h3>
+                <p class="text-ink/60 text-sm leading-relaxed mb-6">Build and own the next generation of our core
+                    banking platform — Scala, Postgres, React, and a regulated release cadence.</p>
+                <div class="hairline mb-4"></div>
+                <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/60 mb-5">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Dhaka / Remote</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 2" />
+                        </svg>Full-time</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>6+ years</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-ink/40">ENG · 01</span>
+                    <span class="role-arrow text-sm font-medium text-primary inline-flex items-center gap-2">Apply
+                        →</span>
+                </div>
+            </div>
+
+            <div class="role-card group block bg-white border border-black/15 p-6 lg:p-7 rounded-xl reveal delay-1"
+                data-role-title="Product Designer · UI/UX"
+                data-role-desc="Shape the mobile banking experience used by 4M Bangladeshis — research, flows, prototypes, and direct partnership with engineering.">
+                <div class="flex items-start justify-between mb-5">
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-primary border border-primary/30 px-2.5 py-1 rounded-full">Design</span>
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-ink/60 bg-ink/5 px-2.5 py-1 rounded-full">Mid</span>
+                </div>
+                <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] leading-tight mb-3">
+                    Product Designer · UI/UX</h3>
+                <p class="text-ink/60 text-sm leading-relaxed mb-6">Shape the mobile banking experience used by 4M
+                    Bangladeshis — research, flows, prototypes, and direct partnership with engineering.</p>
+                <div class="hairline mb-4"></div>
+                <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/60 mb-5">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Dhaka HQ</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 2" />
+                        </svg>Full-time</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>4+ years</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-ink/40">DSG · 02</span>
+                    <span class="role-arrow text-sm font-medium text-primary inline-flex items-center gap-2">Apply
+                        →</span>
+                </div>
+            </div>
+
+            <div class="role-card group block bg-white border border-black/15 p-6 lg:p-7 rounded-xl reveal delay-2"
+                data-role-title="Strategy Consultant"
+                data-role-desc="Lead engagements across the public sector practice — written memos, stakeholder workshops, and policy-grade deliverables.">
+                <div class="flex items-start justify-between mb-5">
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-primary border border-primary/30 px-2.5 py-1 rounded-full">Consulting</span>
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-ink/60 bg-ink/5 px-2.5 py-1 rounded-full">Senior</span>
+                </div>
+                <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] leading-tight mb-3">
+                    Strategy Consultant</h3>
+                <p class="text-ink/60 text-sm leading-relaxed mb-6">Lead engagements across the public sector practice —
+                    written memos, stakeholder workshops, and policy-grade deliverables.</p>
+                <div class="hairline mb-4"></div>
+                <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/60 mb-5">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Dhaka HQ</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 2" />
+                        </svg>Full-time</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>8+ years</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-ink/40">CON · 03</span>
+                    <span class="role-arrow text-sm font-medium text-primary inline-flex items-center gap-2">Apply
+                        →</span>
+                </div>
+            </div>
+
+            <div class="role-card group block bg-white border border-black/15 p-6 lg:p-7 rounded-xl reveal"
+                data-role-title="DevOps Engineer"
+                data-role-desc="Own the infrastructure layer — Kubernetes clusters, CI/CD pipelines, and observability across three production environments.">
+                <div class="flex items-start justify-between mb-5">
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-primary border border-primary/30 px-2.5 py-1 rounded-full">Engineering</span>
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-ink/60 bg-ink/5 px-2.5 py-1 rounded-full">Mid</span>
+                </div>
+                <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] leading-tight mb-3">
+                    DevOps Engineer</h3>
+                <p class="text-ink/60 text-sm leading-relaxed mb-6">Own the infrastructure layer — Kubernetes clusters,
+                    CI/CD pipelines, and observability across three production environments.</p>
+                <div class="hairline mb-4"></div>
+                <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/60 mb-5">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Remote (BD)</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 2" />
+                        </svg>Full-time</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>4+ years</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-ink/40">ENG · 04</span>
+                    <span class="role-arrow text-sm font-medium text-primary inline-flex items-center gap-2">Apply
+                        →</span>
+                </div>
+            </div>
+
+            <div class="role-card group block bg-white border border-black/15 p-6 lg:p-7 rounded-xl reveal delay-1"
+                data-role-title="Research Analyst"
+                data-role-desc="Field research across the agriculture intelligence practice — surveys, interviews, and quantitative briefs that ship to ministers.">
+                <div class="flex items-start justify-between mb-5">
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-primary border border-primary/30 px-2.5 py-1 rounded-full">Research</span>
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-ink/60 bg-ink/5 px-2.5 py-1 rounded-full">Junior</span>
+                </div>
+                <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] leading-tight mb-3">
+                    Research Analyst</h3>
+                <p class="text-ink/60 text-sm leading-relaxed mb-6">Field research across the agriculture intelligence
+                    practice — surveys, interviews, and quantitative briefs that ship to ministers.</p>
+                <div class="hairline mb-4"></div>
+                <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/60 mb-5">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Dhaka / Hybrid</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 2" />
+                        </svg>Full-time</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>2+ years</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-ink/40">RES · 05</span>
+                    <span class="role-arrow text-sm font-medium text-primary inline-flex items-center gap-2">Apply
+                        →</span>
+                </div>
+            </div>
+
+            <div class="role-card group block bg-white border border-black/15 p-6 lg:p-7 rounded-xl reveal delay-2"
+                data-role-title="Principal Data Engineer"
+                data-role-desc="Architect the unified data layer across telecom and banking clients — Spark, Iceberg, and a regulated lineage audit.">
+                <div class="flex items-start justify-between mb-5">
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-primary border border-primary/30 px-2.5 py-1 rounded-full">Engineering</span>
+                    <span
+                        class="text-[10px] font-semibold tracking-label-wide uppercase text-ink/60 bg-ink/5 px-2.5 py-1 rounded-full">Principal</span>
+                </div>
+                <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] leading-tight mb-3">
+                    Principal Data Engineer</h3>
+                <p class="text-ink/60 text-sm leading-relaxed mb-6">Architect the unified data layer across telecom and
+                    banking clients — Spark, Iceberg, and a regulated lineage audit.</p>
+                <div class="hairline mb-4"></div>
+                <div class="flex flex-wrap gap-x-5 gap-y-2 text-xs text-ink/60 mb-5">
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                            <circle cx="12" cy="10" r="3" />
+                        </svg>Dhaka HQ</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M12 7v5l3 2" />
+                        </svg>Full-time</span>
+                    <span class="inline-flex items-center gap-1.5"><svg class="w-3.5 h-3.5 text-ink/40" fill="none"
+                            stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                            <path d="M12 2 2 7l10 5 10-5-10-5z" />
+                            <path d="m2 17 10 5 10-5" />
+                            <path d="m2 12 10 5 10-5" />
+                        </svg>10+ years</span>
+                </div>
+                <div class="flex items-center justify-between">
+                    <span class="text-xs font-medium text-ink/40">ENG · 06</span>
+                    <span class="role-arrow text-sm font-medium text-primary inline-flex items-center gap-2">Apply
+                        →</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-12 flex flex-col sm:flex-row items-center justify-between gap-6 reveal">
+            <div class="text-sm text-ink/60">Showing 6 of 12 — six more roles below the fold.</div>
+            <button
+                class="inline-flex items-center gap-3 border border-ink/20 px-6 py-3 text-sm font-medium rounded-full hover:border-primary hover:text-primary transition-colors duration-300">
+                Load 6 more roles
+                <span class="text-base">↓</span>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- ============ WHY YESS BANGLA (BENTO GRID) ============ -->
+<section id="why" class="bg-white hidden py-12 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-light opacity-60"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center gap-4 mb-12 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-ink/60 text-xs font-medium tracking-label-wide uppercase">Why YessBangla · Built for
+                ambition</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 mb-16">
+            <h2
+                class="lg:col-span-7 font-display font-bold text-ink text-4xl sm:text-5xl leading-[0.9] tracking-[-0.02em] reveal">
+                A workplace<br>built for<br>ambition.
+            </h2>
+            <p class="lg:col-span-5 lg:pt-4 text-ink/70 text-base lg:text-lg leading-relaxed reveal delay-1">
+                Not swag. The things that compound over a decade — health, learning, voice, and the right tools. These
+                four pillars decide whether your best work happens here or somewhere else.
+            </p>
+        </div>
+
+        <!-- Bento grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-4 lg:gap-6">
+
+            <!-- Large card: Health & wellness (image) -->
+            <div
+                class="lg:col-span-7 lg:row-span-2 relative overflow-hidden rounded-2xl border border-black/10 reveal group min-h-[400px]">
+                <img src="https://picsum.photos/seed/family-wellness-health-bangla/900/800" alt="Family wellness"
+                    class="absolute inset-0 w-full h-full object-cover kenburns" />
+                <div class="absolute inset-0 bg-gradient-to-t from-ink/95 via-ink/50 to-ink/10"></div>
+                <div class="relative h-full min-h-[400px] p-8 lg:p-10 flex flex-col justify-end">
+                    <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-6">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.8">
+                            <path
+                                d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z" />
+                        </svg>
+                    </div>
+                    <div class="text-primary font-display font-bold text-2xl mb-3 flow-num">01 / 04</div>
+                    <h3
+                        class="font-display font-bold text-white text-3xl lg:text-4xl tracking-[-0.01em] mb-4 leading-tight">
+                        Health & wellness</h3>
+                    <p class="text-white/80 text-base lg:text-lg leading-relaxed max-w-md">Full family medical coverage
+                        — you, spouse, children and dependent parents. Includes outpatient mental health and dental.</p>
+                </div>
+            </div>
+
+            <!-- Small card: Learning budget -->
+            <div
+                class="lg:col-span-5 border border-black/10 p-8 lg:p-10 rounded-2xl reveal delay-1 hover:border-primary transition-colors duration-400 bg-cream">
+                <div class="flex items-start justify-between mb-6">
+                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.8">
+                            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+                            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
+                        </svg>
+                    </div>
+                    <div class="text-primary font-display font-bold text-xl flow-num">02 / 04</div>
+                </div>
+                <h3 class="font-display font-bold text-ink text-2xl lg:text-3xl tracking-[-0.01em] mb-4">Learning budget
+                </h3>
+                <p class="text-ink/60 text-base leading-relaxed mb-4">BDT 120,000 annual stipend for courses, books and
+                    conferences. No approval process — just a short memo on what you learned.</p>
+                <div class="font-display font-bold text-primary text-3xl tracking-[-0.04em] flow-num">৳120k<span
+                        class="text-ink/40 text-sm font-normal">/yr</span></div>
+            </div>
+
+            <!-- Small card: Modern tooling -->
+            <div
+                class="lg:col-span-5 border border-black/10 p-8 lg:p-10 rounded-2xl reveal delay-2 hover:border-primary transition-colors duration-400 bg-cream">
+                <div class="flex items-start justify-between mb-6">
+                    <div class="w-14 h-14 rounded-full bg-primary/10 flex items-center justify-center">
+                        <svg class="w-7 h-7 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.8">
+                            <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
+                            <path d="M8 21h8M12 17v4" />
+                        </svg>
+                    </div>
+                    <div class="text-primary font-display font-bold text-xl flow-num">03 / 04</div>
+                </div>
+                <h3 class="font-display font-bold text-ink text-2xl lg:text-3xl tracking-[-0.01em] mb-4">Modern tooling
+                </h3>
+                <p class="text-ink/60 text-base leading-relaxed">Top-tier hardware, licensed software, and a quiet
+                    office designed for deep work. The right tools aren't a perk — they're the baseline.</p>
+            </div>
+
+            <!-- Wide card: Inclusive culture (dark with embedded stat) -->
+            <div
+                class="lg:col-span-12 border border-black/10 p-8 lg:p-12 rounded-2xl reveal delay-3 bg-ink relative overflow-hidden">
+                <div class="absolute -right-20 -top-20 w-80 h-80 opacity-30 pointer-events-none"
+                    style="background: radial-gradient(circle, rgba(0,146,34,0.5) 0%, transparent 70%);"></div>
+                <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                    <div class="lg:col-span-2">
+                        <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+                            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                stroke-width="1.8">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+                                <circle cx="9" cy="7" r="4" />
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="lg:col-span-6">
+                        <div class="text-primary font-display font-bold text-xl mb-2 flow-num">04 / 04</div>
+                        <h3 class="font-display font-bold text-white text-2xl lg:text-3xl tracking-[-0.01em] mb-3">
+                            Inclusive culture</h3>
+                        <p class="text-white/70 text-base lg:text-lg leading-relaxed max-w-2xl">Diverse teams, flat
+                            hierarchy, every voice matters. Weekly written memos and quarterly practice reviews keep the
+                            floor open — no glass walls, no reserved seats.</p>
+                    </div>
+                    <div class="lg:col-span-4 lg:text-right">
+                        <div class="font-display font-bold text-primary text-5xl lg:text-6xl tracking-[-0.04em] flow-num">
+                            4.8<span class="text-2xl">/5</span></div>
+                        <div class="text-white/50 text-xs font-medium tracking-label-wide uppercase mt-2">Glassdoor ·
+                            137 reviews</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ HOW WE HIRE (VERTICAL TIMELINE) ============ -->
+<section class="bg-white py-10 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-light opacity-50"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center gap-4 mb-12 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-ink/60 text-xs font-medium tracking-label-wide uppercase">How we hire · Clear,
+                respectful</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+            <h2
+                class="lg:col-span-7 font-display font-bold text-ink text-4xl sm:text-4xl leading-[0.9] tracking-[-0.02em] reveal">
+                A clear,<br>respectful<br>process.
+            </h2>
+            <p class="lg:col-span-5 lg:pt-4 text-ink/70 text-base lg:text-lg leading-relaxed reveal delay-1">
+                Most candidates move from application to offer in two to three weeks. Every stage is transparent, every
+                rejection is written by the hiring lead, and we never ghost.
+            </p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative">
+            <!-- Vertical line -->
+            <div class="absolute left-8 lg:left-10 top-4 bottom-4 w-px bg-black/10"></div>
+
+            <!-- Step 1 -->
+            <div class="relative pl-20 lg:pl-24 pb-6 reveal">
+                <div
+                    class="absolute left-0 top-0 w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-primary text-white flex items-center justify-center shadow-lg">
+                    <span class="font-display font-bold text-2xl lg:text-3xl flow-num">01</span>
+                </div>
+                <div
+                    class="bg-white border border-black/10 rounded-2xl p-6 lg:p-8 hover:border-primary transition-colors duration-400">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em]">Apply</h3>
+                        <span
+                            class="text-[10px] font-semibold tracking-label-wide uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-full">~5
+                            minutes</span>
+                    </div>
+                    <p class="text-ink/60 text-sm lg:text-base leading-relaxed">Submit your application in under five
+                        minutes. No account creation, no tedious forms — just your CV and a short note.</p>
+                </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative pl-20 lg:pl-24 pb-6 reveal delay-1">
+                <div
+                    class="absolute left-0 top-0 w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-white border-2 border-primary text-primary flex items-center justify-center">
+                    <span class="font-display font-bold text-2xl lg:text-3xl flow-num">02</span>
+                </div>
+                <div
+                    class="bg-white border border-black/10 rounded-2xl p-6 lg:p-8 hover:border-primary transition-colors duration-400">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em]">Screen</h3>
+                        <span
+                            class="text-[10px] font-semibold tracking-label-wide uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-full">5–7
+                            working days</span>
+                    </div>
+                    <p class="text-ink/60 text-sm lg:text-base leading-relaxed">A recruiter reviews your application
+                        within 5–7 working days. If there's a fit, you'll have a short introductory call to align on the
+                        role.</p>
+                </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative pl-20 lg:pl-24 pb-6 reveal delay-2">
+                <div
+                    class="absolute left-0 top-0 w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-white border-2 border-primary text-primary flex items-center justify-center">
+                    <span class="font-display font-bold text-2xl lg:text-3xl flow-num">03</span>
+                </div>
+                <div
+                    class="bg-white border border-black/10 rounded-2xl p-6 lg:p-8 hover:border-primary transition-colors duration-400">
+                    <div class="flex flex-wrap items-center gap-3 mb-3">
+                        <h3 class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em]">Interview
+                        </h3>
+                        <span
+                            class="text-[10px] font-semibold tracking-label-wide uppercase text-primary bg-primary/10 px-2.5 py-1 rounded-full">1–2
+                            sessions</span>
+                    </div>
+                    <p class="text-ink/60 text-sm lg:text-base leading-relaxed">One or two targeted interviews with the
+                        hiring manager and the team you'd ship with. Practical conversations, not whiteboard puzzles.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative pl-20 lg:pl-24 reveal delay-3">
+                <div
+                    class="absolute left-0 top-0 w-16 lg:w-20 h-16 lg:h-20 rounded-full bg-primary text-white flex items-center justify-center shadow-lg">
+                    <span class="font-display font-bold text-2xl lg:text-3xl flow-num">04</span>
+                </div>
+                <div class="bg-ink border border-ink rounded-2xl p-6 lg:p-8 relative overflow-hidden">
+                    <div class="absolute -right-10 -top-10 w-40 h-40 opacity-30 pointer-events-none"
+                        style="background: radial-gradient(circle, rgba(0,146,34,0.5) 0%, transparent 70%);"></div>
+                    <div class="relative">
+                        <div class="flex flex-wrap items-center gap-3 mb-3">
+                            <h3 class="font-display font-bold text-white text-xl lg:text-2xl tracking-[-0.01em]">Offer
+                            </h3>
+                            <span
+                                class="text-[10px] font-semibold tracking-label-wide uppercase text-primary bg-primary/20 px-2.5 py-1 rounded-full">48h
+                                turnaround</span>
+                        </div>
+                        <p class="text-white/70 text-sm lg:text-base leading-relaxed">After reference checks and an open
+                            compensation conversation, you'll receive a written offer. No last-minute surprises, ever.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="mt-16 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 reveal">
+            <div>
+                <div class="text-ink/40 text-xs font-medium tracking-label-wide uppercase mb-2">Average time,
+                    application to offer</div>
+                <div class="font-display font-bold text-ink text-4xl lg:text-5xl tracking-[-0.04em] flow-num">2–3<span
+                        class="text-primary text-2xl lg:text-3xl"> weeks</span></div>
+            </div>
+            <a href="#positions"
+                class="group inline-flex items-center gap-3 bg-primary text-white px-7 py-4 text-sm font-medium rounded-full hover:bg-ink transition-colors duration-400">
+                <span>Begin application</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform duration-300">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ WHAT WE VALUE (BIG BG NUMBERS) ============ -->
+<section class="bg-[aliceblue] py-10 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-light opacity-50"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center gap-4 mb-12 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-ink/60 text-xs font-medium tracking-label-wide uppercase">What we value · Principles
+                behind the work</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+            <h2
+                class="lg:col-span-7 font-display font-bold text-ink text-4xl sm:text-5xl leading-[0.9] tracking-[-0.02em] reveal">
+                The principles<br>behind the work.
+            </h2>
+            <p class="lg:col-span-5 lg:pt-4 text-ink/70 text-base lg:text-lg leading-relaxed reveal delay-1">
+                Three operating principles guide every decision — from how we hire to how we ship to how we disagree.
+                They're written down, reviewed quarterly, and referenced by name in memos.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+
+            <div
+                class="relative bg-white border border-black/10 rounded-2xl p-8 lg:p-10 overflow-hidden reveal hover:border-primary transition-colors duration-400 group min-h-[360px] flex flex-col justify-between">
+                <div
+                    class="absolute -top-6 -right-2 font-display font-bold text-primary/10 text-[200px] leading-none flow-num pointer-events-none select-none">
+                    01</div>
+                <div class="relative">
+                    <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-8">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.8">
+                            <circle cx="12" cy="12" r="10" />
+                            <circle cx="12" cy="12" r="6" />
+                            <circle cx="12" cy="12" r="2" />
+                        </svg>
+                    </div>
+                    <h3
+                        class="font-display font-bold text-ink text-2xl lg:text-3xl tracking-[-0.01em] mb-4 leading-tight">
+                        Outcomes over optics</h3>
+                </div>
+                <p class="relative text-ink/60 text-base leading-relaxed">We measure work by the results it delivers,
+                    not the hours it took. The memo that ships a decision matters more than the meeting that discussed
+                    it.</p>
+            </div>
+
+            <div
+                class="relative bg-white border border-black/10 rounded-2xl p-8 lg:p-10 overflow-hidden reveal delay-1 hover:border-primary transition-colors duration-400 group min-h-[360px] flex flex-col justify-between">
+                <div
+                    class="absolute -top-6 -right-2 font-display font-bold text-primary/10 text-[200px] leading-none flow-num pointer-events-none select-none">
+                    02</div>
+                <div class="relative">
+                    <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-8">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.8">
+                            <circle cx="12" cy="12" r="10" />
+                            <path
+                                d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                        </svg>
+                    </div>
+                    <h3
+                        class="font-display font-bold text-ink text-2xl lg:text-3xl tracking-[-0.01em] mb-4 leading-tight">
+                        Built for South Asia</h3>
+                </div>
+                <p class="relative text-ink/60 text-base leading-relaxed">We design for emerging markets first — speed,
+                    resilience, accessibility. What works in San Francisco fails in Sylhet. We build for the latter, and
+                    the former comes free.</p>
+            </div>
+
+            <div
+                class="relative bg-white border border-black/10 rounded-2xl p-8 lg:p-10 overflow-hidden reveal delay-2 hover:border-primary transition-colors duration-400 group min-h-[360px] flex flex-col justify-between">
+                <div
+                    class="absolute -top-6 -right-2 font-display font-bold text-primary/10 text-[200px] leading-none flow-num pointer-events-none select-none">
+                    03</div>
+                <div class="relative">
+                    <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center mb-8">
+                        <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            stroke-width="1.8">
+                            <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z" />
+                        </svg>
+                    </div>
+                    <h3
+                        class="font-display font-bold text-ink text-2xl lg:text-3xl tracking-[-0.01em] mb-4 leading-tight">
+                        Bias for momentum</h3>
+                </div>
+                <p class="relative text-ink/60 text-base leading-relaxed">Ship, learn, iterate. Small bets compound into
+                    category-defining work. We'd rather publish a rough memo today than a perfect one next quarter.</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ VOICES FROM TEAM ============ -->
+<section class="bg-ink text-white py-12 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-dark opacity-30"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] opacity-25 pointer-events-none"
+        style="background: radial-gradient(circle, rgba(0,146,34,0.4) 0%, transparent 60%);"></div>
+
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center gap-4 mb-12 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-white/60 text-xs font-medium tracking-label-wide uppercase">Voices from the team · Why
+                people stay</span>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 mb-20">
+            <h2
+                class="lg:col-span-7 font-display font-bold text-white text-4xl leading-[0.9] tracking-[-0.02em] reveal">
+                Why people<br>stay and grow<br>here.
+            </h2>
+            <p class="lg:col-span-5 lg:pt-4 text-white/70 text-base lg:text-lg leading-relaxed reveal delay-1">
+                Three voices from the team — unedited, recorded over coffee, in their own words. No marketing copy, no
+                approved scripts.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-4 lg:gap-6">
+
+            <div
+                class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 lg:p-10 reveal hover:bg-white/10 transition-colors duration-400 flex flex-col">
+                <div class="font-display font-bold text-primary text-7xl leading-none mb-4">"</div>
+                <blockquote
+                    class="font-display font-bold text-white text-lg lg:text-xl leading-[1.3] tracking-[-0.01em] mb-8 flex-1">
+                    From junior engineer to leading a product line in 18 months. The growth here is real — not promised
+                    in an offer letter, but actually delivered.
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-white/10">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                        <span class="font-display font-bold text-primary text-lg">T</span>
+                    </div>
+                    <div>
+                        <div class="font-medium text-white text-sm">Tasnim R.</div>
+                        <div class="text-white/50 text-xs tracking-label-wide uppercase">Engineering Lead</div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 lg:p-10 reveal delay-1 hover:bg-white/10 transition-colors duration-400 flex flex-col">
+                <div class="font-display font-bold text-primary text-7xl leading-none mb-4">"</div>
+                <blockquote
+                    class="font-display font-bold text-white text-lg lg:text-xl leading-[1.3] tracking-[-0.01em] mb-8 flex-1">
+                    A workplace where designers are treated as equals to engineers. We're in the room when the
+                    architecture is decided, not after. Rare and refreshing.
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-white/10">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                        <span class="font-display font-bold text-primary text-lg">A</span>
+                    </div>
+                    <div>
+                        <div class="font-medium text-white text-sm">Arif H.</div>
+                        <div class="text-white/50 text-xs tracking-label-wide uppercase">Product Designer</div>
+                    </div>
+                </div>
+            </div>
+
+            <div
+                class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl p-8 lg:p-10 reveal delay-2 hover:bg-white/10 transition-colors duration-400 flex flex-col">
+                <div class="font-display font-bold text-primary text-7xl leading-none mb-4">"</div>
+                <blockquote
+                    class="font-display font-bold text-white text-lg lg:text-xl leading-[1.3] tracking-[-0.01em] mb-8 flex-1">
+                    The clients are ambitious, the standards are high, and the team genuinely supports you. Hard to find
+                    this combination anywhere in the region.
+                </blockquote>
+                <div class="flex items-center gap-4 pt-6 border-t border-white/10">
+                    <div
+                        class="w-12 h-12 rounded-full bg-primary/20 border border-primary/30 flex items-center justify-center">
+                        <span class="font-display font-bold text-primary text-lg">N</span>
+                    </div>
+                    <div>
+                        <div class="font-medium text-white text-sm">Nabila K.</div>
+                        <div class="text-white/50 text-xs tracking-label-wide uppercase">Senior Consultant</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section class="bg-[aliceblue] py-12 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-light opacity-50"></div>
+    <div class="relative max-w-7xl mx-auto px-6 lg:px-10">
+        <div class="flex items-center gap-4 mb-12 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-ink/60 text-xs font-medium tracking-label-wide uppercase">FAQ · Questions, answered</span>
+        </div>
+        <h2 class="font-display font-bold text-ink text-4xl sm:text-5xl leading-[0.9] tracking-[-0.02em] mb-16 reveal">
+            Questions,<br>answered.
+        </h2>
+
+        <div class="space-y-3">
+
+            <div class="faq-item open border border-black/10 rounded-2xl overflow-hidden reveal bg-white">
+                <button class="faq-question w-full flex items-center gap-4 text-left p-6 lg:p-7">
+                    <span class="font-display font-bold text-primary text-2xl flow-num flex-shrink-0">01</span>
+                    <span class="font-display font-bold text-ink text-lg lg:text-xl tracking-[-0.01em] pr-4 flex-1">Do I
+                        need to live in Dhaka?</span>
+                    <span
+                        class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-black/15 flex items-center justify-center text-ink text-xl leading-none">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-ink/60 text-base leading-relaxed px-6 lg:px-7 pb-6 lg:pb-7 pl-16 lg:pl-[60px]">
+                        Many roles are hybrid or remote-friendly within Bangladesh. Each listing notes the expected
+                        location and travel pattern — if a role requires you to be in Dhaka HQ four days a week, it says
+                        so explicitly. For senior consulting roles, expect client-site travel across divisional cities
+                        roughly one week per quarter.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-black/10 rounded-2xl overflow-hidden reveal delay-1 bg-white">
+                <button class="faq-question w-full flex items-center gap-4 text-left p-6 lg:p-7">
+                    <span class="font-display font-bold text-primary text-2xl flow-num flex-shrink-0">02</span>
+                    <span
+                        class="font-display font-bold text-ink text-lg lg:text-xl tracking-[-0.01em] pr-4 flex-1">What's
+                        your interview process like?</span>
+                    <span
+                        class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-black/15 flex items-center justify-center text-ink text-xl leading-none">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-ink/60 text-base leading-relaxed px-6 lg:px-7 pb-6 lg:pb-7 pl-16 lg:pl-[60px]">
+                        Four stages, two to three weeks total. Apply → Screen (recruiter call within 5–7 working days) →
+                        Interview (1–2 sessions with the hiring manager and team) → Offer. No take-home case studies
+                        that eat your weekend, no eight-round panels. Every rejection is written by the hiring lead.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-black/10 rounded-2xl overflow-hidden reveal delay-2 bg-white">
+                <button class="faq-question w-full flex items-center gap-4 text-left p-6 lg:p-7">
+                    <span class="font-display font-bold text-primary text-2xl flow-num flex-shrink-0">03</span>
+                    <span class="font-display font-bold text-ink text-lg lg:text-xl tracking-[-0.01em] pr-4 flex-1">Do
+                        you sponsor visas or relocation?</span>
+                    <span
+                        class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-black/15 flex items-center justify-center text-ink text-xl leading-none">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-ink/60 text-base leading-relaxed px-6 lg:px-7 pb-6 lg:pb-7 pl-16 lg:pl-[60px]">
+                        For roles based in Dhaka, we cover relocation for returning diaspora and expatriate hires — visa
+                        processing, two months of temporary housing, and a flat BDT 150,000 settling-in grant. We don't
+                        currently sponsor work visas outside Bangladesh.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-black/10 rounded-2xl overflow-hidden reveal delay-3 bg-white">
+                <button class="faq-question w-full flex items-center gap-4 text-left p-6 lg:p-7">
+                    <span class="font-display font-bold text-primary text-2xl flow-num flex-shrink-0">04</span>
+                    <span class="font-display font-bold text-ink text-lg lg:text-xl tracking-[-0.01em] pr-4 flex-1">What
+                        does compensation look like?</span>
+                    <span
+                        class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-black/15 flex items-center justify-center text-ink text-xl leading-none">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-ink/60 text-base leading-relaxed px-6 lg:px-7 pb-6 lg:pb-7 pl-16 lg:pl-[60px]">
+                        Every posting lists the salary band publicly — no "competitive package" hedging. We pay above
+                        market median for the practice, offer practice-level equity for senior roles, and review
+                        compensation quarterly against three external benchmarks. You'll know the band before you apply.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-black/10 rounded-2xl overflow-hidden reveal delay-4 bg-white">
+                <button class="faq-question w-full flex items-center gap-4 text-left p-6 lg:p-7">
+                    <span class="font-display font-bold text-primary text-2xl flow-num flex-shrink-0">05</span>
+                    <span class="font-display font-bold text-ink text-lg lg:text-xl tracking-[-0.01em] pr-4 flex-1">Can
+                        I apply to multiple roles at once?</span>
+                    <span
+                        class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-black/15 flex items-center justify-center text-ink text-xl leading-none">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-ink/60 text-base leading-relaxed px-6 lg:px-7 pb-6 lg:pb-7 pl-16 lg:pl-[60px]">
+                        Yes, but we'd encourage you to apply to the one role that fits you best — the recruiter screen
+                        will help confirm whether that's the right match. If you're torn between two, mention it in your
+                        note and we'll route your application to both hiring leads.
+                    </p>
+                </div>
+            </div>
+
+            <div class="faq-item border border-black/10 rounded-2xl overflow-hidden reveal delay-4 bg-white">
+                <button class="faq-question w-full flex items-center gap-4 text-left p-6 lg:p-7">
+                    <span class="font-display font-bold text-primary text-2xl flow-num flex-shrink-0">06</span>
+                    <span class="font-display font-bold text-ink text-lg lg:text-xl tracking-[-0.01em] pr-4 flex-1">Do
+                        you hire graduates and career-switchers?</span>
+                    <span
+                        class="faq-icon flex-shrink-0 w-8 h-8 rounded-full border border-black/15 flex items-center justify-center text-ink text-xl leading-none">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p class="text-ink/60 text-base leading-relaxed px-6 lg:px-7 pb-6 lg:pb-7 pl-16 lg:pl-[60px]">
+                        Yes. Two of our 2024 hires came from non-traditional backgrounds — a literature graduate now in
+                        product research, and a former banker now in strategy consulting. We look for craft and
+                        curiosity over credentials. If your CV doesn't tell the story, use the 200-word note to tell it
+                        yourself.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- ============ DON'T SEE YOUR ROLE (CENTERED) ============ -->
+<section class="bg-ink text-white py-12 relative overflow-hidden">
+    <div class="absolute inset-0 dot-grid-dark opacity-30"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[700px] opacity-30 pointer-events-none"
+        style="background: radial-gradient(circle, rgba(0,146,34,0.5) 0%, transparent 60%);"></div>
+
+    <div class="relative max-w-[1000px] mx-auto px-6 lg:px-10 text-center">
+        <div class="flex items-center justify-center gap-4 mb-10 reveal">
+            <div class="w-12 h-px bg-primary"></div>
+            <span class="text-white/60 text-xs font-medium tracking-label-wide uppercase">Don't see your role · Open
+                introduction</span>
+            <div class="w-12 h-px bg-primary"></div>
+        </div>
+        <h2
+            class="font-display font-bold text-white text-4xl sm:text-5xl lg:text-7xl leading-[0.9] tracking-[-0.025em] mb-8 reveal delay-1">
+            Don't see<br>your role?
+        </h2>
+        <p class="text-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl mx-auto mb-12 reveal delay-2">
+            We're always meeting great people. Send us your CV and a short note about the work you want to do — we'll
+            reach out when an opening in engineering, design, consulting or research matches.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-4 justify-center reveal delay-3">
+            <a href="mailto:careers@yessbangla.com"
+                class="group inline-flex items-center justify-center gap-3 bg-primary text-white px-7 py-4 text-sm font-medium rounded-full hover:bg-white hover:text-ink transition-colors duration-400">
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                    <rect x="2" y="4" width="20" height="16" rx="2" />
+                    <path d="m22 7-10 5L2 7" />
+                </svg>
+                <span>Email our recruiters</span>
+            </a>
+            <a href="#positions"
+                class="group inline-flex items-center justify-center gap-3 bg-white text-ink px-7 py-4 text-sm font-medium rounded-full hover:bg-primary hover:text-white transition-colors duration-400">
+                <span>Browse open roles</span>
+                <span class="text-base group-hover:translate-x-1 transition-transform duration-300">→</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- ============ APPLY MODAL ============ -->
+<div id="applyModal" class="fixed inset-0 z-[100] hidden">
+    <div class="modal-backdrop absolute inset-0 bg-ink/80 backdrop-blur-sm"></div>
+    <div class="absolute inset-0 flex items-start sm:items-center justify-center p-4 lg:p-8 overflow-y-auto">
+        <div class="modal-content relative bg-white rounded-2xl w-full max-w-3xl my-4 sm:my-8">
+            <div class="flex items-start justify-between p-6 lg:p-8 border-b border-black/10">
+                <div>
+                    <div class="flex items-center gap-3 mb-2">
+                        <div
+                            class="w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-display font-bold text-sm">
+                            2</div>
+                        <span class="text-xs font-medium tracking-label-wide uppercase text-ink/50">Step 2 · Your
+                            details</span>
+                    </div>
+                    <h3 class="font-display font-bold text-ink text-2xl lg:text-3xl tracking-[-0.02em]">Apply for this
+                        role</h3>
+                </div>
+                <button id="closeModal"
+                    class="flex-shrink-0 w-10 h-10 rounded-full border border-black/15 flex items-center justify-center hover:border-primary hover:text-primary hover:bg-primary/5 transition-colors duration-300"
+                    aria-label="Close">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2">
+                        <path d="M18 6 6 18M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="p-6 lg:p-8 max-h-[60vh] overflow-y-auto">
+                <div class="bg-cream rounded-xl p-5 lg:p-6 mb-8 border border-black/5">
+                    <div class="text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Applying for</div>
+                    <h4 id="modalRoleTitle"
+                        class="font-display font-bold text-ink text-xl lg:text-2xl tracking-[-0.01em] mb-2">Senior
+                        Full-Stack Engineer</h4>
+                    <p id="modalRoleDesc" class="text-ink/60 text-sm leading-relaxed">Build and own the next generation
+                        of our core banking platform.</p>
+                </div>
+                <form class="space-y-5">
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div>
+                            <label class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Full
+                                name <span class="text-primary">*</span></label>
+                            <input type="text" required
+                                class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-ink/30"
+                                placeholder="Your full name" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Email
+                                <span class="text-primary">*</span></label>
+                            <input type="email" required
+                                class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-ink/30"
+                                placeholder="you@email.com" />
+                        </div>
+                    </div>
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-5">
+                        <div>
+                            <label
+                                class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Phone
+                                <span class="text-primary">*</span></label>
+                            <input type="tel" required
+                                class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-ink/30"
+                                placeholder="+880 1XXX XXXXXX" />
+                        </div>
+                        <div>
+                            <label
+                                class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Location
+                                <span class="text-primary">*</span></label>
+                            <input type="text" required
+                                class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-ink/30"
+                                placeholder="City, Bangladesh" />
+                        </div>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">LinkedIn
+                            / Portfolio</label>
+                        <input type="url"
+                            class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-ink/30"
+                            placeholder="https://linkedin.com/in/you or https://your.site" />
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Cover
+                            letter <span class="text-ink/30 text-xs normal-case tracking-normal">(optional · 200 words
+                                max)</span></label>
+                        <textarea rows="4"
+                            class="w-full bg-white border border-black/15 px-4 py-3 text-sm font-medium text-ink rounded-lg focus:border-primary focus:outline-none transition-colors placeholder-ink/30 resize-none"
+                            placeholder="Tell us why this role, in your own words."></textarea>
+                    </div>
+                    <div>
+                        <label class="block text-xs font-medium tracking-label-wide uppercase text-ink/50 mb-2">Resume /
+                            CV <span class="text-primary">*</span></label>
+                        <div
+                            class="dropzone border-2 border-dashed border-black/15 rounded-lg p-6 lg:p-8 text-center cursor-pointer">
+                            <svg class="w-8 h-8 text-ink/40 mx-auto mb-3" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24" stroke-width="1.8">
+                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                <path d="M17 8l-5-5-5 5" />
+                                <path d="M12 3v12" />
+                            </svg>
+                            <p class="text-sm font-medium text-ink mb-1">Drag your file here, or <span
+                                    class="text-primary underline">browse</span></p>
+                            <p class="text-xs text-ink/40">PDF, DOC or DOCX · 10MB max</p>
+                            <input type="file" class="hidden" accept=".pdf,.doc,.docx" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div
+                class="p-6 lg:p-8 border-t border-black/10 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+                <p class="text-xs text-ink/50 leading-relaxed max-w-md">By submitting, you agree to our <a href="#"
+                        class="text-primary underline">Privacy Policy</a>. We'll respond within 7 working days.</p>
+                <button type="submit"
+                    class="group inline-flex items-center justify-center gap-3 bg-primary text-white px-7 py-4 text-sm font-medium rounded-full hover:bg-primary-dark transition-colors duration-400 whitespace-nowrap">
+                    <span>Submit application</span>
+                    <span class="text-base group-hover:translate-x-1 transition-transform duration-300">→</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('is-in');
+              observer.unobserve(entry.target);
+          }
+      });
+  }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -8% 0px'
+  });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  const counters = document.querySelectorAll('[data-counter]');
+  const counterObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          const el = entry.target;
+          const target = parseFloat(el.dataset.counter);
+          const decimals = parseInt(el.dataset.decimals || '0');
+          const duration = 1800;
+          const start = performance.now();
+          const ease = t => 1 - Math.pow(1 - t, 3);
+          const step = (now) => {
+              const t = Math.min((now - start) / duration, 1);
+              const value = target * ease(t);
+              el.textContent = decimals ? value.toFixed(decimals) : Math.floor(value);
+              if (t < 1) requestAnimationFrame(step);
+              else el.textContent = decimals ? target.toFixed(decimals) : target;
+          };
+          requestAnimationFrame(step);
+          counterObserver.unobserve(el);
+      });
+  }, {
+      threshold: 0.5
+  });
+  counters.forEach(el => counterObserver.observe(el));
+
+  document.querySelectorAll('.pill').forEach(pill => {
+      pill.addEventListener('click', () => {
+          document.querySelectorAll('.pill').forEach(p => p.classList.remove('is-active'));
+          pill.classList.add('is-active');
+      });
+  });
+
+  document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+          btn.parentElement.classList.toggle('open');
+      });
+  });
+
+  const modal = document.getElementById('applyModal');
+  const modalBackdrop = modal.querySelector('.modal-backdrop');
+  const modalContent = modal.querySelector('.modal-content');
+  const modalTitle = document.getElementById('modalRoleTitle');
+  const modalDesc = document.getElementById('modalRoleDesc');
+  const closeBtn = document.getElementById('closeModal');
+
+  function openModal(title, desc) {
+      modalTitle.textContent = title;
+      modalDesc.textContent = desc;
+      modal.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      requestAnimationFrame(() => {
+          modalBackdrop.classList.add('is-open');
+          modalContent.classList.add('is-open');
+      });
+  }
+
+  function closeModal() {
+      modalBackdrop.classList.remove('is-open');
+      modalContent.classList.remove('is-open');
+      setTimeout(() => {
+          modal.classList.add('hidden');
+          document.body.style.overflow = '';
+      }, 400);
+  }
+
+  document.querySelectorAll('.role-card').forEach(card => {
+      card.addEventListener('click', (e) => {
+          e.preventDefault();
+          const title = card.dataset.roleTitle;
+          const desc = card.dataset.roleDesc;
+          openModal(title, desc);
+      });
+  });
+
+  closeBtn.addEventListener('click', closeModal);
+  modalBackdrop.addEventListener('click', closeModal);
+  document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
+          closeModal();
+      }
+  });
+</script>
+
+        </div>
+
+        <!-- Footer Start -->
+        <footer class="bg-[#060D0A] relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-12 py-14">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
+
+                    <!-- Brand -->
+                    <div class="lg:col-span-4">
+                        <div class="flex gap-2">
+                            <div class="inline-flex items-center rounded-md bg-white p-1 shadow-[0_2px_8px_rgba(15,36,29,0.18)] mb-5">
+                                <img src="https://yessbd.com/Frontend/img/yess-bangla-logo.png" alt="Yess Bangla Logo" class="h-10 w-auto object-contain">
+                            </div>
+                            <div class="block">
+                                <h1 id="logo_text" class="text-sm md:text-lg font-semibold text-white">Yess Bangla Private Limited</h1>
+                                <p id="slogan_text" class="text-xs text-white">Where Solution Begins</p>
+                            </div>                  
+                        </div>
+
+                        <div class="mb-4">
+                            <p class="text-white/70">A full-service business consulting and IT solutions company helping organisations across Bangladesh scale with confidence.</p>
+                        </div>
+
+                        <div class="flex items-center gap-3">
+                                                        <a href="https://www.facebook.com/yessbanglaltd/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a>
+                                                                                    <a href="https://www.linkedin.com/company/yess-bangla-private-limited/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                            </a>
+                                                                                    <a href="https://www.instagram.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                                                                                    <a href="https://www.x.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-square-x-twitter"></i>
+                            </a>
+                                                                                     <a href="https://www.youtube.com/" target="_blank" class="w-9 h-9 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-white/60 hover:text-primary hover:border-primary transition-colors">
+                                <i class="fa-brands fa-youtube"></i>
+                            </a>
+                                                    </div>
+                    </div>
+
+                    <!-- Company -->
+                    <div class="lg:col-span-2">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Company</h4>
+                        <ul class="space-y-3 text-sm">
+                            <li><a href="https://yessbd.com/about" class="text-white/60 hover:text-[#3AD9A6] transition-colors">About Us <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/services" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Services <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/ventures" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Ventures <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/industries" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Industries <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/insights" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Insights <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/career" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Careers <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                            <li><a href="https://yessbd.com/contact" class="text-white/60 hover:text-[#3AD9A6] transition-colors">Contact <span><i class="fa-solid fa-angle-right"></i></span></a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Our Ventures -->
+                    <div class="lg:col-span-3">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Our Ventures</h4>
+                        <ul class="space-y-3 text-sm">
+                                                            <li><a href="https://yessbd.com/ventures/5?type=Shondhaan" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Shondhaan <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/8?type=Organic%20Haat" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Organic Haat <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/7?type=Yess%20Host" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Host <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/9?type=Akash%20OTT" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Akash OTT <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/10?type=Yess%20Soft" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Soft <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                            <li><a href="https://yessbd.com/ventures/6?type=Yess%20Event" class="text-[#3AD9A6] font-semibold inline-flex items-center gap-1 m-0">Yess Event <span><i class="fa-solid fa-caret-right mt-1"></i></span></a></li>
+                                                    </ul>
+                    </div>
+
+                    <!-- Get In Touch -->
+                    <div class="lg:col-span-3">
+                        <h4 class="text-white font-semibold text-[13px] uppercase tracking-wider mb-5">Get in touch</h4>
+                        <ul class="space-y-4 text-sm mb-6">
+                            <li class="flex items-start gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a2 2 0 01-2.828 0l-4.243-4.243a8 8 0 1111.314 0z"/>
+                                    <circle cx="12" cy="11" r="3" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="text-white/60 leading-relaxed">
+                                    Block-A, Road-3, House-127 (Green View), 1st Floor, Mirpur-12, Dhaka-1216
+                                </span>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                                </svg>
+                                <a href="tel:+8801805464343" class="text-white/60 hover:text-[#3AD9A6] transition-colors">+880 1805-464343</a>
+                            </li>
+                            <li class="flex items-center gap-2.5">
+                                <svg class="w-4 h-4 text-[#3AD9A6] flex-shrink-0" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                                </svg>
+                                <a href="mailto:yessbangla.bd@gmail.com" class="text-white/60 hover:text-[#3AD9A6] transition-colors break-all">yessbangla.bd@gmail.com</a>
+                            </li>
+                        </ul>
+
+                        <form onsubmit="return false;" class="flex">
+                            <input type="email" placeholder="Your email"
+                                   class="bg-white/5 border border-white/10 rounded-l-lg px-3.5 py-2.5 text-sm text-white outline-none w-full placeholder:text-white/40">
+                            <button type="submit" class="bg-[#10B67F] hover:opacity-90 text-white text-sm font-semibold px-5 rounded-r-lg whitespace-nowrap transition-opacity">
+                                Subscribe
+                            </button>
+                        </form>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollToTop"
+            type="button"
+            aria-label="Scroll to top"
+            title="Scroll to top"
+            class="hidden fixed bottom-20 md:bottom-5 right-5 z-50 w-11 h-11 items-center justify-center rounded-full bg-primary text-white shadow-lg transition-all duration-300 hover:bg-hover hover:text-black hover:-translate-y-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="m5 15 7-7 7 7" />
+        </svg>
+    </button>
+
+    <!-- Consultation modal -->
+    <div id="consultationModal" class="hidden fixed inset-0 z-50 overflow-y-auto" role="dialog"
+        aria-modal="true" aria-labelledby="consultationModalTitle">
+        <div id="consultationBackdrop" class="fixed inset-0 bg-black/70 backdrop-blur-sm"></div>
+        <div class="relative flex min-h-full items-center justify-center p-4 sm:p-6">
+            <div class="relative my-8 w-full max-w-2xl overflow-hidden rounded-2xl bg-white shadow-2xl">
+                <div class="flex items-start justify-between border-b border-zinc-200 px-5 py-4 sm:px-7">
+                    <div>
+                        <p class="text-[10px] font-semibold uppercase tracking-[0.18em] text-[#328f6c]">Let's talk</p>
+                        <h2 id="consultationModalTitle" class="mt-1 text-xl font-bold text-zinc-900">Start Free Consultation</h2>
+                    </div>
+                    <button type="button" id="consultationClose" aria-label="Close consultation form"
+                        class="rounded-lg p-2 text-zinc-400 transition-colors hover:bg-zinc-100 hover:text-zinc-700">
+                        <i data-lucide="x" class="h-5 w-5"></i>
+                    </button>
+                </div>
+
+                <form method="POST" action="https://yessbd.com/book-consultancy" class="space-y-4 px-5 py-5 sm:px-7 sm:py-6">
+                    <input type="hidden" name="_token" value="lvND8CKC7H0PRR9ZBBKpRN8zckD4AXd2AHBCML97" autocomplete="off">                    
+                    <div class="grid grid-cols-1 gap-4 sm:grid-cols-2">
+                        <div>
+                            <label for="consultationName" class="mb-1.5 block text-sm font-medium text-zinc-700">Your name</label>
+                            <input id="consultationName" name="name" type="text" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationEmail" class="mb-1.5 block text-sm font-medium text-zinc-700">Email</label>
+                            <input id="consultationEmail" name="email" type="email" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationPhone" class="mb-1.5 block text-sm font-medium text-zinc-700">Phone</label>
+                            <input id="consultationPhone" name="phone" type="tel" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                        <div>
+                            <label for="consultationSubject" class="mb-1.5 block text-sm font-medium text-zinc-700">Subject</label>
+                            <input id="consultationSubject" name="subject" type="text" value="" required
+                                class="w-full rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                                                    </div>
+                    </div>
+
+                    <div>
+                        <label for="consultationService" class="mb-1.5 block text-sm font-medium text-zinc-700">Select a venture or service</label>
+                        <select id="consultationService" name="service" required
+                            class="w-full rounded-lg border border-zinc-300 bg-white px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20">
+                            <option value="">Choose an option</option>
+                                                            <option value="Shondhaan" >
+                                    Shondhaan
+                                </option>
+                                                            <option value="Organic Haat" >
+                                    Organic Haat
+                                </option>
+                                                            <option value="Yess Host" >
+                                    Yess Host
+                                </option>
+                                                            <option value="Akash OTT" >
+                                    Akash OTT
+                                </option>
+                                                            <option value="Yess Soft" >
+                                    Yess Soft
+                                </option>
+                                                            <option value="Yess Event" >
+                                    Yess Event
+                                </option>
+                                                        <option value="Other service" >Other service</option>
+                            <option value="General consultation" >General consultation</option>
+                            <option value="Partnership" >Partnership</option>
+                        </select>
+                                            </div>
+
+                    <div>
+                        <label for="consultationDescription" class="mb-1.5 block text-sm font-medium text-zinc-700">Description</label>
+                        <textarea id="consultationDescription" name="description" rows="4"
+                            class="w-full resize-y rounded-lg border border-zinc-300 px-3.5 py-2.5 text-sm text-zinc-900 outline-none transition focus:border-[#328f6c] focus:ring-2 focus:ring-[#328f6c]/20"></textarea>
+                                            </div>
+
+                    <div class="flex flex-col-reverse gap-3 border-t border-zinc-200 pt-4 sm:flex-row sm:justify-end">
+                        <button type="reset" class="inline-flex items-center justify-center rounded-lg border border-zinc-300 px-5 py-2.5 text-sm font-semibold text-zinc-700 transition hover:bg-zinc-50">Clear</button>
+                        <button type="submit" class="inline-flex items-center justify-center rounded-lg bg-[#328f6c] px-5 py-2.5 text-sm font-semibold text-white transition hover:bg-[#2a7a5c] focus:outline-none focus:ring-2 focus:ring-[#328f6c]/40">Submit request</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        const consultationModal = document.getElementById('consultationModal');
+        const consultationOpen = document.getElementById('consultationOpen');
+        const consultationClose = document.getElementById('consultationClose');
+        const consultationBackdrop = document.getElementById('consultationBackdrop');
+
+        const closeConsultation = () => consultationModal?.classList.add('hidden');
+
+        consultationOpen?.addEventListener('click', () => {
+            consultationModal.classList.remove('hidden');
+            document.getElementById('consultationName')?.focus();
+        });
+        consultationClose?.addEventListener('click', closeConsultation);
+        consultationBackdrop?.addEventListener('click', closeConsultation);
+        document.addEventListener('keydown', (event) => {
+            if (event.key === 'Escape') closeConsultation();
+        });
+    </script>
+
+    <!-- ============ Non-critical scripts moved to the bottom, deferred ============ -->
+    <script src="https://kit.fontawesome.com/9f57283aa3.js" crossorigin="anonymous" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            if (window.lucide) {
+                lucide.createIcons();
+            }
+
+            const navbar = document.getElementById("navbar");
+            const header = navbar;
+            const navMenuBtn = header.querySelector('#headerMenuBtn');
+            const navLogoText = document.querySelector('#logo_text');
+            const navSlogan = document.querySelector('#slogan_text');
+
+          function updateHeaderOnScroll() {
+                const currentScrollY = window.scrollY;
+
+                if (currentScrollY > 20) {
+                    header.classList.add('header-on-scroll');
+                    header.classList.remove('bg-transparent', 'border-transparent');
+
+                    // Logo and slogan → black
+                    if (navLogoText) {
+                        navLogoText.classList.remove('text-white', 'text-primary');
+                        navLogoText.classList.add('text-black');
+                    }
+
+                    if (navSlogan) {
+                        navSlogan.classList.remove('text-white', 'text-primary');
+                        navSlogan.classList.add('text-black');
+                    }
+
+                } else {
+                    header.classList.remove('header-on-scroll');
+                    header.classList.add('bg-transparent', 'border-transparent');
+
+                    // Logo and slogan → white
+                    if (navLogoText) {
+                        navLogoText.classList.remove('text-white', 'text-primary');
+                        navLogoText.classList.add('text-black');
+                    }
+
+                    if (navSlogan) {
+                        navSlogan.classList.remove('text-white', 'text-primary');
+                        navSlogan.classList.add('text-black');
+                    }
+                }
+
+                if (navMenuBtn) {
+                    navMenuBtn.classList.remove('text-gray-900');
+
+                    if (currentScrollY > 20) {
+                        navMenuBtn.classList.add('text-gray-900');
+                    } else {
+                        navMenuBtn.classList.add('text-white');
+                    }
+                }
+            }
+            window.addEventListener('scroll', updateHeaderOnScroll, { passive: true });
+            updateHeaderOnScroll();
+
+            // Show the scroll-to-top button after the user moves down the page.
+            const scrollToTop = document.getElementById('scrollToTop');
+            function updateScrollToTopVisibility() {
+                scrollToTop.classList.toggle('hidden', window.scrollY <= 300);
+                scrollToTop.classList.toggle('flex', window.scrollY > 300);
+            }
+            scrollToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+            window.addEventListener('scroll', updateScrollToTopVisibility, { passive: true });
+            updateScrollToTopVisibility();
+
+            // Mobile menu toggle
+            const menuBtn = document.getElementById('menuBtn');
+            const headerMenuBtn = document.getElementById('headerMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const menuIcon = document.getElementById('menuIcon');
+            const closeIcon = document.getElementById('closeIcon');
+
+            function toggleMobileMenu() {
+                mobileMenu.classList.toggle('hidden');
+                menuIcon.classList.toggle('hidden');
+                closeIcon.classList.toggle('hidden');
+                const isOpen = !mobileMenu.classList.contains('hidden');
+                menuBtn.setAttribute('aria-expanded', String(isOpen));
+                headerMenuBtn.setAttribute('aria-expanded', String(isOpen));
+            }
+
+            if (menuBtn) menuBtn.addEventListener('click', toggleMobileMenu);
+            if (headerMenuBtn) headerMenuBtn.addEventListener('click', toggleMobileMenu);
+
+            document.querySelectorAll('.mobile-link').forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileMenu.classList.add('hidden');
+                    menuIcon.classList.remove('hidden');
+                    closeIcon.classList.add('hidden');
+                    menuBtn.setAttribute('aria-expanded', 'false');
+                    headerMenuBtn.setAttribute('aria-expanded', 'false');
+                });
+            });
+
+            // Keep the quick-nav dropdown independent from the full mobile menu.
+            const mobileQuickNav = document.getElementById('mobileQuickNav');
+            const mobileDropdownToggle = mobileQuickNav?.querySelector('[data-mobile-dropdown-toggle]');
+            const mobileDropdownMenu = mobileQuickNav?.querySelector('[data-mobile-dropdown-menu]');
+            const mobileDropdownIcon = mobileQuickNav?.querySelector('[data-mobile-dropdown-icon]');
+
+            function closeMobileDropdown() {
+                mobileDropdownMenu?.classList.add('hidden');
+                mobileDropdownToggle?.setAttribute('aria-expanded', 'false');
+                mobileDropdownIcon?.classList.remove('rotate-180');
+            }
+
+            mobileDropdownToggle?.addEventListener('click', (event) => {
+                event.stopPropagation();
+                const isOpen = mobileDropdownMenu?.classList.toggle('hidden') === false;
+                mobileDropdownToggle.setAttribute('aria-expanded', String(isOpen));
+                mobileDropdownIcon?.classList.toggle('rotate-180', isOpen);
+            });
+
+            document.addEventListener('click', (event) => {
+                if (mobileQuickNav && !mobileQuickNav.contains(event.target)) {
+                    closeMobileDropdown();
+                }
+            });
+
+            document.addEventListener('keydown', (event) => {
+                if (event.key === 'Escape') closeMobileDropdown();
+            });
+        });
+    </script>
+
+    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+<script>
+
+
+</script>
+</body>
+</html>
